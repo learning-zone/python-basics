@@ -1,0 +1,7 @@
+FirstName,LastName,Phone1,Phone2,Email1,Email2,Zip
+John,Doe,(555) 123-4567,(555) 987-6543,johnd@home.com,,94105
+Jane,Doe,(555) 123-4567,(555) 654-9873,janed@home.com,johnd@home.com,94105
+Jack,Doe,(444) 123-4567,(555) 654-9873,jackd@home.com,,94109
+John,Doe,(555) 123-4567,(555) 987-6543,jackd@home.com,,94105
+Josh,Doe,(456) 789-0123,,joshd@home.com,jackd@home.com,94109
+Jill,Doe,(654) 987-1234,,jill@home.com,,94129
