@@ -15,6 +15,38 @@
 #### Q. How to find PID of process and How to find how much resources a process is taking on linux?
 #### Q. What is Amazon’s version of Hadoop?
 #### Q. What are tools for ingestion?
+#### Q. What is Python?
+#### Q. Describe some features of Python.
+#### Q. How does Python execute code?
+#### Q. What are some built-in types in Python?
+#### Q. What are bindings, i.e., what does it mean for a value to be bound to a variable?
+#### Q. How do you create a list?
+#### Q. How do you create a dictionary?
+#### Q. What is a list comprehension? Why would you use one?
+#### Q. What is a generator? What can it be used for?
+#### Q. What is inheritance? 
+#### Q. What happens if you have an error in an __init__ statement? 
+#### Q. What happens in python if you try to divide by zero?
+#### Q. How can you improve the following code?
+
+```python
+import string
+
+i = 0
+for letter in string.letters:
+    print("The letter at index %i is %s" % (i, letter))
+    i = i + 1
+```
+
+Bonus points for mentioning `enumerate` and use of `str.format`.
+
+#### Q. How can you return multiple values from a function/method?
+#### Q. What's the fastest way to swap the values bound to two variables?
+#### Q. What is the importance of reference counting?
+#### Q. Do functions (or methods) return something even if there isn't a `return statement? If so, what do they return?
+#### Q. How do you reverse a list? Can you come up with at least three ways? 
+#### Q. How would you merge two sorted lists? They can be any length, or empty. 
+#### Q. How would you count the lines in a file? How would you do it if the file was too big to hold in memory?
 
 
 #### Why was the language called as Python?
