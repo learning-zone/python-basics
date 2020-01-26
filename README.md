@@ -601,9 +601,6 @@ Everything in Python is an object and all variables hold references to the objec
     
 - However, when we pass literal arguments like strings, numbers, or tuples, they pass by value. This is because they are immutable.
 
-
-
-
 #### Q. What is the use of enumerate() in Python?
 
 #### Q. What are `*args`, `**kwargs` ?
@@ -657,11 +654,7 @@ def f(x, *tup, **kwargs):
 ```
 
 
-#### Q. How instance variables are different from class variables?
 
-#### Q. Differentiate between "*.py" file and "*.pyc" file?
-
-#### Q. Explain difference between Map vs Reduce Vs Filter ?
 
 #### Q. What is lambda? What are Lambda Functions ?Explain lambda expressions. When would you use one? What is Anonymous Function? Why lambda forms in python does not have statements? What is the lambda operator?
 
@@ -722,24 +715,7 @@ We know that a package may contain sub-packages and modules. A module is nothing
 To create a package of our own, we create a directory and create a file `__init__.py` in it. We leave it empty. Then, in that package, we create a module(s) with whatever code we want. For a detailed explanation with pictures, refer to Python Packages.
 
 
-#### Q. What are Generators ?
-
-#### Q. What are Iterators ?
-
-#### Q. Can generator be used to create Iterators ? Give example
-
-#### Q. Can iterators be used to create generator ?
-
-#### Q. What are iterators and generators?
-
-#### Q. What is Method Resolution Order ?
-
-
-
-#### Q. Differentiate between append() and extend() methods ?
-
----
-#### Q. _Application Based_
+####  _Application Based_
 #### Q. What is Web Scraping? How do you achieve it in Python?
 We can use scrapy.
 
@@ -4658,3 +4634,13 @@ Without the rstrip(), we would get blank lines between the output.
 #### Q. What is inheritance? 
 #### Q. What happens if you have an error in an __init__ statement? 
 #### Q. What happens in python if you try to divide by zero?
+#### Q. How instance variables are different from class variables?
+#### Q. Differentiate between "*.py" file and "*.pyc" file?
+#### Q. Explain difference between Map vs Reduce Vs Filter ?
+#### Q. What are Generators ?
+#### Q. What are Iterators ?
+#### Q. Can generator be used to create Iterators ? Give example
+#### Q. Can iterators be used to create generator ?
+#### Q. What are iterators and generators?
+#### Q. What is Method Resolution Order ?
+#### Q. Differentiate between append() and extend() methods ?
