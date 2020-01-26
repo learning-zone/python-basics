@@ -1132,10 +1132,10 @@ mylist[-6:-1]
     - subn() – it is similar to sub() and also returns the new string along with the no. of replacements.
 
 
-What is map function in Python?
+#### Q. What is map function in Python?
 
     Map function executes the function given as the first argument on all the elements of the iterable given as the second argument. If the function given takes in more than 1 arguments, then many iterables are given. #Follow the link to know more similar functions
-- How to get indices of N maximum values in a NumPy array?
+#### Q. How to get indices of N maximum values in a NumPy array?
 
     We can get the indices of N maximum values in a NumPy array using the below code:
 
@@ -1144,11 +1144,11 @@ What is map function in Python?
     arr = np.array([1, 3, 2, 4, 5])
     print(arr.argsort()[-3:][::-1])
     ```
-- What is a Python module?
+#### Q. What is a Python module?
 
     A module is a Python script that generally contains import statements, functions, classes and variable definitions, and Python runnable code and it "lives" file with a ‘.py’ extension. zip files and DLL files can also be modules.Inside the module, you can refer to the module name as a string that is stored in the global variable name .
 
-- Name the File-related modules in Python?
+#### Q. Name the File-related modules in Python?
 
     Python provides libraries / modules with functions that enable you to manipulate text files and binary files on file system. Using them you can create files, update their contents, copy, and delete files. The libraries are : os, os.path, and shutil.
     
@@ -1159,7 +1159,7 @@ What is map function in Python?
 
 
     
-- Explain all the file processing modes supported by Python?
+#### Q. Explain all the file processing modes supported by Python?
 
     Python allows you to open files in one of the three modes. They are:
     
@@ -1169,7 +1169,7 @@ What is map function in Python?
 
     "r", "w", "rw", and "a", so that the preceding modes become "rt", "wt", "rwt", and "at".A binary file can be opened in any one of the above said modes by specifying the option "b" along with "r", "w", "rw", and "a" so that the preceding modes become "rb", "wb", "rwb", "ab".
 
-- How many kinds of sequences are supported by Python? What are they?
+#### Q. How many kinds of sequences are supported by Python? What are they?
 
     Python supports 7 sequence types. They are str, list, tuple, unicode, byte array, xrange, and buffer. where xrange is deprecated in python 3.5.X.
 
@@ -1184,11 +1184,11 @@ What is map function in Python?
         print(line)
    ```
 
-- What is the difference between NumPy and SciPy?
+#### Q. What is the difference between NumPy and SciPy?
 
     In an ideal world, NumPy would contain nothing but the array data type and the most basic operations: indexing, sorting, reshaping, basic element wise functions, et cetera. All numerical code would reside in SciPy. However, one of NumPy’s important goals is compatibility, so NumPy tries to retain all features supported by either of its predecessors. Thus NumPy contains some linear algebra functions, even though these more properly belong in SciPy. In any case, SciPy contains more fully-featured versions of the linear algebra modules, as well as many other numerical algorithms. If you are doing scientific computing with python, you should probably install both NumPy and SciPy. Most new features belong in SciPy rather than NumPy.
 
-- Which of the following is an invalid statement?     
+#### Q. Which of the following is an invalid statement?     
     a) abc = 1,000,000  
     b) a b c = 1000 2000 3000   
     c) a,b,c = 1000, 2000, 3000     
@@ -1196,7 +1196,7 @@ What is map function in Python?
 
     Answer: b
 
-- What is the output of the following? 
+#### Q. What is the output of the following? 
     ```py
     try: 
         if '1' != 1: 
@@ -1209,61 +1209,61 @@ What is map function in Python?
 
     Answer: C
 
-- Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1] ?  
+#### Q. Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1] ?  
   
     25
 
-- How to open a file c:\scores.txt for writing?
+#### Q. How to open a file c:\scores.txt for writing?
 
     ``fileWriter = open("c:\\scores.txt", "w")``
-- Name few Python modules for Statistical, Numerical and scientific computations ?
+#### Q. Name few Python modules for Statistical, Numerical and scientific computations ?
 
     `numPy` – this module provides an array/matrix type, and it is useful for doing computations on arrays.   
     `scipy` – this module provides methods for doing numeric integrals, solving differential equations, etc     
     `pylab` – is a module for generating and saving plots
 
-- What is TkInter?
+#### Q. What is TkInter?
 
     TkInter is Python library. It is a toolkit for GUI development. It provides support for various GUI tools or widgets (such as buttons, labels, text boxes, radio buttons, etc) that are used in GUI applications. The common attributes of them include Dimensions, Colors, Fonts, Cursors, etc.
 
-- Is Python object oriented? what is object oriented programming?
+#### Q. Is Python object oriented? what is object oriented programming?
 
     Yes. Python is Object Oriented Programming language. OOP is the programming paradigm based on classes and instances of those classes called objects. The features of OOP are: Encapsulation, Data Abstraction, Inheritance, Polymorphism.
 
-- Does Python supports interfaces like in Java? Discuss.    
+#### Q. Does Python supports interfaces like in Java? Discuss.    
     Python does not provide interfaces like in Java. Abstract Base Class (ABC) and its feature are provided by the Python’s "abc" module. Abstract Base Class is a mechanism for specifying what methods must be implemented by its implementation subclasses. The use of ABC’c provides a sort of "understanding" about methods and their expected behaviour. This module was made available from Python 2.7 version onwards.
 
-- What are Accessors, mutators, @property?    
+#### Q. What are Accessors, mutators, @property?    
     Accessors and mutators are often called getters and setters in languages like "Java". For example, if x is a property of a user-defined class, then the class would have methods called setX() and getX(). Python has an @property 'decorator' that allows you to ad getters and setters in order to access the attribute of the class.
 
-- Differentiate between append() and extend() methods.?
+#### Q. Differentiate between append() and extend() methods.?
 
     Both append() and extend() methods are the methods of list. These methods are used to add the elements at the end of the list.     
     `append(element)` – adds the given element at the end of the list which has called this method.      
     `extend(another-list)` – adds the elements of another-list at the end of the list which is called the extend method.
 
-- Name few methods that are used to implement Functionally Oriented Programming in Python?
+#### Q. Name few methods that are used to implement Functionally Oriented Programming in Python?
 
     Python supports methods (called iterators in Python3), such as filter(), map(), and reduce(), that are very useful when you need to iterate over the items in a list, create a dictionary, or extract a subset of a list.
     - `filter()` – enables you to extract a subset of values based on conditional logic.
     - `map()` – it is a built-in function that applies the function to each item in an iterable.
     - `reduce()` – repeatedly performs a pair-wise reduction on a sequence until a single value is computed.
 
-- What is the output of the following?
+#### Q. What is the output of the following?
     ```python
     x = ['ab', 'cd']
     print(len(map(list, x)))
     ```
     A TypeError occurs as map has no len().
 
-- What is the output of the following?    
+#### Q. What is the output of the following?    
     ```py
     x = ['ab', 'cd']
     print(len(list(map(list, x))))
     ```     
     The length of each string is 2.
 
-- Which of the following is not the correct syntax for creating a set?    
+#### Q. Which of the following is not the correct syntax for creating a set?    
     a) set([[1,2],[3,4]])       
     b) set([1,2,2,3,4])         
     c) set((1,2,3,4))       
@@ -1272,7 +1272,7 @@ What is map function in Python?
     A.
     Explanation : The argument given for the set must be an iterable.
 
-- Explain a few methods to implement Functionally Oriented Programming in Python.
+#### Q. Explain a few methods to implement Functionally Oriented Programming in Python.
 
     Sometimes, when we want to iterate over a list, a few methods come in handy.    
     
@@ -1298,7 +1298,7 @@ What is map function in Python?
 
 
 
-- Write a Python function that checks whether a passed string is palindrome Or not? 
+#### Q. Write a Python function that checks whether a passed string is palindrome Or not? 
     
     Note: A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam , saas, nun.
     
@@ -1316,7 +1316,7 @@ What is map function in Python?
         return True
     print(isPalindrome(‘aza’))
     ```
-- Write a Python program to calculate the sum of a list of numbers.
+#### Q. Write a Python program to calculate the sum of a list of numbers.
     ```py
     def list_sum(num_List):
         if len(num_List) == 1:
@@ -1328,7 +1328,7 @@ What is map function in Python?
     ```
     Sample Output: 24
 
-- How to retrieve data from a table in MySQL database through Python code? Explain.
+#### Q. How to retrieve data from a table in MySQL database through Python code? Explain.
     ```py
     #import MySQLdb module as : 
     import MySQLdb
@@ -1348,7 +1348,7 @@ What is map function in Python?
     #close the database connection. 
     db.close()
     ```
-- Write a Python program to read a random line from a file.
+#### Q. Write a Python program to read a random line from a file.
     ```py
     import random
     def random_line(fname):
@@ -1356,7 +1356,7 @@ What is map function in Python?
         return random.choice(lines)
         print(random_line(‘test.txt’))
     ```
-- Write a Python program to count the number of lines in a text file.
+#### Q. Write a Python program to count the number of lines in a text file.
 
     ```py
     def file_lengthy(fname):
@@ -1367,21 +1367,16 @@ What is map function in Python?
     
     print("Number of lines in the file: ",file_lengthy("test.txt"))
     ```
-- When to use list comprehensions and when to avoid list comprehensions ?
-
-- What are Map, filter and reduce functions ?
-- What are the different types of exceptions generated in python?
-- How to write your own custom exception handling ?
-- Difference between input and raw_input ?
-- Why do we write `__name__` == `"__main__"` in a python script ?
-
-- Why does the exception handling have a finally block ?
-- Does python provide thread safe multi-threading ?
-- What do you mean by non blocking IO ?
-
-
-
-- What are the key features of Python?  
+#### Q. When to use list comprehensions and when to avoid list comprehensions ?
+#### Q. What are Map, filter and reduce functions ?
+#### Q. What are the different types of exceptions generated in python?
+#### Q. How to write your own custom exception handling ?
+#### Q. Difference between input and raw_input ?
+#### Q. Why do we write `__name__` == `"__main__"` in a python script ?
+#### Q. Why does the exception handling have a finally block ?
+#### Q. Does python provide thread safe multi-threading ?
+#### Q. What do you mean by non blocking IO ?
+#### Q. What are the key features of Python?  
 
 If it makes for an introductory language to programming, Python must mean something. These are its qualities:
 >
@@ -1392,7 +1387,7 @@ If it makes for an introductory language to programming, Python must mean someth
     - Free
     - Has a large community
 
-- Explain the ternary operator in Python.
+#### Q. Explain the ternary operator in Python.
 
 Unlike C++, we don’t have ?: in Python, but we have this:
 
@@ -1415,7 +1410,7 @@ print("Hi") if a<b else print("Bye")
 ```
 Ans: Hi
 
-- What is multithreading? Give an example. How is multithreading achieved in Python? What is GIL(Global interpreter lock) issue ? How does the GIL impact concurrency in Python? What kinds of applications does it impact more than others?
+#### Q. What is multithreading? Give an example. How is multithreading achieved in Python? What is GIL(Global interpreter lock) issue ? How does the GIL impact concurrency in Python? What kinds of applications does it impact more than others?
 
 It means running several different programs at the same time concurrently by invoking multiple threads. Multiple threads within a process refer the data space with main thread and they can communicate with each other to share information more easily.Threads are light-weight processes and have less memory overhead. Threads can be used just for quick task like calculating results and also running other processes in the background while the main program is running.
 
@@ -1573,7 +1568,7 @@ Python has the following keywords:
 `continue	exec	if	nonlocal	return`	
 
 
-Q.20. How do you remove the leading whitespace in a string?
+#### Q. How do you remove the leading whitespace in a string?
 
 Leading whitespace in a string is the whitespace in a string before the first non-whitespace character. To remove it from a string, we use the method `lstrip()`.
 ```py
@@ -1633,7 +1628,7 @@ Also, istitle() will tell us if a string is in title case.
 ```
 True
 
-- What is the pass statement in Python?
+#### Q. What is the pass statement in Python?
 
 There may be times in our code when we haven’t decided what to do yet, but we must type something for it to be syntactically correct. In such a case, we use the pass statement.
 
@@ -1665,7 +1660,7 @@ for i in range(7):
 5   
 6
 
-- What is a closure in Python?
+#### Q. What is a closure in Python?
 
 A closure is said to occur when a nested function references a value in its enclosing scope. The whole point here is that it remembers the value.
 ```py
@@ -1679,7 +1674,7 @@ A(7)()
 
 7
 
-- Explain the //, %, and ** operators in Python.
+#### Q. Explain the //, %, and ** operators in Python.
 
 The // operator performs floor division. It will return the integer part of the result on division.
 ```py
@@ -1720,7 +1715,7 @@ Addition (+) This adds two values.
 7/8  # 0.875
 7//8 # 0
 ```
-- Explain relational operators in Python.
+#### Q. Explain relational operators in Python.
 
 Relational operators compare values.
 >    - Less than (<) If the value on the left is lesser, it returns True.
@@ -1765,7 +1760,7 @@ True
 
 True
 
-- What are assignment operators in Python?
+#### Q. What are assignment operators in Python?
 
 This one is an Important Interview question in Python Interview.
 
@@ -1807,7 +1802,7 @@ We can combine all arithmetic operators with the assignment symbol.
 
 0.0
 
-- Explain logical operators in Python.
+#### Q. Explain logical operators in Python.
 
 We have three logical operators- and, or, not.
 
@@ -1823,7 +1818,7 @@ True
 
 False
 
-Q.28. What are membership, operators?
+#### Q. What are membership, operators?
 
 With the operators ‘in’ and ‘not in’, we can confirm if a value is a member in another.
 
@@ -1833,7 +1828,7 @@ True
     'us' not in 'disappointment'
 True
 
-Q.29. Explain identity operators in Python.
+#### Q. Explain identity operators in Python.
 
 This is one of the very commonly asked Python Interview Questions and answers it with examples.
 The operators ‘is’ and ‘is not’ tell us if two values have the same identity.
@@ -1845,7 +1840,7 @@ False
 
 True
 
-Q.30. Finally, tell us about bitwise operators in Python.
+#### Q. Finally, tell us about bitwise operators in Python.
 
 These operate on values bit by bit.
 
@@ -1889,7 +1884,7 @@ Here, 001 was shifted to the left by two places to get 100, which is binary for 
 
 For more insight on operators, refer to Operators in Python.
 
-Q.31. How would you work with numbers other than those in the decimal number system?
+#### Q. How would you work with numbers other than those in the decimal number system?
 
 With Python, it is possible to type numbers in binary, octal, and hexadecimal.
 
@@ -1923,11 +1918,11 @@ To convert a number into its binary form, we use bin().
 
 
 
-- Why are identifier names with a leading underscore disparaged?
+#### Q. Why are identifier names with a leading underscore disparaged?
 
 Since Python does not have a concept of private variables, it is a convention to use leading underscores to declare a variable private. This is why we mustn’t do that to variables we do not want to make private.
 
-- How can you declare multiple assignments in one statement?
+#### Q. How can you declare multiple assignments in one statement?
 
 There are two ways to do this:
 ```py
@@ -1935,7 +1930,7 @@ There are two ways to do this:
      a = b = c =3         #This assigns 3 to a, b, and c
 ```
 
-- What is tuple unpacking?
+#### Q. What is tuple unpacking?
 
 First, let’s discuss tuple packing. It is a way to pack a set of values into a tuple.
 ```py
@@ -1952,7 +1947,7 @@ x,y,z=mytuple
 x+y+z
 ```
 
-- What data types does Python support?
+#### Q. What data types does Python support?
 
     Python provides us with five kinds of data types:   
     
@@ -1978,7 +1973,7 @@ x+y+z
         {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 ```   
 
-Q2. What is a docstring?
+#### Q. What is a docstring?
 
 A docstring is a documentation string that we use to explain what a construct does. We place it as the first thing under a function, class, or a method, to describe what it does. We declare a docstring using three sets of single or double quotes.
 
@@ -2002,11 +1997,11 @@ sayhi.__doc__
 
 A docstring, unlike a comment, is retained at runtime.
 
-Q.3. What is the PYTHONPATH variable?
+#### Q. What is the PYTHONPATH variable?
 
 PYTHONPATH is the variable that tells the interpreter where to locate the module files imported into a program. Hence, it must include the Python source library directory and the directories containing Python source code. You can manually set PYTHONPATH, but usually, the Python installer will preset it.
 
-Q.4. What is slicing?
+#### Q. What is slicing?
 
 These are the types of basic Python interview questions for freshers.
 
@@ -2021,7 +2016,7 @@ Slicing is a technique that allows us to retrieve only a part of a list, tuple, 
         ‘Hell’
 ```
 
-Q.5. What is a namedtuple?
+#### Q. What is a namedtuple?
 
 A namedtuple will let us access a tuple’s elements using a name/label. We use the function namedtuple() for this, and import it from collections.
 
@@ -2035,7 +2030,7 @@ A namedtuple will let us access a tuple’s elements using a name/label. We use 
 
 As you can see, it let us access the marks in Chemistry using the Chemistry attribute of object Ramayan.
 
-Q.6. How would you declare a comment in Python?
+#### Q. How would you declare a comment in Python?
 
 Unlike languages like C++, Python does not have multiline comments. All it has is octothorpe (#). Anything following a hash is considered a comment, and the interpreter ignores it.
 
@@ -2044,7 +2039,7 @@ Unlike languages like C++, Python does not have multiline comments. All it has i
 
 In fact, you can place a comment anywhere in your code. You can use it to explain your code.
 
-Q.7. How would you convert a string into an int in Python?
+#### Q. How would you convert a string into an int in Python?
 
 If a string contains only numerical characters, you can convert it into an integer using the int() function.
 
@@ -2062,7 +2057,7 @@ Let’s check the types:
 
  <class ‘int’>
 
-Q.8. How do you take input in Python?
+#### Q. How do you take input in Python?
 
 For taking input from user, we have the function input(). In Python 2, we had another function raw_input().
 
@@ -2100,7 +2095,7 @@ Now when we multiply it by 2, we get this:
 
 `14`
 
-Q.9. What is a frozen set in Python?
+#### Q. What is a frozen set in Python?
 
 Answer these type of Python Interview Questions with Examples.
 
@@ -2130,7 +2125,7 @@ However, a set is mutable. A frozen set is immutable. This means we cannot chang
   <class ‘frozenset’>
 
 
-Q.10. How would you generate a random number in Python?
+#### Q. How would you generate a random number in Python?
 
 This kind of Python interview Questions and Answers can Prove your depth of knowledge.
 
@@ -2176,7 +2171,7 @@ We can also use the function randint(). It takes two arguments to indicate a ran
 
 2
 
-Q.11. How will you capitalize the first letter of a string?     
+#### Q. How will you capitalize the first letter of a string?     
 
 Simply using the method capitalize().
 
@@ -2194,7 +2189,7 @@ However, it will let other characters be.
 
 ‘$HRIR@M’
 
-Q.12. How will you check if all characters in a string are alphanumeric?
+#### Q. How will you check if all characters in a string are alphanumeric?
 
 For this, we use the method isalnum().
 
@@ -2236,7 +2231,7 @@ True
 
 False
 
-Q.13. What is the concatenation?
+#### Q. What is the concatenation?
 
 This is very basic Python Interview Question, try not to make any mistake in this.
 
@@ -2258,7 +2253,7 @@ Here, 4 is considered an int. Let’s do this again.
      (2,3)+(4,)  # (obj,) is way to declare single empty
     (2, 3, 4)
 
-Q.14. What is a function?
+#### Q. What is a function?
 
 When we want to execute a sequence of statements, we can give it a name. Let’s define a function to take two numbers and return the greater number.
 
@@ -2272,7 +2267,7 @@ greater(3,3.5)
 You can create your own function or use one of Python’s many built-in functions.
 
 
-Q.16. What is recursion?
+#### Q. What is recursion?
 
 When a function makes a call to itself, it is termed recursion. But then, in order for it to avoid forming an infinite loop, we must have a base condition. Let’s take an example.
 ```py
@@ -2286,11 +2281,11 @@ facto(4)
 
 
 
-3. Python Interview Questions for Experienced
+### Python Interview Questions for Experienced
 
 These are the Advanced Python Interview Questions and Answers for Experienced, however they can also refer the basic Python Interview Questions and Answers for Freshers for basic knowledge.
 
-Q.21. What does the function zip() do?
+#### Q. What does the function zip() do?
 
 One of the less common functions with beginners, zip() returns an iterator of tuples.
 
@@ -2304,7 +2299,7 @@ Here, it pairs items from the two lists, and creates tuples with those. But it d
 
 [(‘a’, 1), (‘b’, 2), (‘c’, 3)]
 
-Q.22. If you are ever stuck in an infinite loop, how will you break out of it?
+#### Q. If you are ever stuck in an infinite loop, how will you break out of it?
 
 For this, we press Ctrl+C. This interrupts the execution. Let’s create an infinite loop to demonstrate this.
 
@@ -2327,10 +2322,7 @@ File “<pyshell#331>”, line 2, in counterfunc
 while(n==7):print(n)    
 KeyboardInterrupt
 
-
-Q.23. 
-
-Q.24. With Python, how do you find out which directory you are currently in?
+#### Q. With Python, how do you find out which directory you are currently in?
 
 To find this, we use the function/method getcwd(). We import it from the module os.
 
@@ -2350,7 +2342,7 @@ We can also change the current working directory with chdir().
 
 ‘C:\\Users\\lifei\\Desktop’
 
-Q.25. How will you find, in a string, the first word that rhymes with ‘cake’?
+#### Q. How will you find, in a string, the first word that rhymes with ‘cake’?
 
 For our purpose, we will use the function search(), and then use group() to get the output.
 
@@ -2362,7 +2354,7 @@ For our purpose, we will use the function search(), and then use group() to get 
 
 And as we know, the function search() stops at the first match. Hence, we have our first rhyme to ‘cake’.
 
-Q.27. What is Tkinter?
+#### Q. What is Tkinter?
 
 Tkinter is a famous Python library with which you can craft a GUI. It provides support for different GUI tools and widgets like buttons, labels, text boxes, radio buttons, and more. These tools and widgets have attributes like dimensions, colors, fonts, colors, and more.
 
@@ -2377,13 +2369,11 @@ This creates a window with the title ‘My Game’. You can position your widget
 
 Follow this link to know more about Python Libraries
 
-Q.28. How is a .pyc file different from a .py file?
+#### Q. How is a .pyc file different from a .py file?
 
 While both files hold bytecode, .pyc is the compiled version of a Python file. It has platform-independent bytecode. Hence, we can execute it on any platform that supports the .pyc format. Python automatically generates it to improve performance(in terms of load time, not speed).
 
-Q.29. 
-
-Q.30. How do you calculate the length of a string?
+#### Q. How do you calculate the length of a string?
 
 This is simple. We call the function len() on the string we want to calculate the length of.
 
@@ -2391,7 +2381,7 @@ This is simple. We call the function len() on the string we want to calculate th
 
 
 
-Q.1. What does the following code output?
+#### Q. What does the following code output?
 
      def extendList(val, list=[]):
           list.append(val)
@@ -3711,7 +3701,7 @@ y
 ...
 ```
 
-Q: What will be printed out by the second append() statement below?
+#### Q. What will be printed out by the second append() statement below?
 ```py
 def append(list=[]):
     # append the length of a list to the list
