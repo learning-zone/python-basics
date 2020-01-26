@@ -1,32 +1,6 @@
 ## Python Interview Questions
 
-#### Q. Is python compile language?
-#### Q. Standard python libraries used?
-#### Q. What is size of integer in python?
-#### Q. What are serialization formats(in python)?
-#### Q. How python manages memory?
-#### Q. Is tuple mutable or immutable?
-#### Q. Tell me some datastructures in Python?
-#### Q. Why python instead of scala on spark when scala has better performance?
-#### Q. How to access file on linux server using python?
-#### Q. What is List Comprehension ? Show with example
-#### Q. What version of Azure DataFactory you are using>?
-#### Q. How to execute a java code?
-#### Q. How to find PID of process and How to find how much resources a process is taking on linux?
-#### Q. What is Amazon’s version of Hadoop?
-#### Q. What are tools for ingestion?
-#### Q. What is Python?
-#### Q. Describe some features of Python.
-#### Q. How does Python execute code?
-#### Q. What are some built-in types in Python?
-#### Q. What are bindings, i.e., what does it mean for a value to be bound to a variable?
-#### Q. How do you create a list?
-#### Q. How do you create a dictionary?
-#### Q. What is a list comprehension? Why would you use one?
-#### Q. What is a generator? What can it be used for?
-#### Q. What is inheritance? 
-#### Q. What happens if you have an error in an __init__ statement? 
-#### Q. What happens in python if you try to divide by zero?
+
 #### Q. How can you improve the following code?
 
 ```python
@@ -37,23 +11,13 @@ for letter in string.letters:
     print("The letter at index %i is %s" % (i, letter))
     i = i + 1
 ```
-
 Bonus points for mentioning `enumerate` and use of `str.format`.
 
-#### Q. How can you return multiple values from a function/method?
-#### Q. What's the fastest way to swap the values bound to two variables?
-#### Q. What is the importance of reference counting?
-#### Q. Do functions (or methods) return something even if there isn't a `return statement? If so, what do they return?
-#### Q. How do you reverse a list? Can you come up with at least three ways? 
-#### Q. How would you merge two sorted lists? They can be any length, or empty. 
-#### Q. How would you count the lines in a file? How would you do it if the file was too big to hold in memory?
-
-
-#### Why was the language called as Python?
+#### Q. Why was the language called as Python?
 At the same time he began implementing Python, Guido van Rossum was also reading the published scripts from "Monty Python's Flying Circus" (a BBC comedy series from the seventies).
 
 
-**What is Python particularly good for? When is using Python the “right choice” for a project?**
+#### Q. What is Python particularly good for? When is using Python the “right choice” for a project?
 
 Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
 
@@ -70,17 +34,17 @@ Although likes and dislikes are highly personal, a developer who is “worth his
 
 With regard to the question of when using Python is the “right choice” for a project, the complete answer also depends on a number of issues orthogonal to the language itself, such as prior technology investment, skill set of the team, and so on. Although the question as stated above implies interest in a strictly technical answer, a developer who will raise these additional issues in an interview will always “score more points” with me since it indicates an awareness of, and sensitivity to, the “bigger picture” (i.e., beyond just the technology being employed). Conversely, a response that Python is always the right choice is a clear sign of an unsophisticated developer.
 
-#### Why Python is not that much of popular, when compared to other programming languages?
+#### Q. Why Python is not that much of popular, when compared to other programming languages?
 
 Python is not so useful in web environment where the user interface is the browser. Hence, lot of people are using PHP for different design goals. Google is tightly connected with python as they make searching algorithms.
      
-#### What are the advantage and disadvantage of Python programming language?
+#### Q. What are the advantage and disadvantage of Python programming language?
 
 Python is more like java and bit cumbersome, but it leads to a better design. Python is an interpreted language, high level programming, pure object-oriented, high performance server side scripting language.
 
 It is not best for mobile application. Due to interpreter its execution speed is not up to mark as compared to compiler.
 
-#### What are some drawbacks of the Python language?
+#### Q. What are some drawbacks of the Python language?
 
 For starters, if you know a language well, you know its drawbacks, so responses such as “there’s nothing I don’t like about it” or “it has no drawbacks” are very telling indeed.
 
@@ -89,7 +53,7 @@ The two most common valid answers to this question (by no means intended as an e
 - Execution speed. Python can be slower than compiled languages since it is interpreted. (Well, sort of. See our earlier discussion on this topic.)
 
 
-#### We know Python is all the rage these days. But to be truly accepting of a great technology, you must know its pitfalls as well. Would you like to talk about this?
+#### Q. We know Python is all the rage these days. But to be truly accepting of a great technology, you must know its pitfalls as well. Would you like to talk about this?
 
 Of course. To be truly yourself, you must be accepting of your flaws. Only then can you move forward to work on them. Python has its flaws too:
 
@@ -103,7 +67,7 @@ And even after these pitfalls, of course. Being easy makes it addictive. Once a 
 
 So while it has problems, it is also a wonderful tool for a lot of things. 
 
-**What are the key differences between Python 2 and 3?**
+#### Q. What are the key differences between Python 2 and 3?
 ```
 Division operator   
 `print` function  
@@ -135,7 +99,7 @@ Error Handling
         - Sorting a heterogeneous list no longer makes sense.     
         - All the elements must be comparable to each other
 
-#### What are some key differences to bear in mind when coding in Python vs. Java?
+#### Q. What are some key differences to bear in mind when coding in Python vs. Java?
 
 Disclaimer #1. The differences between Java and Python are numerous and would likely be a topic worthy of its own (lengthy) post. Below is just a brief sampling of some key differences between the two languages.
 
@@ -168,7 +132,7 @@ Disclaimer #2. The intent here is not to launch into a religious battle over the
 
     - An expert knowledge of Python extends well beyond the technical minutia of the language. A Python expert will have an in-depth understanding and appreciation of Python’s benefits as well as its limitations. Accordingly, here are some sample questions that can help assess this dimension of a candidate’s expertise:
 
-**What will be the output of the code below in Python 2?  Explain your answer.**     
+#### Q. What will be the output of the code below in Python 2?       
 
 ```py
 def div1(x,y):
@@ -187,17 +151,14 @@ Also, how would the answer differ in Python 3 (assuming, of course, that the abo
 
 
 
-**What is the difference between range and xrange? How has this changed over time?**
+#### Q. What is the difference between range and xrange? How has this changed over time?
 - As follows:
     - `xrange` returns the xrange object while range returns the list, and uses the same memory and no matter what the range size is.
     - For the most part, xrange and range are the exact same in terms of functionality. They both provide a way to generate a list of integers for you to use, however you please. 
     - The only difference is that range returns a Python list object and x range returns an xrange object. This means that xrange doesn’t actually generate a static list at run-time like range does. It creates the values as you need them with a special technique called yielding. This technique is used with a type of object known as generators. That means that if you have a really gigantic range you’d like to generate a list for, say one billion, xrange is the function to use. 
     - This is especially true if you have a really memory sensitive system such as a cell phone that you are working with, as range will use as much memory as it can to create your array of integers, which can result in a Memory Error and crash your program. It’s a memory hungry beast.
 
-#### Here's a function (Provide a function). Optimize it for me.
-    - 
-
-**What will be the output of the code below?**
+#### Q. What will be the output of the code below?**
 
 ```py
 List = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’]
@@ -206,47 +167,47 @@ print(list[10:])
 - TypeError: 'type' object is not subscriptable     
 if proper name given,it will print [].
 
-#### How do you iterate over a list and pull element indices at the same time?
+#### Q. How do you iterate over a list and pull element indices at the same time?
     - as
 
-#### How do you enforce ordering for a dictionary-style object?
+#### Q. How do you enforce ordering for a dictionary-style object?
     - asfdfw
 
-#### How many ways can you append or concatenate strings? Which of these ways is fastest? Easiest to read?
+#### Q. How many ways can you append or concatenate strings? Which of these ways is fastest? Easiest to read?
     - fqffwv
 
-#### Write a code for downloading a CSV in Python2 and Python3. (Provide a link to CSV file)
+#### Q. Write a code for downloading a CSV in Python2 and Python3. (Provide a link to CSV file)
     -  jalfkslf
 
-#### I'm getting a maximum recursion depth error for a function. What does this mean? How can I mitigate the problem?
+#### Q. I'm getting a maximum recursion depth error for a function. What does this mean? How can I mitigate the problem?
     - ka;lsk;as
 
-#### Here's a class hierarchy with some methods defined. When I call this function, what gets printed?
+#### Q. Here's a class hierarchy with some methods defined. When I call this function, what gets printed?
     - asdassadasd
 
 Apart from these technical questions, ask these following general questions to find out more about candidates Python skills
 
-#### What’s your favorite standard library module?
+#### Q. What’s your favorite standard library module?
     - Bottle.
 
-#### Tell me something you don't like about Python.
+#### Q. Tell me something you don't like about Python.
     - PEP 572 to include ' := ' operator for assignment.
 
-#### What was the most interesting project you have participated in? Can you describe it and tell why you consider it to be so interesting?
+#### Q. What was the most interesting project you have participated in? Can you describe it and tell why you consider it to be so interesting?
     - College website using tornado
     - Annual days audition date,time,venue using redis,python,pandas,tweepy.
 
-#### Do you like to participate in the analysis, design and deployment phases of a project or do you prefer to concentrate on the pure development of well-described task? Why?
+#### Q. Do you like to participate in the analysis, design and deployment phases of a project or do you prefer to concentrate on the pure development of well-described task? Why?
     - Ya for sure. To understand its whole life cycle these things are mandatory having development in focus.
 
-#### I have noticed you listed Skill X on your CV. What’s your opinion about it?
+#### Q. I have noticed you listed Skill X on your CV. What’s your opinion about it?
     - I am passionate about it.
 
-#### Do you remember any programming project decision you made that was a failure? Why do you think it was a mistake? Why did it happen? What did you learn from this experience?
+#### Q. Do you remember any programming project decision you made that was a failure? Why do you think it was a mistake? Why did it happen? What did you learn from this experience?
     - as
 
 
-#### What is a method?      
+#### Q. What is a method?      
 A method is a function on some object x that you normally call as x.name(arguments...). Methods are defined as functions inside the class definition: 
 ```py
 class C: 
@@ -254,11 +215,11 @@ class C:
         return arg*2 + self.attribute
 ```
 
-#### How can I find the methods or attributes of an object?
+#### Q. How can I find the methods or attributes of an object?
 
 For an instance x of a user-defined class, dir(x) returns an alphabetized list of the names containing the instance attributes and methods and attributes defined by its class.
 
-#### How do I call a method defined in a base class from a derived class that overrides it?
+#### Q. How do I call a method defined in a base class from a derived class that overrides it?
 
 If you're using new-style classes, use the built-in `super()` function:
 
@@ -270,13 +231,13 @@ class Derived(Base):
 If you're using classic classes: For a class definition such as 
 `class Derived(Base):` ... you can call method meth() defined in Base (or one of Base's base classes) as Base.meth(self,arguments). Here, Base.meth is an unbound method, so you need to provide the self argument.
 
-#### How can I organize my code to make it easier to change the base class?
+#### Q. How can I organize my code to make it easier to change the base class?
 
 You could define an alias for the base class, assign the real base class to it before your class definition, and use the alias throughout your class. Then all you have to change is the value assigned to the alias. Incidentally, this trick is also handy if you want to decide dynamically (e.g. depending on availability of resources) which base class to use. 
 
 Example: BaseAlias = class Derived(BaseAlias): def meth(self): BaseAlias.meth(self).
 
-#### How do I find the current module name?
+#### Q. How do I find the current module name?
 A module can find out its own module name by looking at the predefined global variable `__name__`. If this has the value `'__main__'`, the program is running as a script. Many modules that are usually used by importing them also provide a command-line interface or a self-test, and only execute this code after checking `__name__`: 
 
 ```py
@@ -294,7 +255,7 @@ m = __import__(s)
 ```
 
 _Adv_
-#### How do I access a module written in Python from C?
+#### Q. How do I access a module written in Python from C?
 
 You can get a pointer to the module object as follows: 
 
@@ -303,17 +264,17 @@ You can get a pointer to the module object as follows:
 If the module hasn't been imported yet (i.e. it is not yet present in sys.modules), this initializes the module; otherwise it simply returns the value of ``sys.modules[""]``. Note that it doesn't enter the module into any namespace -- it only ensures it has been initialized and is stored in sys.modules. You can then access the module's attributes (i.e. any name defined in the module) as follows: attr = PyObject_GetAttrString(module, ""); Calling PyObject_SetAttrString() to assign to variables in the module also works.
 
 _Adv_
-#### How do I interface to C++ objects from Python?
+#### Q. How do I interface to C++ objects from Python?
 
 Depending on your requirements, there are many approaches. To do this manually, begin by reading the "Extending and Embedding" document. Realize that for the Python run-time system, there isn't a whole lot of difference between C and C++ -- so the strategy of building a new Python type around a C structure (pointer) type will also work for C++ objects. 
 
 _beg_
-#### How do I convert a number to a string?
+#### Q. How do I convert a number to a string?
 
 To convert, e.g., the number 144 to the string '144', use the built-in function str(). If you want a hexadecimal or octal representation, use the built-in functions hex() or oct(). For fancy formatting, use the % operator on strings, e.g. "%04d" % 144 yields '0144' and "%.3f" % (1/3.0) yields '0.333'. See the library reference manual for details.
 
 _beg_
-#### How is the Implementation of Python's dictionaries done?
+#### Q. How is the Implementation of Python's dictionaries done?
 
 Python dictionary needs to be declared first:   
 `dict = {}`
@@ -332,7 +293,7 @@ Remove all:
 A hash value of the key is computed using a hash function, The hash value addresses a location in an array of "buckets" or "collision lists" which contains the (key , value) pair.
 
 _int_
-#### What is used to create Unicode string in Python?
+#### Q. What is used to create Unicode string in Python?
 
 "u" should be added before the string
 
@@ -343,7 +304,7 @@ Add unicode before the string. Ex: unicode(text) resulting in text.
 
 
 _beg_    
-#### What is the built-in function used in Python to iterate over a sequence of numbers?
+#### Q. What is the built-in function used in Python to iterate over a sequence of numbers?
 
 Syntax: `range(start,end,step count)`
 
@@ -372,7 +333,7 @@ Output:
     8
     9
 
-#### Does Python have a switch-case statement?
+#### Q. Does Python have a switch-case statement?
 
 Ans.  In languages like C++, we have something like this:
 
@@ -408,11 +369,11 @@ def switch(choice):
 
 Here, the get() method returns the value of the key. When no key matches, the default value (the second argument) is returned.
 
-#### Does python support switch or case statement in Python? If not what is the reason for the same?
+#### Q. Does python support switch or case statement in Python? If not what is the reason for the same?
 
 Dictionary can be used as case/switch. Actually there is no switch statement in the Python programming language but the is a similar construct that can do justice to switch that is the exception handling using try and except1,except2,except3.... and so on.
 
-#### What is the statement that can be used in Python if a statement is required syntactically but the program requires no action?
+#### Q. What is the statement that can be used in Python if a statement is required syntactically but the program requires no action?
 
 `pass` keyword is used to do nothing but it fulfill the syntactical requirements.
 
@@ -430,13 +391,11 @@ else:
     pass
 ```
 
-
-
-#### What is used to represent Strings in Python. Is double quotes used for String representation or single quotes used for String representation in Python?
+#### Q. What is used to represent Strings in Python. Is double quotes used for String representation or single quotes used for String representation in Python?
 
 Both works in Python. Most preferable way by PEP 8 is in double quotes
 
-#### Does Python support strongly for regular expressions? What are the other languages that support strongly for regular expressions? What are Regular Expressions ?
+#### Q. Does Python support strongly for regular expressions? What are the other languages that support strongly for regular expressions? What are Regular Expressions ?
 
 Yes, Python Supports Regular Expressions Well. `re` is an in-buit library for the same. There is a lot of other languages that have good support to RegEx- Perl, Awk, Sed, Java etc.
 
@@ -444,11 +403,11 @@ Regular expressions (called REs, or regexes, or regex patterns) are essentially 
 
 Regular expression patterns are compiled into a series of bytecodes which are then executed by a matching engine written in C. For advanced use, it may be necessary to pay careful attention to how the engine will execute a given RE, and write the RE in a certain way in order to produce bytecode that runs faster. Optimization isn’t covered in this document, because it requires that you have a good understanding of the matching engine’s internals.
 
-#### How do you perform pattern matching in Python? Explain.
+#### Q. How do you perform pattern matching in Python? Explain.
 
 Regular Expressions/REs/ regexes enable us to specify expressions that can match specific "parts" of a given string. For instance, we can define a regular expression to match a single character or a digit, a telephone number, or an email address, etc. The Python’s "re" module provides regular expression patterns and was introduce from later versions of Python 2.5. "re" module is providing methods for search text strings, or replacing text strings along with methods for splitting text strings based on the pattern defined.
 
-#### Write a regular expression that will accept an email id. Use the `re` module.
+#### Q. Write a regular expression that will accept an email id. Use the `re` module.
 
 Ans.
 ```py
@@ -462,7 +421,7 @@ To brush up on regular expressions, check Regular Expressions in Python.
 
 ### _Garbage Collector & Memory Manager_
 
-#### What is Garbage Collection?    
+#### Q. What is Garbage Collection?    
 The concept of removing unused or unreferenced objects from the memory location is known as a Garbage Collection. While executing the program, if garbage collection takes place then more memory space is available for the program and rest of the program execution becomes faster.
 
 Garbage collector is a predefined program, which removes the unused or unreferenced objects from the memory location.
@@ -471,16 +430,16 @@ Any object reference count becomes zero then we call that object as a unused or 
 
 While executing the python program if any object reference count becomes zero, then internally python interpreter calls the garbage collector and garbage collector will remove that object from memory location.
 
-#### How is memory managed in Python?
+#### Q. How is memory managed in Python?
 
 Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have an access to this private heap and interpreter. Like other programming language python also has garbage collector which will take care of memory management in python.Python also have an inbuilt garbage collector, which recycle all the unused memory and frees the memory and makes it available to the heap space. The allocation of Python heap space for Python objects is done by Python memory manager. The core API gives access to some tools for the programmer to code.
 
 Python has a private heap space to hold all objects and data structures. Being programmers, we cannot access it; it is the interpreter that manages it. But with the core API, we can access some tools. The Python memory manager controls the allocation. 
 
-#### Why isn't all memory freed when Python exits?
+#### Q. Why isn't all memory freed when Python exits?
 Objects referenced from the global namespaces of Python modules are not always deallocated when Python exits. This may happen if there are circular references. There are also certain bits of memory ...
 
-#### Whenever you exit Python, is all memory de-allocated? State why is it so.
+#### Q. Whenever you exit Python, is all memory de-allocated? State why is it so.
 
 The answer here is no. The modules with circular references to other objects, or to objects referenced from global namespaces, aren’t always freed on exiting Python.
 Plus, it is impossible to de-allocate portions of memory reserved by the C library.
@@ -490,7 +449,7 @@ Whenever Python exits, especially those Python modules which are having circular
 
 
 
-#### Is it possible to assign multiple var to values in list?
+#### Q. Is it possible to assign multiple var to values in list?
 
 The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
 
@@ -509,7 +468,7 @@ size, color, disposition = cat
 
 
 _Adv_ 
-#### What is `__slots__` and when is it useful?     
+#### Q. What is `__slots__` and when is it useful?     
 Normally, all class objects have an `__dict__` which allows new attributes to be bound to a class instance at runtime. When a class is defined with `__slots__`, only attributes whose names are present in the `__slots__` sequence are allowed. 
 This results in instances of this class not having an `__dict__` attribute and not being able to bind new attributes at run time.`__slots__` is useful because it eliminates 
 
@@ -545,9 +504,9 @@ This class variable can be assigned a string, iterable, or sequence of strings w
  
  
 
-#### What are the built-in type does python provides? Among them which are Mutable and Immutable Data structures in Python? 
-#### OR 
-#### What Are The Types of Objects Support in Python Language?
+#### Q. What are the built-in type does python provides? Among them which are Mutable and Immutable Data structures in Python? 
+#### Q. OR 
+#### Q. What Are The Types of Objects Support in Python Language?
 
 Python supports are two types are of objects. They are:
 
@@ -623,7 +582,7 @@ Mutable built-in types:
     Mutable objects performance is low when compared to immutable objects   
     Applying Iterations mutable objects takes huge time
 
-#### What is difference between tuple and list ? Where will you use tuple and where will you use list ?
+#### Q. What is difference between tuple and list ? Where will you use tuple and where will you use list ?
 ---
 | List 	                           |         Tuple|
 List objects are mutable objects 	 Tuple objects are immutable Objects
@@ -640,11 +599,11 @@ mylist[1] = 2                        mytuple[1] = 2
 
 
 
-#### Python is Call by Value or Call by Reference? How are arguments passed by value or by reference?
+#### Q. Python is Call by Value or Call by Reference? How are arguments passed by value or by reference?
 
 Everything in Python is an object and all variables hold references to the objects. The references values are according to the functions; as a result you cannot change the value of the references. However, you can change the objects if it is mutable.
 
-#### Explain Python’s parameter-passing mechanism.
+#### Q. Explain Python’s parameter-passing mechanism.
 - To pass its parameters to a function, Python uses pass-by-reference. If you change a parameter within a function, the change reflects in the calling function. This is its default behavior. 
     
 - However, when we pass literal arguments like strings, numbers, or tuples, they pass by value. This is because they are immutable.
@@ -652,9 +611,9 @@ Everything in Python is an object and all variables hold references to the objec
 
 
 
-#### What is the use of enumerate() in Python?
+#### Q. What is the use of enumerate() in Python?
 
-#### What are `*args`, `**kwargs` ?
+#### Q. What are `*args`, `**kwargs` ?
 
 In cases when we don’t know how many arguments will be passed to a function, like when we want to pass a list or a tuple of values, we use `*args`.
 
@@ -686,7 +645,7 @@ c.7
 
 The words `args` and `kwargs` are a convention, and we can use anything in their place.
 
-#### How can I pass optional or keyword parameters from one function to another?
+#### Q. How can I pass optional or keyword parameters from one function to another?
 
 Collect the arguments using the * and ** specifier in the function's parameter list; this gives you the positional arguments as a tuple and the keyword arguments as a dictionary. You can then pass these arguments when calling another function by using `*` and `**` :
 
@@ -705,13 +664,13 @@ def f(x, *tup, **kwargs):
 ```
 
 
-#### How instance variables are different from class variables?
+#### Q. How instance variables are different from class variables?
 
-#### Differentiate between "*.py" file and "*.pyc" file?
+#### Q. Differentiate between "*.py" file and "*.pyc" file?
 
-#### Explain difference between Map vs Reduce Vs Filter ?
+#### Q. Explain difference between Map vs Reduce Vs Filter ?
 
-#### What is lambda? What are Lambda Functions ?Explain lambda expressions. When would you use one? What is Anonymous Function? Why lambda forms in python does not have statements? What is the lambda operator?
+#### Q. What is lambda? What are Lambda Functions ?Explain lambda expressions. When would you use one? What is Anonymous Function? Why lambda forms in python does not have statements? What is the lambda operator?
 
 A function which doesn’t contain any name is known as a anonymous function lambda function, Lambda function we can assign to the variable & we can call the lambda function through the variable.
 
@@ -760,9 +719,9 @@ add(2,3)
 output:     
 `5`
 
-#### What is __init__ functions ?
-#### _OR_ In a class definition, what does the `__init__()` function do?     
-#### _OR_ How do you create your own package in Python?
+#### Q. What is __init__ functions ?
+#### Q. _OR_ In a class definition, what does the `__init__()` function do?     
+#### Q. _OR_ How do you create your own package in Python?
 
 It overrides the any initialization from an inherited class and is called when the class is instantiated.
 
@@ -770,28 +729,28 @@ We know that a package may contain sub-packages and modules. A module is nothing
 To create a package of our own, we create a directory and create a file `__init__.py` in it. We leave it empty. Then, in that package, we create a module(s) with whatever code we want. For a detailed explanation with pictures, refer to Python Packages.
 
 
-#### What are Generators ?
+#### Q. What are Generators ?
 
-#### What are Iterators ?
+#### Q. What are Iterators ?
 
-#### Can generator be used to create Iterators ? Give example
+#### Q. Can generator be used to create Iterators ? Give example
 
-#### Can iterators be used to create generator ?
+#### Q. Can iterators be used to create generator ?
 
-#### What are iterators and generators?
+#### Q. What are iterators and generators?
 
-#### What is Method Resolution Order ?
+#### Q. What is Method Resolution Order ?
 
 
 
-#### Differentiate between append() and extend() methods ?
+#### Q. Differentiate between append() and extend() methods ?
 
 ---
-#### _Application Based_
-#### What is Web Scraping? How do you achieve it in Python?
+#### Q. _Application Based_
+#### Q. What is Web Scraping? How do you achieve it in Python?
 We can use scrapy.
 
-#### Explain the use "with" statement in python?
+#### Q. Explain the use "with" statement in python?
 
 - In python generally "with" statement is used to open a file, process the data present in the file, and also to close the file without calling a close() method. "with" statement makes the exception handling simpler by providing cleanup activities.
 
@@ -801,8 +760,8 @@ with open("filename", "mode") as file-var:
 ```
 processing statements   
 Note: no need to close the file by calling close() upon file-var.close()
-#### What are Middlewares ?
-#### What is Monkey patching ? Give example ?
+#### Q. What are Middlewares ?
+#### Q. What is Monkey patching ? Give example ?
 
 Dynamically modifying a class or module at run-time.
 
@@ -818,28 +777,28 @@ class A:
 ```
 Hi, monkey
 
-#### What's the difference between py2.x and py3.x ?
-#### Give examples of Python Framework ?
+#### Q. What's the difference between py2.x and py3.x ?
+#### Q. Give examples of Python Framework ?
 
-#### How Python is interpreted.
-#### Explain dict.
+#### Q. How Python is interpreted.
+#### Q. Explain dict.
 
-#### How to pass optional or keyword arguments.
+#### Q. How to pass optional or keyword arguments.
 
-#### Explain indexing and slicing.
+#### Q. Explain indexing and slicing.
 
 
 
-#### Difference between str() and repr().
+#### Q. Difference between str() and repr().
 
 ======= advanced ======
-#### What is Dynamic Typing ?
-#### Justify this statement : Everything is object in Python? 
+#### Q. What is Dynamic Typing ?
+#### Q. Justify this statement : Everything is object in Python? 
 
 
 
 
-#### Explain serialization and deserialization / Pickling and unpicking.
+#### Q. Explain serialization and deserialization / Pickling and unpicking.
 Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling.
 
 To create portable serialized representations of Python objects, we have the module ‘pickle’. It accepts a Python object (remember, everything in Python is an object). It then converts it into a string representation and uses the dump() function to dump it into a file. We call this pickling. In contrast, retrieving objects from this stored string representation is termed 'unpickling'.
@@ -860,11 +819,11 @@ Reference:
 [2]   https://docs.python-guide.org/scenarios/serialization/
 
 
-#### What is list / dict compression.
+#### Q. What is list / dict compression.
 
 
 
-#### What are higher ordered functions?
+#### Q. What are higher ordered functions?
 You have two choices: you can use nested scopes or you can use callable objects. For example, suppose you wanted to define linear(a,b) which returns a function f(x) that computes the value a*x+b.     
 `Using nested scopes:` 
 ```py
@@ -913,7 +872,7 @@ inc, dec, reset = count.up, count.down, count.set
 ```
 Here inc(), dec() and reset() act like functions which share the same counting variable.
 
-####  How do I copy a file? How to copy object in Python? Diff between shallow copy and deep copy? 
+#### Q.  How do I copy a file? How to copy object in Python? Diff between shallow copy and deep copy? 
 
 The shutil module contains a `copyfile()` function.
 
@@ -939,60 +898,60 @@ File “<pyshell#97>”, line 1, in <module> mytuple[1]=2
 TypeError: ‘tuple’ object does not support item assignment
 
 
-#### How to make array in python?
+#### Q. How to make array in python?
 import numpy
 
-#### How to generate random numbers.
+#### Q. How to generate random numbers.
 
-#### How to handle exceptions.
+#### Q. How to handle exceptions.
 
-#### When to use list/tuple/set/dict?
+#### Q. When to use list/tuple/set/dict?
 
-#### What is virtualenv
-
-
-
-#### `with` statement and its usage.
+#### Q. What is virtualenv
 
 
 
-
-#### What is class and what is self.
-
-#### Explain isinstance()
-
-#### What is static method, class method and instance method?
+#### Q. `with` statement and its usage.
 
 
 
-#### Explain map, filter,reduce and lambda.
 
-#### Difference between new styled classed and old styled classes.
+#### Q. What is class and what is self.
 
-#### What is diff between Python and Java?
+#### Q. Explain isinstance()
 
-#### What is context processor?
-
-#### What is exec() and eval ()?
-
-#### How to pass command line argument.
-
-#### What is yield ?
-
-#### What is ord() and chr()?
-
-#### What are Metaclasses?
-
-#### What is descriptor ?
-
-#### Any 10 python packages you have used.
+#### Q. What is static method, class method and instance method?
 
 
-#### namespace vs scope ?
 
-#### What is MRO ?
+#### Q. Explain map, filter,reduce and lambda.
 
-#### == vs is ?
+#### Q. Difference between new styled classed and old styled classes.
+
+#### Q. What is diff between Python and Java?
+
+#### Q. What is context processor?
+
+#### Q. What is exec() and eval ()?
+
+#### Q. How to pass command line argument.
+
+#### Q. What is yield ?
+
+#### Q. What is ord() and chr()?
+
+#### Q. What are Metaclasses?
+
+#### Q. What is descriptor ?
+
+#### Q. Any 10 python packages you have used.
+
+
+#### Q. namespace vs scope ?
+
+#### Q. What is MRO ?
+
+#### Q. == vs is ?
 
 
 2. Compare Java & Python
@@ -1006,7 +965,7 @@ import numpy
     |machine learning| Average 	  |Very Good |
     |applications    |
     
-#### What is the purpose of PYTHONSTARTUP,PYTHONCASEOK,PYTHONHOME & PYTHONPATH environment variables?
+#### Q. What is the purpose of PYTHONSTARTUP,PYTHONCASEOK,PYTHONHOME & PYTHONPATH environment variables?
 
 - PYTHONSTARTUP − It contains the path of an initialization file containing Python source code. It is executed every time you start the interpreter. It is named as .pythonrc.py in Unix and it contains commands that load utilities or modify PYTHONPATH. 
     
@@ -1017,7 +976,7 @@ import numpy
 - PYTHONPATH − It has a role similar to PATH. This variable tells the Python interpreter where to locate the module files imported into a program. It should include the Python source library directory and the directories containing Python source code. PYTHONPATH is sometimes preset by the Python installer.
 
 
-#### Explain Inheritance in Python with an example.
+#### Q. Explain Inheritance in Python with an example.
 
 When one class inherits from another, it is said to be the child/ derived/sub class inheriting from the parent/base/super class. It inherits/gains all members (attributes and methods). Inheritance lets us reuse our code, and also makes it easier to create and maintain applications.
 
@@ -1048,7 +1007,7 @@ Inheritance allows One class to gain all the members(say attributes and methods)
  
     - Hybrid Inheritance- Hybrid inheritance is a combination of two or more types of inheritance.
 
-#### What is Hierarchical Inheritance?
+#### Q. What is Hierarchical Inheritance?
 
 The concept of inheriting the properties from one class into multiple classes separately is known as hierarchical inheritance.
 
@@ -1089,12 +1048,12 @@ In m3 of Z
 
 **Python supports Multi-Level Inheritance or Multiple Inheritance or Both?**   
  - Yes    
-#### Consider multiple inheritances here. 
-#### Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+#### Q. Consider multiple inheritances here. 
+#### Q. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
 
 Ans. In our article on Multiple Inheritance in Python, we discussed Method Resolution Order (MRO). C does not contain its own version of func(). Since the interpreter searches in a left-to-right fashion, it finds the method in A, and does not go to look for it in B.
 
-#### Which methods/functions do we use to determine the type of instance and inheritance?
+#### Q. Which methods/functions do we use to determine the type of instance and inheritance?
 
 Ans. Here, we talk about three methods/functions- `type(), isinstance() and issubclass()`.
 
@@ -1168,7 +1127,7 @@ False
 
     `list.pop(obj=list[-1])` − Removes and returns last object or obj from list.
 
-#### What are negative indexes and why are they used?
+#### Q. What are negative indexes and why are they used?
 
 Python sequences can be index in positive and negative numbers. For positive index, 0 is the first index, 1 is the second index and so forth. For negative index, (-1) is the last index and (-2) is the second last index and so forth.
 
@@ -1197,7 +1156,7 @@ mylist[-6:-1]
 [3, 4, 5, 6, 7]
 
 
-#### Explain split(), sub(), subn() methods of `re` module in Python.  
+#### Q. Explain split(), sub(), subn() methods of `re` module in Python.  
 - To modify the strings, Python’s "re" module is providing 3 methods. They are:   
     - split() – uses a regex pattern to "split" a given string into a list.
     - sub() – finds all substrings where the regex pattern matches and then replace them with a different string.
@@ -1247,7 +1206,7 @@ What is map function in Python?
 
 
 
-#### How to display the contents of text file in reverse order?How will you reverse a list?
+#### Q. How to display the contents of text file in reverse order?How will you reverse a list?
 
    `list.reverse()` − Reverses objects of list in place, convert the given file into a list. Reverse the list by using `reversed()`.    
    E.g.:     
@@ -1517,7 +1476,7 @@ y1.start()
 ```
 A thread is a lightweight process and multithreading allows us to execute multiple threads at once. As you know, Python is a multithreaded language. It has a multithreading package. The GIL (Global Interpreter Lock) ensures that a single thread executes at a time. A thread holds the GIL and does a little work before passing it on to the next thread. This makes for an illusion of parallel execution. But in reality, it is just threaded taking turns at the CPU. Of course, all the passing around adds overhead to the execution.
 
-#### Explain help() and dir() functions in Python.
+#### Q. Explain help() and dir() functions in Python.
 
 The help() function displays the documentation string and help for its argument.
 ```py
@@ -1536,7 +1495,7 @@ dir(copy.copy)
 
 ### _**Dictionary**_
 
-#### What is a dictionary in Python?
+#### Q. What is a dictionary in Python?
 
 The built-in datatypes in Python is called dictionary. It defines one-to-one relationship between keys and values. Dictionaries contain pair of keys and their corresponding values. Dictionaries are indexed by keys.
     
@@ -1577,7 +1536,7 @@ print(dict_keys)
 ```
 ([‘a’, ‘b’, ‘c’, ‘e’])
 
-#### Write Python logic to count the number of capital letters in a file.
+#### Q. Write Python logic to count the number of capital letters in a file.
 ```py
 import os
 os.chdir('C:\\Users\\lifei\\Desktop')
@@ -1590,7 +1549,7 @@ with open('Today.txt') as today:
 ```
 26
 
-#### How would you randomize the contents of a list in-place?
+#### Q. How would you randomize the contents of a list in-place?
 
 For this, we’ll import the function `shuffle()` from the module `random`.
 ```py
@@ -1600,7 +1559,7 @@ mylist
 ```
 [3, 4, 8, 0, 5, 7, 6, 2, 1]
 
-#### Explain join() and split() in Python.
+#### Q. Explain join() and split() in Python.
 
 `.join([])` It takes any iterables into this method. Join method is used to concatenate the elements of any list. `join()` lets us join characters from a string together by a character we specify.
 ```py
@@ -1614,7 +1573,7 @@ mylist
 ```
 [‘1’, ‘2’, ‘3’, ‘4’, ‘5’]
 
-#### Is Python case-sensitive?
+#### Q. Is Python case-sensitive?
 
 A language is case-sensitive if it distinguishes between identifiers like myname and Myname. In other words, it cares about case- lowercase or uppercase. Let’s try this with Python.
 ```py
@@ -2483,7 +2442,7 @@ Well, this is because the list argument does not initialize to its default value
 
 Let’s revise the Basis of Python Programming
 
-#### What is a decorator? How do I define my own?
+#### Q. What is a decorator? How do I define my own?
 
 Ans. A decorator is a function that adds functionality to another function without modifying it. It wraps another function to add functionality to it. A Python decorator is a specific change that we make in Python syntax to alter functions easily.
 
@@ -2507,9 +2466,9 @@ $$$$$$$$$$$$$$$$$
 
 Decorators are an example of metaprogramming, where one part of the code tries to change another. For more on decorators, read Python Decorators.
 
-#### What is decorator and its usage ? How to create custom decorator ?
+#### Q. What is decorator and its usage ? How to create custom decorator ?
 
-#### Why use function decorators? Give an example.
+#### Q. Why use function decorators? Give an example.
 
 A decorator is essentially a callable Python object that is used to modify or extend a function or class definition. 
 
@@ -2789,7 +2748,7 @@ And this is how extend() works:
 
 
 
-#### What do you mean by overriding methods?
+#### Q. What do you mean by overriding methods?
 
 Ans. Suppose class B inherits from class A. Both have the method sayhello()- to each, their own version. B overrides the sayhello() of class A. So, when we create an object of class B, it calls the version that class B has.
 
@@ -2933,7 +2892,7 @@ Q17. What happens when a function doesn’t have a return statement? Is this val
 Yes, this is valid. The function will then return a None object. The end of a function is defined by the block of code being executed (i.e., the indenting) not by any explicit keyword.
 
 
-#### What is a namespace in Python?
+#### Q. What is a namespace in Python?
 
 In Python, every name introduced has a place where it lives and can be hooked for. This is known as namespace. It is like a box where a variable name is mapped to the object placed. Whenever the variable is searched out, this box will be searched, to get corresponding object.
 
@@ -2941,15 +2900,15 @@ A namespace is a collection of names. It maps names to corresponding objects. Wh
 
 On starting the interpreter, it creates a namespace for as long as we don’t exit. We have local namespaces, global namespaces, and a built-in namespace.
 
-#### Explain the differences between local and global namespaces.
+#### Q. Explain the differences between local and global namespaces.
 
 Local namespaces are created within a function. when that function is called. Global name spaces are created when the program starts.
 
-#### Name the four main types of namespaces in Python?
+#### Q. Name the four main types of namespaces in Python?
 
 Global, Local, Module and Class namespaces. 
 
-#### When would you use triple quotes as a delimiter?
+#### Q. When would you use triple quotes as a delimiter?
 
 Triple quotes ‘’”” or ‘“ are string delimiters that can span multiple lines in Python. Triple quotes are usually used when spanning multiple lines, or enclosing a string that has a mix of single and double quotes contained therein.
 
@@ -3033,7 +2992,7 @@ def handler(signum, frame):
 
 
 
-#### How do I find undefined g++ symbols __builtin_new or __pure_virtual?
+#### Q. How do I find undefined g++ symbols __builtin_new or __pure_virtual?
 
 To dynamically load g++ extension modules, you must: 
 Recompile Python
@@ -3264,50 +3223,50 @@ They are:
 
 ### _Control Flow_
 
-#### Explain Control flow statements.
+#### Q. Explain Control flow statements.
 
 By default python program execution starts from first line, execute each and every statements only once and transactions the program if the last statement of the program execution is over.
 Control flow statements are used to disturb the normal flow of the execution of the program.
 
-#### What are the two major loop statements?
+#### Q. What are the two major loop statements?
 
 `for and while`
 
-#### Under what circumstances would one use a  `while` statement rather than `for`?
+#### Q. Under what circumstances would one use a  `while` statement rather than `for`?
 
 The while statement is used for simple repetitive looping and the for statement is used when one wishes to iterate through a list of items, such as database records, characters in a string, etc.
 
-#### What happens if output an `else` statement after after block?
+#### Q. What happens if output an `else` statement after after block?
 
 The code in the else block is executed after the for loop completes, unless a break is encountered in the for loop execution. in which case the else block is not executed.
 
-#### Explain the use of break and continue in Python looping.
+#### Q. Explain the use of break and continue in Python looping.
 
 The break statement stops execution of the current loop. and transfers control to the next block. The continue statement ends the current block’s execution and jumps to the next iteration of the loop.
 
-#### When would you use a continue statement in a for loop?
+#### Q. When would you use a continue statement in a for loop?
 
 When processing a particular item was complete; to move on to the next, without executing further processing in the block. The continue statement says, “I’m done processing this item, move on to the next item.”
 
-#### When would you use a break statement in a for loop?
+#### Q. When would you use a break statement in a for loop?
 
 When the loop has served its purpose. As an example. after finding the item in a list searched for, there is no need to keep looping. The break statement says, I’m done in this loop; move on to the next block of code.”
 
-#### What is the structure of a for loop?
+#### Q. What is the structure of a for loop?
 
 for in : … The ellipsis represents a code block to be executed, once for each item in the sequence. Within the block the item is available as the current item from the entire list.
 
-#### What is the structure of a while loop?
+#### Q. What is the structure of a while loop?
 
 while : … The ellipsis represents a code block to be executed. until the condition becomes false. The condition is an expression that is considered true unless it evaluates to o, null or false.
 
-#### Use a for loop and illustrate how you would define and print the characters in a string out, one per line.
+#### Q. Use a for loop and illustrate how you would define and print the characters in a string out, one per line.
 ```
 myString = “I Love Python”
 for myChar hi myString:
     print(myChar)
 ```
-#### Given the string “I LoveQPython” use afor loop and illustrate printing each character tip to, but not including the Q.
+#### Q. Given the string “I LoveQPython” use afor loop and illustrate printing each character tip to, but not including the Q.
 ```
 inyString = "I Love Pijtlzon"
 for myCizar in myString:    
@@ -3315,7 +3274,7 @@ for myCizar in myString:
     break
 print(myChar)
 ```
-#### Given the string “I Love Python” print out each character except for the spaces, using a for loop.
+#### Q. Given the string “I Love Python” print out each character except for the spaces, using a for loop.
 
 inyString = I Love Python”
 for myCizar in myString:
@@ -3323,14 +3282,14 @@ fmyChar == ‘’ ‘’:
 continue
 print myChar
 
-#### Illustrate how to execute a ioop ten times.
+#### Q. Illustrate how to execute a ioop ten times.
 i=1     
 while i < 10:
 
 
 ### _Data Types_
 
-#### What is a Tuple?
+#### Q. What is a Tuple?
 
 - Tuple Objects can be created by using parenthesis or by calling tuple function or by assigning multiple values to a single variable
 - Tuple objects are immutable objects
@@ -3365,7 +3324,7 @@ while i < 10:
 
 ```
   
-#### What is the Dictionary?
+#### Q. What is the Dictionary?
 
 - Dictionary objects can be created by using curly braces{} or by calling dictionary function.
 
@@ -3385,12 +3344,12 @@ while i < 10:
 
 - Heterogeneous keys and heterogeneous values are allowed.
 
-#### How do you create a dictionary which can preserve the order of pairs?
+#### Q. How do you create a dictionary which can preserve the order of pairs?
 
-#### Can you use mutable Data Structure as key in Dictionaries ?
+#### Q. Can you use mutable Data Structure as key in Dictionaries ?
 
 
-#### How to Search Path of Modules?
+#### Q. How to Search Path of Modules?
 
 By default python interpreter search for the imported modules in the following locations:
 
@@ -3401,7 +3360,7 @@ By default python interpreter search for the imported modules in the following l
     - Built-in attributes of a module:
     - By default for each and every python module some properties are added internally and we call those properties as a built-in-attribute of a module
 
-#### What are the Packages?
+#### Q. What are the Packages?
 
 Package is nothing but a folder or dictionary which represents collection of modules.
 
@@ -3410,7 +3369,7 @@ A package can also contain sub packages.
 We can import the modules of the package by using package 
 name.module name or name.subpackage name.module name
 
-#### What is File Handling?
+#### Q. What is File Handling?
 
 File is a named location on the disk, which stores the data in permanent manner.
 Python language provides various functions and methods to provide the communication between python programs and files.
@@ -3419,7 +3378,7 @@ We can open the files by calling open function of built-in-modules
 At the time of opening the file, we have to specify the mode of the file
 Mode of the file indicates for what purpose the file is going to be opened(r,w,a,b)
 
-#### What are the Runtime Errors?
+#### Q. What are the Runtime Errors?
 
 The errors which occurs after starting the execution of the programs are known as runtime errors. Runtime errors can occur because of:
 
@@ -3435,12 +3394,12 @@ Creating runtime error representation class object is technically known as a ris
 While executing the program if any exception is raised, then internally python interpreter verify any code is implemented to handle raised exception or not
 If code is not implemented to handle raised exception then program will be terminated abnormally
 
-#### What is Abnormal Termination?
+#### Q. What is Abnormal Termination?
 
 The concept of terminating the program in the middle of its execution without executing last statement of the main module is known as a abnormal termination
 Abnormal termination is undesirable situation in programming languages.
 
-#### What is `try` Block?
+#### Q. What is `try` Block?
 
 A block which is preceded by the try keyword is known as a try block
 Syntax:
@@ -3451,7 +3410,7 @@ try{
 The statements which causes to run time errors and other statements which depends on the execution of run time errors statements are recommended to represent in try block
 While executing try block statement if any exception is raised then immediately try block identifies that exception, receive that exception and forward that exception to except block without executing remaining statements to try block.
 
-#### What is the Difference Between Methods & Constructors?
+#### Q. What is the Difference Between Methods & Constructors?
 
 Methods 	
 - Method name can be any name.
@@ -3463,13 +3422,13 @@ Constructor
 - With respect to one object one constructor can be executed only once
 - Constructors are used to define & initialize the non static variable
 
-#### What is the Encapsulation?
+#### Q. What is the Encapsulation?
 
 The concept of binding or grouping related data members along with its related functionalities is known as a Encapsulation.
 
 
 
-#### Executing DML Commands Through Python Programs?
+#### Q. Executing DML Commands Through Python Programs?
 
 DML (Data Modification Language) Commands are used to modify the data of the database objects
 Whenever we execute DML Commands the records are going to be modified temporarily.
@@ -3488,7 +3447,7 @@ After executing the DML Command through the python program we have to call commi
 
 ### _Multithreading_
 
-#### What is Threads Life Cycle?
+#### Q. What is Threads Life Cycle?
 
 Threads Life Cycle
 
@@ -3504,7 +3463,7 @@ Whenever waiting time is over or specified thread execution is over - then immed
 - If running state threads execution is over then immediately those threads execution will be terminated
  -The threads which execution is terminated are known as dead state threads.
 
-#### What is scheduling?
+#### Q. What is scheduling?
 
 Among multiple threads:     
 - which thread as to start the execution first,     
@@ -3513,7 +3472,7 @@ Among multiple threads:
 - which thread as to continue the execution next this comes under scheduling. Scheduling is highly dynamic
 
 
-#### for loop is implemented in python language as follows:
+#### Q. for loop is implemented in python language as follows:
 ```py
 for element in iterable:
     iter-obj=iter(iterable)
@@ -3545,7 +3504,7 @@ Output:
 
 
 
-#### What Are Applications of Python?
+#### Q. What Are Applications of Python?
 
 Applications of Python
 
@@ -3562,15 +3521,15 @@ Applications of Python
     - Animation 	
 
 
-#### What is PEP 8?
+#### Q. What is PEP 8?
 
 PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.
 
-#### How Python is interpreted?
+#### Q. How Python is interpreted?
 
 Python language is an interpreted language. Python program runs directly from the source code. It converts the source code that is written by the programmer into an intermediate language, which is again translated into machine language that has to be executed.
 
-#### What are the tools that help to find bugs or perform static analysis?
+#### Q. What are the tools that help to find bugs or perform static analysis?
 
 PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug. Pylint is another tool that verifies whether the module meets the coding standard.
 
@@ -3611,7 +3570,7 @@ Python generator produces a sequence of values to iterate on. This way, it is ki
 36  
 49
 
-#### So, what is an iterator, then?
+#### Q. So, what is an iterator, then?
 
 An iterator returns one object at a time to iterate on. To create an iterator, we use the iter() function.
 
@@ -3636,7 +3595,7 @@ And now, when we call it again, it raises a StopIteration exception. This is bec
     File “<pyshell#295>”, line 1, in <module> next(odds)
     StopIteration
 
-#### we asked you about generators and iterators, and you gave us the right answers. But don’t they sound similar?
+#### Q. we asked you about generators and iterators, and you gave us the right answers. But don’t they sound similar?
 
 - They do, but there are subtle differences:
 
@@ -3756,11 +3715,11 @@ Memcached common misuse is to use it as a data store, and not as a cache. Never 
 Memcached does not offer any form of security either in encryption or authentication
 
 
-#### What is List Comprehensions feature of Python used for?
+#### Q. What is List Comprehensions feature of Python used for?
 
 List comprehensions help to create and manage lists in a simpler and clearer way than using `map()`, `filter()` and `lambda`. Each list comprehension consists of an expression followed by a for clause, then zero or more for or if clauses.
 
-#### What are lambda expressions, list comprehensions and generator expressions? What are the advantages and appropriate uses of each?
+#### Q. What are lambda expressions, list comprehensions and generator expressions? What are the advantages and appropriate uses of each?
 
 **Lambda expressions** are a shorthand technique for creating single line, anonymous functions. Their simple, inline nature often – though not always – leads to more readable and concise code than the alternative of formal function declarations. On the other hand, their terse inline nature, by definition, very much limits what they are capable of doing and their applicability. Being anonymous and inline, the only way to use the same lambda function in multiple locations in your code is to specify it redundantly.
 
@@ -3891,13 +3850,13 @@ for i in range(3):
 [0, 1, 2]
 ```
 
-#### Is Python interpreted or compiled?
+#### Q. Is Python interpreted or compiled?
 
 As noted in Why Are There So Many Pythons?, this is, frankly, a bit of a trick question in that it is malformed. Python itself is nothing more than an interface definition (as is true with any language specification) of which there are multiple implementations. Accordingly, the question of whether “Python” is interpreted or compiled does not apply to the Python language itself; rather, it applies to each specific implementation of the Python specification.
 
 Further complicating the answer to this question is the fact that, in the case of CPython (the most common Python implementation), the answer really is "sort of both". Specifically, with CPython, code is first compiled and then interpreted. More precisely, it is not precompiled to native machine code, but rather to bytecode. While machine code is certainly faster, bytecode is more portable and secure. The bytecode is then interpreted in the case of CPython (or both interpreted and compiled to optimized machine code at runtime in the case of PyPy).
 
-#### What are some alternative implementations to CPython? When and why might you use them?
+#### Q. What are some alternative implementations to CPython? When and why might you use them?
 
 One of the more prominent alternative implementations is Jython, a Python implementation written in Java that utilizes the Java Virtual Machine (JVM). While CPython produces bytecode to run on the CPython VM, Jython produces Java bytecode to run on the JVM.
 
@@ -3913,7 +3872,7 @@ Another noteworthy alternative implementation is PyPy whose key features include
 - Sandboxing. PyPy provides the ability to run untrusted code in a fully secure way.
 - Stackless mode. PyPy comes by default with support for stackless mode, providing micro-threads for massive concurrency.
 
-#### What is unittest in Python? What’s your approach to unit testing in Python?
+#### Q. What is unittest in Python? What’s your approach to unit testing in Python?
 
 A unit testing framework in Python is known as unittest. It supports sharing of setups, automation testing, shutdown code for tests, aggregation of tests into collections etc.
 
@@ -3929,7 +3888,7 @@ The value and power of mock are well explained in An Introduction to Mocking in 
 
 [Note: This question is for Python developers who are also experienced in Java.]
 
-#### How would you perform unit-testing on your Python code?
+#### Q. How would you perform unit-testing on your Python code?
 
 Ans.  For this purpose, we have the module unittest in Python. It has the following members:
 >
@@ -3989,7 +3948,7 @@ Even programs that interact with complex external interfaces may be tested when 
 
 
 ### FLASK
-#### What is Flask & its benefits?
+#### Q. What is Flask & its benefits?
 
 Python Flask, as we’ve previously discussed, is a web microframework for Python. It is based on the '`Werkzeug`, `Jinja 2` and good intentions' BSD license. Two of its dependencies are Werkzeug and Jinja2. This means that it has around no dependencies on external libraries. Due to this, we can call it a light framework. A session uses a signed cookie to allow the user to look at and modify session contents. It will remember information from one request to another. However, to modify a session, the user must have the secret key `Flask.secret_key`.
 
@@ -3997,7 +3956,7 @@ Flask is a web micro framework for Python based on "Werkzeug, Jinja 2 and good i
 
 Flask is part of the micro-framework. Which means it will have little to no dependencies on external libraries. It makes the framework light while there is little dependency to update and less security bugs.
 
-#### Mention what is Flask-WTF and what are their features?
+#### Q. Mention what is Flask-WTF and what are their features?
 
 Flask-WTF offers simple integration with WTForms. Features include for Flask WTF are
    >
@@ -4008,18 +3967,18 @@ Flask-WTF offers simple integration with WTForms. Features include for Flask WTF
     Recaptcha supporting
     File upload that works with Flask Uploads
 
-#### Explain what is the common way for the Flask script to work?
+#### Q. Explain what is the common way for the Flask script to work?
 
 The common way for the flask script to work is
 
     Either it should be the import path for your application
     Or the path to a Python file
 
-#### Explain how you can access sessions in Flask?
+#### Q. Explain how you can access sessions in Flask?
 
 A session basically allows you to remember information from one request to another. In a flask, it uses a signed cookie so the user can look at the session contents and modify. The user can modify the session if only it has the secret key Flask.secret_key.
 
-#### Is Flask an MVC model and if yes give an example showing MVC pattern for your application?
+#### Q. Is Flask an MVC model and if yes give an example showing MVC pattern for your application?
 
 Basically, Flask is a minimalistic framework which behaves same as MVC framework. So MVC is a perfect fit for Flask, and the pattern for MVC we will consider for the following example
 
@@ -4047,7 +4006,7 @@ While your model or main part will be
 
     app.run(debug = True)
 
-#### Explain database connection in Python Flask?
+#### Q. Explain database connection in Python Flask?
 
 Best database for flask is MySQL. Flask supports database powered application (RDBS). Such system requires creating a schema, which requires piping the shema.sql file into a sqlite3 command. So you need to install `sqlite3` command in order to create or initiate the database in Flask. Flask allows to request database in three ways
 
@@ -4058,11 +4017,11 @@ Best database for flask is MySQL. Flask supports database powered application (R
 
 [Mind Boggling Python FAQ](https://docs.python.org/3/faq/programming.html)
 
-#### GS Lab
+#### Q. GS Lab
   - How will you sort result of student whose marks are unknown to you based on their roll numbers? 
   Using bubble sort.
 
-#### Webonise labs
+#### Q. Webonise labs
   
   - **How will you measure memory on Linux server?**
     - 1. free command
@@ -4672,3 +4631,37 @@ Without the rstrip(), we would get blank lines between the output.
 
 ---
 ---
+#### Q. How can you return multiple values from a function/method?
+#### Q. What's the fastest way to swap the values bound to two variables?
+#### Q. What is the importance of reference counting?
+#### Q. Do functions (or methods) return something even if there isn't a `return statement? If so, what do they return?
+#### Q. How do you reverse a list? Can you come up with at least three ways? 
+#### Q. How would you merge two sorted lists? They can be any length, or empty. 
+#### Q. How would you count the lines in a file? How would you do it if the file was too big to hold in memory?
+#### Q. Is python compile language?
+#### Q. Standard python libraries used?
+#### Q. What is size of integer in python?
+#### Q. What are serialization formats(in python)?
+#### Q. How python manages memory?
+#### Q. Is tuple mutable or immutable?
+#### Q. Tell me some datastructures in Python?
+#### Q. Why python instead of scala on spark when scala has better performance?
+#### Q. How to access file on linux server using python?
+#### Q. What is List Comprehension ? Show with example
+#### Q. What version of Azure DataFactory you are using>?
+#### Q. How to execute a java code?
+#### Q. How to find PID of process and How to find how much resources a process is taking on linux?
+#### Q. What is Amazon’s version of Hadoop?
+#### Q. What are tools for ingestion?
+#### Q. What is Python?
+#### Q. Describe some features of Python.
+#### Q. How does Python execute code?
+#### Q. What are some built-in types in Python?
+#### Q. What are bindings, i.e., what does it mean for a value to be bound to a variable?
+#### Q. How do you create a list?
+#### Q. How do you create a dictionary?
+#### Q. What is a list comprehension? Why would you use one?
+#### Q. What is a generator? What can it be used for?
+#### Q. What is inheritance? 
+#### Q. What happens if you have an error in an __init__ statement? 
+#### Q. What happens in python if you try to divide by zero?
