@@ -4629,3 +4629,6 @@ Without the rstrip(), we would get blank lines between the output.
 #### Q. When would I not use Python?
 #### Q. What is DRY, how can I apply it through OOP or FP?
 #### Q. When would I use Python?
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
