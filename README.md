@@ -2738,7 +2738,7 @@ b.sayhello()
 ```
 Hello, I’m B
 
-Q.26. What is JSON? Describe in brief how you’d convert JSON data into Python data?
+#### Q. What is JSON? Describe in brief how you’d convert JSON data into Python data?
 
 Ans. JSON stands for JavaScript Object Notation. It is a highly popular data format, and it stores data into NoSQL databases. JSON is generally built on the following two structures:
 
@@ -2747,27 +2747,7 @@ Ans. JSON stands for JavaScript Object Notation. It is a highly popular data for
 
 Python supports JSON parsers. In fact, JSON-based data is internally represented as a dictionary in Python. To convert JSON data into Python data, we use the load() function from the JSON module.
 
-- How can you implement functional programming and why would you?
-- Explain ctypes and why you would use them?
-- What is multiple inheritence and when should you use it?
-- What is a meta class?
-- What are properties and what's the point?
-- What's the difference between 2.7+ and 3?
-- What is a unicode string?
-- What does the yield statement do?
-- What is a generator?
-- Why would I use one?
-- What is polymorphism, when would I use it?
-- How do you go about packaging python code?
-- Is Python compiled?, If yes how so, if not how so.
-- What does  __some-variable__  mean?
-- Should I import an entire module?
-- What does dynamicly/duck typed mean?
-- When would I not use Python?
-- What is DRY, how can I apply it through OOP or FP?
-- When would I use Python?
-
-1. What are the differences between Python and Java ?
+#### Q. What are the differences between Python and Java ?
 
     Python Vs Java
     Comparison 	Python 	Java
@@ -2882,14 +2862,14 @@ Global, Local, Module and Class namespaces.
 Triple quotes ‘’”” or ‘“ are string delimiters that can span multiple lines in Python. Triple quotes are usually used when spanning multiple lines, or enclosing a string that has a mix of single and double quotes contained therein.
 
 
-Q34. How to use GUI that comes with Python to test your code?
+#### Q. How to use GUI that comes with Python to test your code?
 
 That is just an editor and a graphical version of the interactive shell. You write or load code and run it, or type it into the shell.
 There is no automated testing.
 
 
 
-Q36. How does the Python version numbering scheme work?
+#### Q. How does the Python version numbering scheme work?
 
 Python versions are numbered A.B.C or A.B.
 
@@ -2918,7 +2898,7 @@ In other words, all versions labeled 2.0aN precede the versions labeled 2.0bN, w
 
 You may also find version numbers with a “+” suffix, e.g. “2.2+”. These are unreleased versions, built directly from the subversion trunk. In practice, after a final minor release is made, the subversion trunk is incremented to the next minor version, which becomes the “a0” version, e.g. “2.4a0”.
 
-Q37. Where is math.py (socket.py, regex.py, etc.) source file?
+#### Q. Where is math.py (socket.py, regex.py, etc.) source file?
 
 If you can’t find a source file for a module, it may be a built-in or dynamically loaded module implemented in C, C++ or other compiled language. In this case you may not have the source file or it may be something like mathmodule.c, somewhere in a C source directory (not on the Python Path). There are (at least) three kinds of modules in Python:
 
@@ -2927,7 +2907,7 @@ If you can’t find a source file for a module, it may be a built-in or dynamica
 - Modules written in C and linked with the interpreter; to get a list of these, type;
 Import sys print sys.builtin_module_names;
 
-Q38. How do I make a Python script executable on UNIX?
+#### Q. How do I make a Python script executable on UNIX?
 
 You need to do two things:
 The script file’s mode must be executable and the first line must begin with “#!” followed by the path of the Python interpreter. 
@@ -2952,7 +2932,7 @@ exec python $0 ${1+”$@”}
 The minor disadvantage is that this defines the script’s `__doc__`string. However, you can fix that by adding:  
 `__doc__ = “””…Whatever…”””`
 
-Q39. Why don’t my signal handlers work?
+#### Q. Why don’t my signal handlers work?
 
 The most common problem is that the signal handler is declared with the wrong argument list. It is called as:
 handler (signum, frame)
@@ -2968,7 +2948,7 @@ Recompile Python
 Re-link it using g++ (change LINKCC in the python Modules Makefile)
 Link your extension module using g++ (e.g., “g++ -shared -o mymodule.so mymodule.o”).
 
-Q42. How do I send mail from a Python script?
+#### Q. How do I send mail from a Python script?
 
 Use the standard library module smtplib. Here’s a very simple interactive mail sender that uses it. This method will work on any host that supports an SMTP listener.
 ```py
@@ -3004,7 +2984,7 @@ sts = p.close()
 if sts != 0:
     print (“Sendmail exit status”, sts)
 ```
-Q43. How can I mimic CGI form submission (METHOD=POST)? I would like to retrieve web pages that are the result of posting a form. Is there existing code that would let me do this easily?
+#### Q. How can I mimic CGI form submission (METHOD=POST)? I would like to retrieve web pages that are the result of posting a form. Is there existing code that would let me do this easily?
 
 Yes. Here’s a simple example that uses httplib:
 ```py
@@ -3037,7 +3017,7 @@ print(x)
  query_string
 ‘name=Guy%20Steele,%20Jr.’
 ```
-Q44. Why is that none of my threads are not running? How can I make it work?
+#### Q. Why is that none of my threads are not running? How can I make it work?
 
 As soon as the main thread exits, all threads are killed. Your main thread is running too quickly, giving the threads no time to do any work.
 A simple fix is to add a sleep to the end of the program that’s long enough for all the threads to finish:
@@ -3048,7 +3028,7 @@ for i in range(n): print name, i
 for i in range(10)
 ```
 
-Q45. Installation of Python 3.6.1
+#### Q. Installation of Python 3.6.1
 
 Download the required 3.6.1 python, executable installer file from the www.python.org.com website.
 >
@@ -3077,7 +3057,7 @@ To set Path:
     Now path setting is secured.
 
 
-Q46. What Are The Implementation In Python Program?
+#### Q. What Are The Implementation In Python Program?
 
 Python program can be implemented by two ways
 >
@@ -3157,7 +3137,7 @@ D:/mindmajix Python>python Demo.py
 `-1000`     
 `2000.000`
 
-Q47. What are The Data Types Supports in Python Language?   
+#### Q. What are The Data Types Supports in Python Language?   
 
     - Numbers- Numbers use to hold numerical values.
     
@@ -3395,8 +3375,6 @@ Constructor
 
 The concept of binding or grouping related data members along with its related functionalities is known as a Encapsulation.
 
-
-
 #### Q. Executing DML Commands Through Python Programs?
 
 DML (Data Modification Language) Commands are used to modify the data of the database objects
@@ -3456,7 +3434,7 @@ For loop takes the given object, convert that object in the form of iterable obj
 While getting the one by value element from the iterable object if stop iteration exception is raised then for loop internally handle that exception
 
 
-Q68. OS Module
+#### Q. OS Module
 
 OS Module is a predefined module and which provides various functions and methods to perform the operating system related activities, such as creating the files, removing the files, creating the directories removing the directories, executing the operating system related commands, etc.
 Example:
@@ -3470,8 +3448,6 @@ os.chdir(os.pardir)
 print(“3”,os.getcwd())
 ```
 Output:
-
-
 
 #### Q. What Are Applications of Python?
 
@@ -3504,20 +3480,20 @@ PyChecker is a static analysis tool that detects the bugs in Python source code 
 
 
 
-- What is pass in Python?
+#### Q. What is pass in Python?
 
 Pass means, no-operation Python statement, or in other words it is a place holder in compound statement, where there should be a blank left and nothing has to be written there.
 
-- In Python what are iterators?
+#### Q. In Python what are iterators?
 
 In Python, iterators are used to iterate a group of elements, containers like list.
 
 
-- In Python what is slicing?
+#### Q. In Python what is slicing?
 
 A mechanism to select a range of items from sequence types like list, tuple, strings etc. is known as slicing.
 
-- What are generators in Python?
+#### Q. What are generators in Python?
 
 The way of implementing iterators are known as generators. It is a normal function except that it yields expression in the function.    
 Python generator produces a sequence of values to iterate on. This way, it is kind of an iterable. We define a function that ‘yields’ values one by one, and then use a for loop to iterate on it.
@@ -3586,44 +3562,44 @@ And now, when we call it again, it raises a StopIteration exception. This is bec
     - Iterators are more memory-efficient.
 
 
-- How can you copy an object in Python?
+#### Q. How can you copy an object in Python?
 
 To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.
 
 
 
-- How you can convert a number to a string?
+#### Q. How you can convert a number to a string?
 
 In order to convert a number into a string, use the inbuilt function str(). If you want a octal or hexadecimal representation, use the inbuilt function oct() or hex().
 
-- What is module and package in Python?
+#### Q. What is module and package in Python?
 
 In Python, module is the way to structure program. Each Python program file is a module, which imports other modules like objects and attributes.
 
 The folder of Python program is a package of modules. A package can have modules or subfolders.
 
-- Mention what are the rules for local and global variables in Python?
+#### Q. Mention what are the rules for local and global variables in Python?
 
 Local variables: If a variable is assigned a new value anywhere within the function's body, it's assumed to be local.
 
 Global variables: Those variables that are only referenced inside a function are implicitly global.
 
-- How can you share global variables across modules?
+#### Q. How can you share global variables across modules?
 
 To share global variables across modules within a single program, create a special module. Import the config module in all modules of your application. The module will be available as a global variable across modules.
 
-- Explain how can you make a Python Script executable on Unix?
+#### Q. Explain how can you make a Python Script executable on Unix?
 
 To make a Python Script executable on Unix, you need to do two things,
 
     Script file's mode must be executable and
     the first line must begin with # ( #!/usr/local/bin/python)
 
-- Explain how to delete a file in Python?
+#### Q. Explain how to delete a file in Python?
 
 By using a command os.remove (filename) or os.unlink(filename)
 
-- Explain how can you generate random numbers in Python?
+#### Q. Explain how can you generate random numbers in Python?
 
 To generate random numbers in Python, you need to import command as
 ```py
@@ -3639,22 +3615,22 @@ You can access a module written in Python from C by following method,
 
 Module = =PyImport_ImportModule("<modulename>");
 
-- Mention the use of // operator in Python?
+#### Q. Mention the use of // operator in Python?
 
 It is a Floor Divisionoperator , which is used for dividing two operands with the result as quotient showing only digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
 
-- Mention five benefits of using Python?
+#### Q. Mention five benefits of using Python?
     - Python comprises of a huge standard library for most Internet platforms like Email, HTML, etc.
     - Python does not require explicit memory management as the interpreter itself allocates the memory to new variables and free them automatically
     - Provide easy readability due to use of square brackets
     - Easy-to-learn for beginners
     - Having the built-in data types saves programming time and effort from declaring variables
 
-- Mention the use of the split function in Python?
+#### Q. Mention the use of the split function in Python?
 
 The use of the split function in Python is that it breaks a string into shorter strings using the defined separator. It gives a list of all words present in the string.
 
-- Mention what is the difference between Django, Pyramid, and Flask?
+#### Q. Mention what is the difference between Django, Pyramid, and Flask?
 
 Flask is a "microframework" primarily build for a small application with simpler requirements. In flask, you have to use external libraries. Flask is ready to use.
 
@@ -3666,7 +3642,7 @@ Like Pyramid, Django can also used for larger applications. It includes an ORM.
 
 The data in the failed server won't get removed, but there is a provision for auto-failure, which you can configure for multiple nodes. Fail-over can be triggered during any kind of socket or Memcached server level errors and not during normal client errors like adding an existing key, etc.
 
-- Explain how you can minimize the Memcached server outages in your Python Development?
+#### Q. Explain how you can minimize the Memcached server outages in your Python Development?
 
    - When one instance fails, several of them goes down, this will put larger load on the database server when lost data is reloaded as client make a request. To avoid this, if your code has been written to minimize cache stampedes then it will leave a minimal impact
     - Another way is to bring up an instance of Memcached on a new machine using the lost machines IP address
@@ -4644,3 +4620,22 @@ Without the rstrip(), we would get blank lines between the output.
 #### Q. What are iterators and generators?
 #### Q. What is Method Resolution Order ?
 #### Q. Differentiate between append() and extend() methods ?
+#### Q. How can you implement functional programming and why would you?
+#### Q. Explain ctypes and why you would use them?
+#### Q. What is multiple inheritence and when should you use it?
+#### Q. What is a meta class?
+#### Q. What are properties and what's the point?
+#### Q. What's the difference between 2.7+ and 3?
+#### Q. What is a unicode string?
+#### Q. What does the yield statement do?
+#### Q. What is a generator?
+#### Q. Why would I use one?
+#### Q. What is polymorphism, when would I use it?
+#### Q. How do you go about packaging python code?
+#### Q. Is Python compiled?, If yes how so, if not how so.
+#### Q. What does  __some-variable__  mean?
+#### Q. Should I import an entire module?
+#### Q. What does dynamicly/duck typed mean?
+#### Q. When would I not use Python?
+#### Q. What is DRY, how can I apply it through OOP or FP?
+#### Q. When would I use Python?
