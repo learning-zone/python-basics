@@ -445,9 +445,6 @@ The answer here is no. The modules with circular references to other objects, or
 Plus, it is impossible to de-allocate portions of memory reserved by the C library.
 
 Whenever Python exits, especially those Python modules which are having circular references to other objects or the objects that are referenced from the global namespaces are not always de-allocated or freed.It is impossible to de-allocate those portions of memory that are reserved by the C library.On exit, because of having its own efficient clean up mechanism, Python would try to de-allocate/destroy every other object.
-   
-
-
 
 #### Q. Is it possible to assign multiple var to values in list?
 
@@ -501,11 +498,7 @@ This class variable can be assigned a string, iterable, or sequence of strings w
 
 •Multiple inheritance with multiple slotted parent classes can be used, but only one parent is allowed to have attributes created by slots (the other bases must have empty slot layouts) - violations raise TypeError.
 
- 
- 
-
-#### Q. What are the built-in type does python provides? Among them which are Mutable and Immutable Data structures in Python? 
-#### Q. OR 
+#### Q. What are the built-in type does python provides? Among them which are Mutable and Immutable Data structures in Python?OR 
 #### Q. What Are The Types of Objects Support in Python Language?
 
 Python supports are two types are of objects. They are:
