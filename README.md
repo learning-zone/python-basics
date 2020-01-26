@@ -4548,24 +4548,6 @@ Without the rstrip(), we would get blank lines between the output.
         
 - What is use of serialization?     
 
-        
-- Openstack
-    - What are storage types?
-        Block, Object, File, Tape.
-
----
-### Accion Labs
-- AWS
-    - What is Serverless in AWS?
-    - What are step functions?
-    - Have you developed any API?
-    - Explain steps in creation on Lambda function for Python App.
-
-- Linux
-    - How will you schedule jobs in Linux?
-
----
----
 #### Q. How can you return multiple values from a function/method?
 #### Q. What's the fastest way to swap the values bound to two variables?
 #### Q. What is the importance of reference counting?
