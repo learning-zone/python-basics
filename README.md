@@ -16,12 +16,7 @@ Bonus points for mentioning `enumerate` and use of `str.format`.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Why was the language called as Python?
-
-At the same time he began implementing Python, Guido van Rossum was also reading the published scripts from "Monty Python's Flying Circus" (a BBC comedy series from the seventies).
-
-
-## Q. What is Python particularly good for? When is using Python the “right choice” for a project?
+## Q. What is Python particularly good for? When is using Python the "right choice" for a project?
 
 Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
 
@@ -29,32 +24,22 @@ Python is a high-level general-purpose programming language that can be applied 
 
 The language comes with a large standard library that covers areas such as string processing like regular expressions, Unicode, calculating differences between files, Internet protocols like HTTP, FTP, SMTP, XML-RPC, POP, IMAP, CGI programming, software engineering like unit testing, logging, profiling, parsing Python code, and operating system interfaces like system calls, file systems, TCP/IP sockets.
 
-Although likes and dislikes are highly personal, a developer who is “worth his or her salt” will highlight features of the Python language that are generally considered advantageous (which also helps answer the question of what Python is “particularly good for". Some of the more common valid answers to this question include:
+Although likes and dislikes are highly personal, a developer who is "worth his or her salt" will highlight features of the Python language that are generally considered advantageous (which also helps answer the question of what Python is "particularly good for". Some of the more common valid answers to this question include:
 
-- Ease of use and ease of refactoring, thanks to the flexibility of Python’s syntax, which makes it especially useful for rapid prototyping.
-- More compact code, thanks again to Python’s syntax, along with a wealth of functionally-rich Python libraries (distributed freely with most Python language implementations). 
+- Ease of use and ease of refactoring, thanks to the flexibility of Python's syntax, which makes it especially useful for rapid prototyping.
+- More compact code, thanks again to Python's syntax, along with a wealth of functionally-rich Python libraries (distributed freely with most Python language implementations). 
 - A dynamically-typed and strongly-typed language, offering the rare combination of code flexibility while at the same time avoiding pesky implicit-type-conversion bugs.
-- It’s free and open source! Need we say more?
+- It's free and open source! Need we say more?
 
-With regard to the question of when using Python is the “right choice” for a project, the complete answer also depends on a number of issues orthogonal to the language itself, such as prior technology investment, skill set of the team, and so on. Although the question as stated above implies interest in a strictly technical answer, a developer who will raise these additional issues in an interview will always “score more points” with me since it indicates an awareness of, and sensitivity to, the “bigger picture” (i.e., beyond just the technology being employed). Conversely, a response that Python is always the right choice is a clear sign of an unsophisticated developer.
+With regard to the question of when using Python is the "right choice" for a project, the complete answer also depends on a number of issues orthogonal to the language itself, such as prior technology investment, skill set of the team, and so on. Although the question as stated above implies interest in a strictly technical answer, a developer who will raise these additional issues in an interview will always "score more points" with me since it indicates an awareness of, and sensitivity to, the "bigger picture" (i.e., beyond just the technology being employed). Conversely, a response that Python is always the right choice is a clear sign of an unsophisticated developer.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Why Python is not that much of popular, when compared to other programming languages?
-
-Python is not so useful in web environment where the user interface is the browser. Hence, lot of people are using PHP for different design goals. Google is tightly connected with python as they make searching algorithms.
-     
-## Q. What are the advantage and disadvantage of Python programming language?
-
-Python is more like java and bit cumbersome, but it leads to a better design. Python is an interpreted language, high level programming, pure object-oriented, high performance server side scripting language.
-
-It is not best for mobile application. Due to interpreter its execution speed is not up to mark as compared to compiler.
-
 ## Q. What are some drawbacks of the Python language?
 
-For starters, if you know a language well, you know its drawbacks, so responses such as “there’s nothing I don’t like about it” or “it has no drawbacks” are very telling indeed.
+For starters, if you know a language well, you know its drawbacks, so responses such as "there's nothing I don't like about it" or "it has no drawbacks" are very telling indeed.
 
 The two most common valid answers to this question (by no means intended as an exhaustive list) are:
 - The Global Interpreter Lock (GIL). CPython (the most common Python implementation) is not fully thread safe. In order to support multi-threaded Python programs, CPython provides a global lock that must be held by the current thread before it can safely access Python objects. As a result, no matter how many threads or processors are present, only one thread is ever being executed at any given time. In comparison, it is worth noting that the PyPy implementation discussed earlier in this article provides a stackless mode that supports micro-threads for massive concurrency.
@@ -64,11 +49,11 @@ The two most common valid answers to this question (by no means intended as an e
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. We know Python is all the rage these days. But to be truly accepting of a great technology, you must know its pitfalls as well. Would you like to talk about this?
+## Q. We know Python is all the rage these days. But to be truly accepting of a great technology, you must know its pitfalls as well.
 
 Of course. To be truly yourself, you must be accepting of your flaws. Only then can you move forward to work on them. Python has its flaws too:
 
-Python’s interpreted nature imposes a speed penalty on it. While Python is great for a lot of things, it is weak in mobile computing, and in browsers.
+Python's interpreted nature imposes a speed penalty on it. While Python is great for a lot of things, it is weak in mobile computing, and in browsers.
 
 Being dynamically-typed, Python uses duck-typing (If it looks like a duck, it must be a duck). This can raise runtime errors.
 
@@ -109,7 +94,7 @@ Error Handling
         - `zip()`, `map()` and `filter()` all now return iterators instead of lists.
         - `dict.keys()`, `dict.items()` and `dict.values()` now return 'views' instead of lists.
         - `dict.iterkeys()`, `dict.iteritems()` and `dict.itervalues()` are no longer supported.
-        - Comparison operators. The ordering comparison operators (<, <=, >=, >) now raise a TypeError exception when the operands don’t have a meaningful natural ordering. Some examples of the ramifications of this include:
+        - Comparison operators. The ordering comparison operators (<, <=, >=, >) now raise a TypeError exception when the operands don't have a meaningful natural ordering. Some examples of the ramifications of this include:
         - Expressions like 1 < '', 0 > None or len <= len are no longer valid
         - None < None now raises a TypeError instead of returning False
         - Sorting a heterogeneous list no longer makes sense.     
@@ -134,15 +119,15 @@ Disclaimer #2. The intent here is not to launch into a religious battle over the
       memory allocation that calling a static method or function 
       does not.
     - In Java, dotted names (e.g., foo.bar.method) are looked 
-      up by the compiler, so at runtime it really doesn’t matter 
+      up by the compiler, so at runtime it really doesn't matter 
       how many of them you have. In Python, however, the lookups 
-      occur at runtime, so “each dot counts”.
+      occur at runtime, so "each dot counts".
     
     - Method overloading: Whereas Java requires explicit specification of multiple same-named functions with different signatures, the same can be accomplished in Python with a single function that includes optional arguments with default values if not specified by the caller.
 
-    - Single vs. double quotes. Whereas the use of single quotes vs. double quotes has significance in Java, they can be used interchangeably in Python (but no, it won’t allow beginnning the same string with a double quote and trying to end it with a single quote, or vice versa!).
+    - Single vs. double quotes. Whereas the use of single quotes vs. double quotes has significance in Java, they can be used interchangeably in Python (but no, it won't allow beginnning the same string with a double quote and trying to end it with a single quote, or vice versa!).
 
-    - Getters and setters (not!). Getters and setters in Python are superfluous; rather, you should use the ‘property’ built-in (that’s what it’s for!). In Python, getters and setters are a waste of both CPU and programmer time.
+    - Getters and setters (not!). Getters and setters in Python are superfluous; rather, you should use the 'property' built-in (that's what it's for!). In Python, getters and setters are a waste of both CPU and programmer time.
 
     - Classes are optional. Whereas Java requires every function to be defined in the context of an enclosing class definition, Python has no such requirement.
 
@@ -150,13 +135,13 @@ Disclaimer #2. The intent here is not to launch into a religious battle over the
 
     The Big Picture
 
-    - An expert knowledge of Python extends well beyond the technical minutia of the language. A Python expert will have an in-depth understanding and appreciation of Python’s benefits as well as its limitations. Accordingly, here are some sample questions that can help assess this dimension of a candidate’s expertise:
+    - An expert knowledge of Python extends well beyond the technical minutia of the language. A Python expert will have an in-depth understanding and appreciation of Python's benefits as well as its limitations. Accordingly, here are some sample questions that can help assess this dimension of a candidate's expertise:
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What will be the output of the code below in Python 2?       
+## Q. What will be the output of the code below in Python 2?
 
 ```py
 def div1(x,y):
@@ -182,20 +167,20 @@ Also, how would the answer differ in Python 3 (assuming, of course, that the abo
 - As follows:
     - `xrange` returns the xrange object while range returns the list, and uses the same memory and no matter what the range size is.
     - For the most part, xrange and range are the exact same in terms of functionality. They both provide a way to generate a list of integers for you to use, however you please. 
-    - The only difference is that range returns a Python list object and x range returns an xrange object. This means that xrange doesn’t actually generate a static list at run-time like range does. It creates the values as you need them with a special technique called yielding. This technique is used with a type of object known as generators. That means that if you have a really gigantic range you’d like to generate a list for, say one billion, xrange is the function to use. 
-    - This is especially true if you have a really memory sensitive system such as a cell phone that you are working with, as range will use as much memory as it can to create your array of integers, which can result in a Memory Error and crash your program. It’s a memory hungry beast.
+    - The only difference is that range returns a Python list object and x range returns an xrange object. This means that xrange doesn't actually generate a static list at run-time like range does. It creates the values as you need them with a special technique called yielding. This technique is used with a type of object known as generators. That means that if you have a really gigantic range you'd like to generate a list for, say one billion, xrange is the function to use. 
+    - This is especially true if you have a really memory sensitive system such as a cell phone that you are working with, as range will use as much memory as it can to create your array of integers, which can result in a Memory Error and crash your program. It's a memory hungry beast.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What will be the output of the code below?**
+## Q. What will be the output of the code below?
 
 ```py
-List = [‘a’, ‘b’, ‘c’, ‘d’, ‘e’]
+List = ['a', 'b', 'c', 'd', 'e']
 print(list[10:])
 ```
-- TypeError: 'type' object is not subscriptable     
+- TypeError: 'type' object is not subscriptable
 if proper name given,it will print [].
 
 <div align="right">
@@ -210,10 +195,6 @@ class C:
     def meth (self, arg): 
         return arg*2 + self.attribute
 ```
-
-## Q. How can I find the methods or attributes of an object?
-
-For an instance x of a user-defined class, dir(x) returns an alphabetized list of the names containing the instance attributes and methods and attributes defined by its class.
 
 ## Q. How do I call a method defined in a base class from a derived class that overrides it?
 
@@ -364,14 +345,14 @@ Ans.  In languages like C++, we have something like this:
 
     switch(name)
     {
-        case ‘Ram’:
-            cout<<”Monday”;
+        case 'Ram':
+            cout<<"Monday";
             break;
-        case ‘Shiv’:
-            cout<<”Tuesday”;
+        case 'Shiv':
+            cout<<"Tuesday";
             break;
         default:
-            cout<<”Hi, user”;
+            cout<<"Hi, user";
     }
 
 But in Python, we do not have a switch-case statement. Here, you may write a switch function to use. Else, you may use a set of if-elif-else statements. To implement a function for this, we may use a dictionary.
@@ -424,13 +405,13 @@ else:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Does Python support strongly for regular expressions? What are the other languages that support strongly for regular expressions? What are Regular Expressions ?
+## Q. Does Python support strongly for regular expressions?
 
 Yes, Python Supports Regular Expressions Well. `re` is an in-buit library for the same. There is a lot of other languages that have good support to RegEx- Perl, Awk, Sed, Java etc.
 
-Regular expressions (called REs, or regexes, or regex patterns) are essentially a tiny, highly specialized programming language embedded inside Python and made available through the re module. Using this little language, you specify the rules for the set of possible strings that you want to match; this set might contain English sentences, or e-mail addresses, or TeX commands, or anything you like. You can then ask questions such as “Does this string match the pattern?”, or “Is there a match for the pattern anywhere in this string?”. You can also use REs to modify a string or to split it apart in various ways.
+Regular expressions (called REs, or regexes, or regex patterns) are essentially a tiny, highly specialized programming language embedded inside Python and made available through the re module. Using this little language, you specify the rules for the set of possible strings that you want to match; this set might contain English sentences, or e-mail addresses, or TeX commands, or anything you like. You can then ask questions such as "Does this string match the pattern?", or "Is there a match for the pattern anywhere in this string?". You can also use REs to modify a string or to split it apart in various ways.
 
-Regular expression patterns are compiled into a series of bytecodes which are then executed by a matching engine written in C. For advanced use, it may be necessary to pay careful attention to how the engine will execute a given RE, and write the RE in a certain way in order to produce bytecode that runs faster. Optimization isn’t covered in this document, because it requires that you have a good understanding of the matching engine’s internals.
+Regular expression patterns are compiled into a series of bytecodes which are then executed by a matching engine written in C. For advanced use, it may be necessary to pay careful attention to how the engine will execute a given RE, and write the RE in a certain way in order to produce bytecode that runs faster. Optimization isn't covered in this document, because it requires that you have a good understanding of the matching engine's internals.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -438,7 +419,7 @@ Regular expression patterns are compiled into a series of bytecodes which are th
 
 ## Q. How do you perform pattern matching in Python? Explain.
 
-Regular Expressions/REs/ regexes enable us to specify expressions that can match specific "parts" of a given string. For instance, we can define a regular expression to match a single character or a digit, a telephone number, or an email address, etc. The Python’s "re" module provides regular expression patterns and was introduce from later versions of Python 2.5. "re" module is providing methods for search text strings, or replacing text strings along with methods for splitting text strings based on the pattern defined.
+Regular Expressions/REs/ regexes enable us to specify expressions that can match specific "parts" of a given string. For instance, we can define a regular expression to match a single character or a digit, a telephone number, or an email address, etc. The Python's "re" module provides regular expression patterns and was introduce from later versions of Python 2.5. "re" module is providing methods for search text strings, or replacing text strings along with methods for splitting text strings based on the pattern defined.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -452,7 +433,7 @@ import re
 e = re.search(r'[0-9a-zA-Z.]+@[a-zA-Z]+\.(com|co\.in)$' 'JaiRameshwar@gmail.com')
 e.group()
 ```
-‘Ramayanwashere@gmail.com’
+'Ramayanwashere@gmail.com'
 
 To brush up on regular expressions, check Regular Expressions in Python.
 
@@ -490,7 +471,7 @@ Objects referenced from the global namespaces of Python modules are not always d
 
 ## Q. Whenever you exit Python, is all memory de-allocated? State why is it so.
 
-The answer here is no. The modules with circular references to other objects, or to objects referenced from global namespaces, aren’t always freed on exiting Python.
+The answer here is no. The modules with circular references to other objects, or to objects referenced from global namespaces, aren't always freed on exiting Python.
 Plus, it is impossible to de-allocate portions of memory reserved by the C library.
 
 Whenever Python exits, especially those Python modules which are having circular references to other objects or the objects that are referenced from the global namespaces are not always de-allocated or freed.It is impossible to de-allocate those portions of memory that are reserved by the C library.On exit, because of having its own efficient clean up mechanism, Python would try to de-allocate/destroy every other object.
@@ -545,7 +526,7 @@ This class variable can be assigned a string, iterable, or sequence of strings w
 
 •If a class defines a slot also defined in a base class, the instance variable defined by the base class slot is inaccessible (except by retrieving its descriptor directly from the base class). This renders the meaning of the program undefined. In the future, a check may be added to prevent this.
 
-•Nonempty __slots__ does not work for classes derived from “variable-length” built-in types such as int, bytes and tuple.
+•Nonempty __slots__ does not work for classes derived from "variable-length" built-in types such as int, bytes and tuple.
 
 •Any non-string iterable may be assigned to __slots__. Mappings may also be used; however, in the future, special meaning may be assigned to the values corresponding to each key.
 
@@ -575,7 +556,7 @@ Mutable built-in types:
 
 - Immutable Objects
 
-    The objects which doesn’t allow to modify the contents of those objects are known as ‘Immutable Objects’
+    The objects which doesn't allow to modify the contents of those objects are known as 'Immutable Objects'
     
     Before creating immutable objects with some content python interpreter verifies is already any object is available. In memory location with same content or not.
     
@@ -612,7 +593,7 @@ Mutable built-in types:
     All fundamentals types represented classes objects and tuple class objects are immutable objects.
 
 - Mutable Objects:
-    1. The Objects which allows to modify the contents of those objects are known as ‘Mutable Objects’
+    1. The Objects which allows to modify the contents of those objects are known as 'Mutable Objects'
     2. We can create two different mutable objects with same content
 
     Program:
@@ -637,31 +618,11 @@ Mutable built-in types:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is difference between tuple and list ? Where will you use tuple and where will you use list ?
----
-| List 	                           |         Tuple|
-List objects are mutable objects 	 Tuple objects are immutable Objects
-Applying iterations on list objects  Applying iterations on tuple Objects takes longer time                    takes less time
-If the frequent operation is         If the frequent operation is 
-insertion or deletion of the         retrieval of the elements    elements then it is recommended      then it is recommended to
-to use list                          use tuple                    
-List can’t be used as a ‘key’  	     Tuple can be used 
-for the dictionary                   as a key for the dictionary                                       if the tuple is storing                                           only immutable elements
-Lists are slower than tuples.        Tuples are faster than list.
-`list_1 = [10, ‘Chelsea’, 20]`       `tup_1 = (10, ‘Chelsea’ , 20)`
-mylist = [1,3,3]                     mytuple = (1,3,3)
-mylist[1] = 2                        mytuple[1] = 2
-
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. Python is Call by Value or Call by Reference? How are arguments passed by value or by reference?
 
 Everything in Python is an object and all variables hold references to the objects. The references values are according to the functions; as a result you cannot change the value of the references. However, you can change the objects if it is mutable.
 
-## Q. Explain Python’s parameter-passing mechanism.
+## Q. Explain Python's parameter-passing mechanism.
 - To pass its parameters to a function, Python uses pass-by-reference. If you change a parameter within a function, the change reflects in the calling function. This is its default behavior. 
     
 - However, when we pass literal arguments like strings, numbers, or tuples, they pass by value. This is because they are immutable.
@@ -670,7 +631,7 @@ Everything in Python is an object and all variables hold references to the objec
 
 ## Q. What are `*args`, `**kwargs` ?
 
-In cases when we don’t know how many arguments will be passed to a function, like when we want to pass a list or a tuple of values, we use `*args`.
+In cases when we don't know how many arguments will be passed to a function, like when we want to pass a list or a tuple of values, we use `*args`.
 
 ```py
 def func(*args):
@@ -685,7 +646,7 @@ func(3,2,1,4,7)
 4   
 7
 
-`**kwargs` takes keyword arguments when we don’t know how many there will be:
+`**kwargs` takes keyword arguments when we don't know how many there will be:
 
 ```py
 def func(**kwargs):
@@ -726,9 +687,9 @@ def f(x, *tup, **kwargs):
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is lambda? What are Lambda Functions ?Explain lambda expressions. When would you use one? What is Anonymous Function? Why lambda forms in python does not have statements? What is the lambda operator?
+## Q. What is lambda? What are Lambda Functions ?
 
-A function which doesn’t contain any name is known as a anonymous function lambda function, Lambda function we can assign to the variable & we can call the lambda function through the variable.
+A function which doesn't contain any name is known as a anonymous function lambda function, Lambda function we can assign to the variable & we can call the lambda function through the variable.
 
 Syntax:
 `Lambda arguments:expression`
@@ -786,9 +747,6 @@ It overrides the any initialization from an inherited class and is called when t
 We know that a package may contain sub-packages and modules. A module is nothing but Python code.   
 To create a package of our own, we create a directory and create a file `__init__.py` in it. We leave it empty. Then, in that package, we create a module(s) with whatever code we want. For a detailed explanation with pictures, refer to Python Packages.
 
-## Q. What is Web Scraping? How do you achieve it in Python?
-We can use scrapy.
-
 ## Q. Explain the use "with" statement in python?
 
 - In python generally "with" statement is used to open a file, process the data present in the file, and also to close the file without calling a close() method. "with" statement makes the exception handling simpler by providing cleanup activities.
@@ -823,7 +781,7 @@ Hi, monkey
 ## Q. Explain serialization and deserialization / Pickling and unpicking.
 Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling.
 
-To create portable serialized representations of Python objects, we have the module ‘pickle’. It accepts a Python object (remember, everything in Python is an object). It then converts it into a string representation and uses the dump() function to dump it into a file. We call this pickling. In contrast, retrieving objects from this stored string representation is termed 'unpickling'.
+To create portable serialized representations of Python objects, we have the module 'pickle'. It accepts a Python object (remember, everything in Python is an object). It then converts it into a string representation and uses the dump() function to dump it into a file. We call this pickling. In contrast, retrieving objects from this stored string representation is termed 'unpickling'.
 
 The pickle module implements binary protocols for serializing and deserializing a Python object structure. "Pickling" is the process whereby a Python object hierarchy is converted into a byte stream, and "unpickling" is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into an object hierarchy. Pickling (and unpickling) is alternatively known as `serialization`, `marshalling`, or `flattening`; however, to avoid confusion, the terms used here are `pickling` and `unpickling`.
 
@@ -902,12 +860,12 @@ Here inc(), dec() and reset() act like functions which share the same counting v
 
 The shutil module contains a `copyfile()` function.
 
-A deep copy copies an object into another. This means that if you make a change to a copy of an object, it won’t affect the original object. In Python, we use the function deepcopy() for this, and we import the module copy. We use it like:
+A deep copy copies an object into another. This means that if you make a change to a copy of an object, it won't affect the original object. In Python, we use the function deepcopy() for this, and we import the module copy. We use it like:
 ```py
 import copy
 b = copy.deepcopy (a)
 ```
-A shallow copy, however, copies one object’s reference to another. So, if we make a change in the copy, it will affect the original object. For this, we have the function `copy()`, we use it like:
+A shallow copy, however, copies one object's reference to another. So, if we make a change in the copy, it will affect the original object. For this, we have the function `copy()`, we use it like:
 
 ```py
 b = copy.copy(a)
@@ -920,8 +878,8 @@ The major difference is that a list is mutable, but a tuple is immutable. Exampl
 
 ```
 Traceback (most recent call last):
-File “<pyshell#97>”, line 1, in <module> mytuple[1]=2   
-TypeError: ‘tuple’ object does not support item assignment
+File "<pyshell#97>", line 1, in <module> mytuple[1]=2   
+TypeError: 'tuple' object does not support item assignment
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -984,15 +942,15 @@ Example:
 ```py
 class x(object):    
     def m1(self):       
-        print(“in m1 of x”)
+        print("in m1 of x")
 
 class y(x):     
     def m2(self):   
-        print(“in m2 of y”)
+        print("in m2 of y")
 
 class z(x): 
     def m3(self):   
-        print(“in m3 of z”)
+        print("in m3 of z")
 y1=y()
 y1.m1()
 y1.m2()
@@ -1027,22 +985,22 @@ Ans. In our article on Multiple Inheritance in Python, we discussed Method Resol
 
 Ans. Here, we talk about three methods/functions- `type(), isinstance() and issubclass()`.
 
-a. `type()`: This tells us the type of object we’re working with.
+a. `type()`: This tells us the type of object we're working with.
 
     type(3)
-<class ‘int’>
+<class 'int'>
 
     type(False)
 
-<class ‘bool’>
+<class 'bool'>
 
     type(lambda :print("Hi"))
 
-<class ‘function’>
+<class 'function'>
 
     type(type)
 
-<class ‘type’>
+<class 'type'>
 
 b. isinstance()
 
@@ -1101,13 +1059,13 @@ False
 
 Python sequences can be index in positive and negative numbers. For positive index, 0 is the first index, 1 is the second index and so forth. For negative index, (-1) is the last index and (-2) is the second last index and so forth.
 
-The sequences in Python are indexed and it consists of the positive as well as negative numbers. The numbers that are positive uses ‘0’ that is uses as first index and ‘1’ as the second index and the process goes on like that.
+The sequences in Python are indexed and it consists of the positive as well as negative numbers. The numbers that are positive uses '0' that is uses as first index and '1' as the second index and the process goes on like that.
 
-The index for the negative number starts from ‘-1’ that represents the last index in the sequence and ‘-2’ as the penultimate index and the sequence carries forward like the positive number.
+The index for the negative number starts from '-1' that represents the last index in the sequence and '-2' as the penultimate index and the sequence carries forward like the positive number.
 
 The negative index is used to remove any new-line spaces from the string and allow the string to except the last character that is given as S[:-1]. The negative index is also used to show the index to represent the string in correct order.
 
-Let’s take a list for this.
+Let's take a list for this.
 ```py
 mylist=[0,1,2,3,4,5,6,7,8]
 ```
@@ -1131,7 +1089,7 @@ mylist[-6:-1]
 
 ## Q. Explain split(), sub(), subn() methods of `re` module in Python.  
 
-- To modify the strings, Python’s "re" module is providing 3 methods. They are:   
+- To modify the strings, Python's "re" module is providing 3 methods. They are:   
     - split() – uses a regex pattern to "split" a given string into a list.
     - sub() – finds all substrings where the regex pattern matches and then replace them with a different string.
     - subn() – it is similar to sub() and also returns the new string along with the no. of replacements.
@@ -1139,16 +1097,21 @@ mylist[-6:-1]
 
 ## Q. What is map function in Python?
 
-    Map function executes the function given as the first argument on all the elements of the iterable given as the second argument. If the function given takes in more than 1 arguments, then many iterables are given. #Follow the link to know more similar functions
+Map function executes the function given as the first argument on all the elements of the iterable given as the second argument. If the function given takes in more than 1 arguments, then many iterables are given. #Follow the link to know more similar functions
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. How to get indices of N maximum values in a NumPy array?
 
-    We can get the indices of N maximum values in a NumPy array using the below code:
+We can get the indices of N maximum values in a NumPy array using the below code:
 
-    ```py
-    import numpy as np
-    arr = np.array([1, 3, 2, 4, 5])
-    print(arr.argsort()[-3:][::-1])
-    ```
+```py
+import numpy as np
+arr = np.array([1, 3, 2, 4, 5])
+print(arr.argsort()[-3:][::-1])
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1156,7 +1119,7 @@ mylist[-6:-1]
 
 ## Q. What is a Python module?
 
-A module is a Python script that generally contains import statements, functions, classes and variable definitions, and Python runnable code and it "lives" file with a ‘.py’ extension. zip files and DLL files can also be modules.Inside the module, you can refer to the module name as a string that is stored in the global variable name .
+A module is a Python script that generally contains import statements, functions, classes and variable definitions, and Python runnable code and it "lives" file with a '.py' extension. zip files and DLL files can also be modules.Inside the module, you can refer to the module name as a string that is stored in the global variable name .
 
 ## Q. Name the File-related modules in Python?
 
@@ -1165,18 +1128,6 @@ Python provides libraries / modules with functions that enable you to manipulate
 Here,   
 `os` and `os.path` – modules include functions for accessing the filesystem   
 `shutil` – module enables you to copy and delete the files.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. Explain all the file processing modes supported by Python?
-
-Python allows you to open files in one of the three modes. They are:
-
-`read-only` mode, `write-only` mode, `read-write` mode, and `append` mode by specifying the flags "r", "w","rw", "a" respectively.
-A text file can be opened in any one of the above said modes by specifying the option "t" along with
-"r", "w", "rw", and "a", so that the preceding modes become "rt", "wt", "rwt", and "at".A binary file can beopened in any one of the above said modes by specifying the option "b" along with "r", "w", "rw", and "a" sothat the preceding modes become "rb", "wb", "rwb", "ab".
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1205,7 +1156,7 @@ Python supports 7 sequence types. They are str, list, tuple, unicode, byte array
 
 ## Q. What is the difference between NumPy and SciPy?
 
-In an ideal world, NumPy would contain nothing but the array data type and the most basic operations: indexing, sorting, reshaping, basic element wise functions, et cetera. All numerical code would reside in SciPy. However, one of NumPy’s important goals is compatibility, so NumPy tries to retain all features supported by either of its predecessors. Thus NumPy contains some linear algebra functions, even though these more properly belong in SciPy. In any case, SciPy contains more fully-featured versions of the linear algebra modules, as well as many other numerical algorithms. If you are doing scientific computing with python, you should probably install both NumPy and SciPy. Most new features belong in SciPy rather than NumPy.
+In an ideal world, NumPy would contain nothing but the array data type and the most basic operations: indexing, sorting, reshaping, basic element wise functions, et cetera. All numerical code would reside in SciPy. However, one of NumPy's important goals is compatibility, so NumPy tries to retain all features supported by either of its predecessors. Thus NumPy contains some linear algebra functions, even though these more properly belong in SciPy. In any case, SciPy contains more fully-featured versions of the linear algebra modules, as well as many other numerical algorithms. If you are doing scientific computing with python, you should probably install both NumPy and SciPy. Most new features belong in SciPy rather than NumPy.
 
 ## Q. Which of the following is an invalid statement?     
 a) abc = 1,000,000  
@@ -1250,7 +1201,7 @@ Yes. Python is Object Oriented Programming language. OOP is the programming para
 
 ## Q. Does Python supports interfaces like in Java? Discuss.    
 
-Python does not provide interfaces like in Java. Abstract Base Class (ABC) and its feature are provided by the Python’s "abc" module. Abstract Base Class is a mechanism for specifying what methods must be implemented by its implementation subclasses. The use of ABC’c provides a sort of "understanding" about methods and their expected behaviour. This module was made available from Python 2.7 version onwards.
+Python does not provide interfaces like in Java. Abstract Base Class (ABC) and its feature are provided by the Python's "abc" module. Abstract Base Class is a mechanism for specifying what methods must be implemented by its implementation subclasses. The use of ABC'c provides a sort of "understanding" about methods and their expected behaviour. This module was made available from Python 2.7 version onwards.
 
 ## Q. What are Accessors, mutators, @property?    
 
@@ -1265,36 +1216,41 @@ Both append() and extend() methods are the methods of list. These methods are us
 
 ## Q. Name few methods that are used to implement Functionally Oriented Programming in Python?
 
-    Python supports methods (called iterators in Python3), such as filter(), map(), and reduce(), that are very useful when you need to iterate over the items in a list, create a dictionary, or extract a subset of a list.
-    - `filter()` – enables you to extract a subset of values based on conditional logic.
-    - `map()` – it is a built-in function that applies the function to each item in an iterable.
-    - `reduce()` – repeatedly performs a pair-wise reduction on a sequence until a single value is computed.
+Python supports methods (called iterators in Python3), such as filter(), map(), and reduce(), that are very useful when you need to iterate over the items in a list, create a dictionary, or extract a subset of a list.
+
+- `filter()` – enables you to extract a subset of values based on conditional logic.
+- `map()` – it is a built-in function that applies the function to each item in an iterable.
+- `reduce()` – repeatedly performs a pair-wise reduction on a sequence until a single value is computed.
 
 ## Q. What is the output of the following?
-    ```python
-    x = ['ab', 'cd']
-    print(len(map(list, x)))
-    ```
-    A TypeError occurs as map has no len().
 
-## Q. What is the output of the following?    
-    ```py
-    x = ['ab', 'cd']
-    print(len(list(map(list, x))))
-    ```     
-    The length of each string is 2.
+```py
+x = ['ab', 'cd']
+print(len(map(list, x)))
+```
+A TypeError occurs as map has no len().
 
-## Q. Which of the following is not the correct syntax for creating a set?    
-    a) set([[1,2],[3,4]])       
-    b) set([1,2,2,3,4])         
-    c) set((1,2,3,4))       
-    d) {1,2,3,4}    
-    
-    A.
-    Explanation : The argument given for the set must be an iterable.
+## Q. What is the output of the following?
+
+```py
+x = ['ab', 'cd']
+print(len(list(map(list, x))))
+```
+
+The length of each string is 2.
+
+## Q. Which of the following is not the correct syntax for creating a set?
+
+a) set([[1,2],[3,4]])
+b) set([1,2,2,3,4])
+c) set((1,2,3,4))
+d) {1,2,3,4}
+
+A.
+Explanation : The argument given for the set must be an iterable.
 
 ## Q. Explain a few methods to implement Functionally Oriented Programming in Python.
- 
+
 Sometimes, when we want to iterate over a list, a few methods come in handy.    
  
  `filter()`: Filter lets us filter in some values based on conditional logic.
@@ -1321,105 +1277,107 @@ Sometimes, when we want to iterate over a list, a few methods come in handy.
 </div>
 
 ## Q. Write a Python function that checks whether a passed string is palindrome Or not? 
-    
-    Note: A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam , saas, nun.
-    
-    ```py
-    def isPalindrome(string):
-        left_pos = 0    
-        right_pos = len(string) – 1
-        
-        while right_pos >= left_pos:
-            if not string[left_pos] == string[right_pos]:
-                return False
-        
-        left_pos += 1
-        right_pos -= 1
-        return True
-    print(isPalindrome(‘aza’))
-    ```
+
+Note: A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam , saas, nun.
+
+```py
+def isPalindrome(string):
+    left_pos = 0
+    right_pos = len(string) – 1
+
+    while right_pos >= left_pos:
+        if not string[left_pos] == string[right_pos]:
+            return False
+
+    left_pos += 1
+    right_pos -= 1
+    return True
+print(isPalindrome('aza'))
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
 ## Q. Write a Python program to calculate the sum of a list of numbers.
-    ```py
-    def list_sum(num_List):
-        if len(num_List) == 1:
-            return num_List[0]
-        else:
-            return num_List[0] + list_sum(num_List[1:])
 
-    print(list_sum([2, 4, 5, 6, 7]))
-    ```
-    Sample Output: 24
+```py
+def list_sum(num_List):
+    if len(num_List) == 1:
+        return num_List[0]
+    else:
+        return num_List[0] + list_sum(num_List[1:])
+print(list_sum([2, 4, 5, 6, 7]))
+```
+Sample Output: 24
 
 ## Q. How to retrieve data from a table in MySQL database through Python code? Explain.
-    ```py
-    #import MySQLdb module as : 
-    import MySQLdb
-    
-    #establish a connection to the database.
-    db = MySQLdb.connect("host"="local host", "database-user"="user-name", "password"="password", "database-name"="database")
-    
-    #initialize the cursor variable upon the established connection: 
-    c1 = db.cursor()
-    
-    #retrieve the information by defining a required query string.
-    s = "Select * from dept"
-    
-    #fetch the data using fetch() methods and print it. 
-    data = c1.fetch(s)
-    
-    #close the database connection. 
-    db.close()
-    ```
+
+```py
+#import MySQLdb module as : 
+import MySQLdb
+
+#establish a connection to the database.
+db = MySQLdb.connect("host"="local host", "database-user"="user-name", "password"="password","database-name"="database")
+
+#initialize the cursor variable upon the established connection: 
+c1 = db.cursor()
+
+#retrieve the information by defining a required query string.
+s = "Select * from dept"
+
+#fetch the data using fetch() methods and print it. 
+data = c1.fetch(s)
+
+#close the database connection. 
+db.close()
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
 ## Q. Write a Python program to read a random line from a file.
-    ```py
-    import random
-    def random_line(fname):
-        lines = open(fname).read().splitlines()
-        return random.choice(lines)
-        print(random_line(‘test.txt’))
-    ```
+
+```py
+import random
+def random_line(fname):
+    lines = open(fname).read().splitlines()
+    return random.choice(lines)
+    print(random_line('test.txt'))
+```
 ## Q. Write a Python program to count the number of lines in a text file.
 
-    ```py
-    def file_lengthy(fname):
-        with open(fname) as f:
-            for i, l in enumerate(f):
-                pass
-            return i + 1
-    
-    print("Number of lines in the file: ",file_lengthy("test.txt"))
-    ```
+```py
+def file_lengthy(fname):
+    with open(fname) as f:
+        for i, l in enumerate(f):
+            pass
+        return i + 1
+
+print("Number of lines in the file: ",file_lengthy("test.txt"))
+```
 
 ## Q. What are the key features of Python?  
 
 If it makes for an introductory language to programming, Python must mean something. These are its qualities:
 >
-    - Interpreted.      
-    - Dynamically-typed.
-    - Object-oriented
-    - Concise and simple
-    - Free
-    - Has a large community
+- Interpreted.
+- Dynamically-typed.
+- Object-oriented
+- Concise and simple
+- Free
+- Has a large community
 
 ## Q. Explain the ternary operator in Python.
 
-Unlike C++, we don’t have ?: in Python, but we have this:
+Unlike C++, we don't have ?: in Python, but we have this:
 
 [on true] if [expression] else [on false]
 
 If the expression is True, the statement under [on true] is executed. Else, that under [on false] is executed.
 
-Below is how you would use it:      
+Below is how you would use it:
 ex 1.
 ```py
 a,b=2,3
@@ -1438,7 +1396,7 @@ Ans: Hi
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is multithreading? Give an example. How is multithreading achieved in Python? What is GIL(Global interpreter lock) issue ? How does the GIL impact concurrency in Python? What kinds of applications does it impact more than others?
+## Q. What is multithreading? Give an example.
 
 It means running several different programs at the same time concurrently by invoking multiple threads. Multiple threads within a process refer the data space with main thread and they can communicate with each other to share information more easily.Threads are light-weight processes and have less memory overhead. Threads can be used just for quick task like calculating results and also running other processes in the background while the main program is running.
 
@@ -1471,18 +1429,21 @@ A thread is a lightweight process and multithreading allows us to execute multip
 ## Q. Explain help() and dir() functions in Python.
 
 The help() function displays the documentation string and help for its argument.
+
 ```py
-     import copy
-     help(copy.copy)
+import copy
+help(copy.copy)
 ```
+
 Help on function copy in module copy: copy(x)
 Shallow copy operation on arbitrary Python objects.
-See the module’s __doc__ string for more info.
+See the module's __doc__ string for more info.
 The dir() function displays all the members of an object(any kind).
+
 ```py
 dir(copy.copy)
 
-[‘__annotations__’, ‘__call__’, ‘__class__’, ‘__closure__’, ‘__code__’, ‘__defaults__’, ‘__delattr__’, ‘__dict__’, ‘__dir__’, ‘__doc__’, ‘__eq__’, ‘__format__’, ‘__ge__’, ‘__get__’, ‘__getattribute__’, ‘__globals__’, ‘__gt__’, ‘__hash__’, ‘__init__’, ‘__init_subclass__’, ‘__kwdefaults__’, ‘__le__’, ‘__lt__’, ‘__module__’, ‘__name__’, ‘__ne__’, ‘__new__’, ‘__qualname__’, ‘__reduce__’, ‘__reduce_ex__’, ‘__repr__’, ‘__setattr__’, ‘__sizeof__’, ‘__str__’, ‘__subclasshook__’]
+['__annotations__', '__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__globals__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
 ```
 
 <div align="right">
@@ -1495,11 +1456,11 @@ dir(copy.copy)
 
 The built-in datatypes in Python is called dictionary. It defines one-to-one relationship between keys and values. Dictionaries contain pair of keys and their corresponding values. Dictionaries are indexed by keys.
     
-Let’s take an example:
+Let's take an example:
 
 The following example contains some keys. Country, Capital & PM. Their corresponding values are India, Delhi and Modi respectively.
 
-`dict={‘Country’:’India’,’Capital’:’Delhi’,’PM’:’Modi’}`
+`dict={'Country':'India','Capital':'Delhi','PM':'Modi'}`
 
 `print dict[Country]`
 
@@ -1520,7 +1481,7 @@ roots
 ```
 {25: 5, 16: 4, 9: 3, 4: 2, 1: 1}
 
-**How do you get a list of all the keys in a dictionary?**
+## Q. How do you get a list of all the keys in a dictionary?
 
 Be specific in these type of Python Interview Questions and Answers.
 
@@ -1530,13 +1491,14 @@ mydict={'a':1,'b':2,'c':3,'e':5}
 mydict.keys()
 print(dict_keys)
 ```
-([‘a’, ‘b’, ‘c’, ‘e’])
+(['a', 'b', 'c', 'e'])
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
 ## Q. Write Python logic to count the number of capital letters in a file.
+
 ```py
 import os
 os.chdir('C:\\Users\\lifei\\Desktop')
@@ -1551,7 +1513,7 @@ with open('Today.txt') as today:
 
 ## Q. How would you randomize the contents of a list in-place?
 
-For this, we’ll import the function `shuffle()` from the module `random`.
+For this, we'll import the function `shuffle()` from the module `random`.
 ```py
 from random import shuffle
 shuffle(mylist)
@@ -1571,18 +1533,18 @@ mylist
 ```py
 '1,2,3,4,5'.split(',')
 ```
-[‘1’, ‘2’, ‘3’, ‘4’, ‘5’]
+['1', '2', '3', '4', '5']
 
 ## Q. Is Python case-sensitive?
 
-A language is case-sensitive if it distinguishes between identifiers like myname and Myname. In other words, it cares about case- lowercase or uppercase. Let’s try this with Python.
+A language is case-sensitive if it distinguishes between identifiers like myname and Myname. In other words, it cares about case- lowercase or uppercase. Let's try this with Python.
 ```py
 myname='Ramayan'
 Myname
 ```
 Traceback (most recent call last):
-File “<pyshell#3>”, line 1, in <module> Myname
-NameError: name ‘Myname’ is not defined
+File "<pyshell#3>", line 1, in <module> Myname
+NameError: name 'Myname' is not defined
 
 As you can see, this raised a NameError. This means that Python is indeed case-sensitive.
 
@@ -1627,7 +1589,7 @@ We use the lower() method for this.
 ```py
 'Ramayan'.lower()
 ```
-‘ramayan’
+'ramayan'
 
 To convert it into uppercase, then, we use upper().
 ```py
@@ -1673,7 +1635,7 @@ True
 
 ## Q. What is the pass statement in Python?
 
-There may be times in our code when we haven’t decided what to do yet, but we must type something for it to be syntactically correct. In such a case, we use the pass statement.
+There may be times in our code when we haven't decided what to do yet, but we must type something for it to be syntactically correct. In such a case, we use the pass statement.
 
 ```py
 def func(*args):
@@ -1746,7 +1708,7 @@ Finally, % is for modulus. This gives us the value left after the highest achiev
 ```
 0.5
 
-- How many kinds of operators do we have in Python? Explain arithmetic operators.
+## Q. How many kinds of operators do we have in Python? Explain arithmetic operators.
 
 This type of Python Interview Questions and Answers can decide your knowledge in Python. Answer the Python Interview Questions with some good Examples.
 
@@ -1778,7 +1740,7 @@ False
 
     Greater than (>) If the value on the left is greater, it returns True.
 
-     1.1+2.2>3.3
+     1.1 + 2.2 > 3.3
 
 True
 
@@ -1786,19 +1748,19 @@ This is because of the flawed floating-point arithmetic in Python, due to hardwa
 
     Less than or equal to (<=) If the value on the left is lesser than or equal to, it returns True.
 
-     3.0<=3
+     3.0 <= 3
 
 True
 
     Greater than or equal to (>=) If the value on the left is greater than or equal to, it returns True.
 
-     True>=False
+     True >= False
 
 True
 
     Equal to (==) If the two values are equal, it returns True.
 
-     {1,3,2,2}=={1,2,3}
+     {1,3,2,2} == {1,2,3}
 
 True
 
@@ -1822,13 +1784,13 @@ This one is an Important Interview question in Python Interview.
 
 We can combine all arithmetic operators with the assignment symbol.
 
-     a=7
-     a+=1
+     a = 7
+     a += 1
      a
 
 8
 
-     a-=1
+     a -= 1
      a
 
 7
@@ -1880,7 +1842,7 @@ False
 
 ## Q. What are membership, operators?
 
-With the operators ‘in’ and ‘not in’, we can confirm if a value is a member in another.
+With the operators 'in' and 'not in', we can confirm if a value is a member in another.
 
     'me' in 'disappointment'
 True
@@ -1891,7 +1853,7 @@ True
 ## Q. Explain identity operators in Python.
 
 This is one of the very commonly asked Python Interview Questions and answers it with examples.
-The operators ‘is’ and ‘is not’ tell us if two values have the same identity.
+The operators 'is' and 'is not' tell us if two values have the same identity.
 
     10 is '10'
 False
@@ -1922,7 +1884,7 @@ These operate on values bit by bit.
 
 1
 
-    Binary One’s Complement (~) This returns the one’s complement of a value.
+    Binary One's Complement (~) This returns the one's complement of a value.
 
      ~2
 
@@ -1958,29 +1920,29 @@ To convert a number into its binary form, we use bin().
 
      bin(0xf)
 
-‘0b1111’
+'0b1111'
 
     Octal numbers may have digits from 0 to 7. We use the prefix 0o or 0O.
 
      oct(8)
 
-‘0o10’
+'0o10'
 
     Hexadecimal numbers may have digits from 0 to 15. We use the prefix 0x or 0X.
 
      hex(16)
 
-‘0x10’
+'0x10'
 
      hex(15)
 
-‘0xf’
+'0xf'
 
 
 
 ## Q. Why are identifier names with a leading underscore disparaged?
 
-Since Python does not have a concept of private variables, it is a convention to use leading underscores to declare a variable private. This is why we mustn’t do that to variables we do not want to make private.
+Since Python does not have a concept of private variables, it is a convention to use leading underscores to declare a variable private. This is why we mustn't do that to variables we do not want to make private.
 
 ## Q. How can you declare multiple assignments in one statement?
 
@@ -1992,7 +1954,7 @@ There are two ways to do this:
 
 ## Q. What is tuple unpacking?
 
-First, let’s discuss tuple packing. It is a way to pack a set of values into a tuple.
+First, let's discuss tuple packing. It is a way to pack a set of values into a tuple.
 ```py
 mytuple=3,4,5
 mytuple
@@ -2017,17 +1979,17 @@ x+y+z
      title="Ramayan's Book"
      colors=['red','green','blue']
      type(colors)
-        <class ‘list’>
+        <class 'list'>
      name=('Ramayan','Sharma')
      name[0]='Avery'
         Traceback (most recent call last):
-        File “<pyshell#129>, line 1, in <module> name[0]=’Avery’
-        TypeError: ‘tuple’ object does not support item assignment
+        File "<pyshell#129>, line 1, in <module> name[0]='Avery'
+        TypeError: 'tuple' object does not support item assignment
      squares={1:1,2:4,3:9,4:16,5:25}
      type(squares)
-        <class ‘dict’>
+        <class 'dict'>
      type({})
-        <class ‘dict’>
+        <class 'dict'>
      squares={x:x**2 for x in range(1,6)}
      squares
         {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
@@ -2049,7 +2011,7 @@ sayhi()
 
 Hi
 
-To get a function’s docstring, we use its `__doc__` attribute.
+To get a function's docstring, we use its `__doc__` attribute.
 ```py
 sayhi.__doc__
 ```
@@ -2073,12 +2035,12 @@ Slicing is a technique that allows us to retrieve only a part of a list, tuple, 
      [7,6,8,5,9][2:]
         [8, 5, 9]
      'Hello'[:-1]
-        ‘Hell’
+        'Hell'
 ```
 
 ## Q. What is a namedtuple?
 
-A namedtuple will let us access a tuple’s elements using a name/label. We use the function namedtuple() for this, and import it from collections.
+A namedtuple will let us access a tuple's elements using a name/label. We use the function namedtuple() for this, and import it from collections.
 
 ```py
  from collections import namedtuple
@@ -2107,15 +2069,15 @@ If a string contains only numerical characters, you can convert it into an integ
 
 227
 
-Let’s check the types:
+Let's check the types:
 
      type('227')
 
-<class ‘str’>
+<class 'str'>
 
      type(int('227'))
 
- <class ‘int’>
+ <class 'int'>
 
 ## Q. How do you take input in Python?
 
@@ -2131,14 +2093,14 @@ But if you have paid attention, you know that it takes input in the form of a st
 
      type(a)
 
-<class ‘str’>
+<class 'str'>
 
 Multiplying this by 2 gives us this:
 
      a*=2
      a
 
-’77’
+'77'
 
 So, what if we need to work on an integer instead?
 
@@ -2159,7 +2121,7 @@ Now when we multiply it by 2, we get this:
 
 Answer these type of Python Interview Questions with Examples.
 
-First, let’s discuss what a set is. A set is a collection of items, where there cannot be any duplicates. A set is also unordered.
+First, let's discuss what a set is. A set is a collection of items, where there cannot be any duplicates. A set is also unordered.
 
      myset={1,3,2,2}
      myset
@@ -2171,8 +2133,8 @@ This means that we cannot index it.
      myset[0]
 
 Traceback (most recent call last):  
-File “<pyshell#197>”, line 1, in <module> myset[0]  
-TypeError: ‘set’ object does not support indexing
+File "<pyshell#197>", line 1, in <module> myset[0]  
+TypeError: 'set' object does not support indexing
 
 However, a set is mutable. A frozen set is immutable. This means we cannot change its values. This also makes it eligible to be used as a key for a dictionary.
 
@@ -2182,7 +2144,7 @@ However, a set is mutable. A frozen set is immutable. This means we cannot chang
   frozenset({1, 2, 3})
     
      type(myset)
-  <class ‘frozenset’>
+  <class 'frozenset'>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2199,7 +2161,7 @@ To generate a random number, we import the function random() from the module ran
 
 `0.7931961644126482`
 
-Let’s call for help on this.
+Let's call for help on this.
 
      help(random)
 
@@ -2244,17 +2206,17 @@ Simply using the method capitalize().
 
      'Ramayan'.capitalize()
 
-‘Ramayan’
+'Ramayan'
 
      type(str.capitalize)
 
-<class ‘method_descriptor’>
+<class 'method_descriptor'>
 
 However, it will let other characters be.
 
      '$hrir@m'.capitalize()
 
-‘$HRIR@M’
+'$HRIR@M'
 
 ## Q. How will you check if all characters in a string are alphanumeric?
 
@@ -2309,24 +2271,24 @@ This is very basic Python Interview Question, try not to make any mistake in thi
 Concatenation is joining two sequences. We use the + operator for this.
 
      '32'+'32'
-   ‘3232’
+   '3232'
 
      [1,2,3]+[4,5,6]
    [1, 2, 3, 4, 5, 6]
 
      (2,3)+(4)
    `Traceback (most recent call last): `    
-   `File “<pyshell#256>”, line 1, in <module> (2,3)+(4)`    
-   `TypeError: can only concatenate tuple (not “int”) to tuple`
+   `File "<pyshell#256>", line 1, in <module> (2,3)+(4)`    
+   `TypeError: can only concatenate tuple (not "int") to tuple`
 
-Here, 4 is considered an int. Let’s do this again.
+Here, 4 is considered an int. Let's do this again.
 
      (2,3)+(4,)  # (obj,) is way to declare single empty
     (2, 3, 4)
 
 ## Q. What is a function?
 
-When we want to execute a sequence of statements, we can give it a name. Let’s define a function to take two numbers and return the greater number.
+When we want to execute a sequence of statements, we can give it a name. Let's define a function to take two numbers and return the greater number.
 
 ```py
 def greater(a,b):
@@ -2335,12 +2297,12 @@ greater(3,3.5)
 ```
 `3.5`
 
-You can create your own function or use one of Python’s many built-in functions.
+You can create your own function or use one of Python's many built-in functions.
 
 
 ## Q. What is recursion?
 
-When a function makes a call to itself, it is termed recursion. But then, in order for it to avoid forming an infinite loop, we must have a base condition. Let’s take an example.
+When a function makes a call to itself, it is termed recursion. But then, in order for it to avoid forming an infinite loop, we must have a base condition. Let's take an example.
 ```py
 def facto(n):
     if n==1: return 1   
@@ -2350,29 +2312,23 @@ facto(4)
 ```
 `24`
 
-
-
-### Python Interview Questions for Experienced
-
-These are the Advanced Python Interview Questions and Answers for Experienced, however they can also refer the basic Python Interview Questions and Answers for Freshers for basic knowledge.
-
 ## Q. What does the function zip() do?
 
 One of the less common functions with beginners, zip() returns an iterator of tuples.
 
      list(zip(['a','b','c'],[1,2,3]))
 
-[(‘a’, 1), (‘b’, 2), (‘c’, 3)]
+[('a', 1), ('b', 2), ('c', 3)]
 
-Here, it pairs items from the two lists, and creates tuples with those. But it doesn’t have to be lists.
+Here, it pairs items from the two lists, and creates tuples with those. But it doesn't have to be lists.
 
     list(zip(('a','b','c'),(1,2,3)))
 
-[(‘a’, 1), (‘b’, 2), (‘c’, 3)]
+[('a', 1), ('b', 2), ('c', 3)]
 
 ## Q. If you are ever stuck in an infinite loop, how will you break out of it?
 
-For this, we press Ctrl+C. This interrupts the execution. Let’s create an infinite loop to demonstrate this.
+For this, we press Ctrl+C. This interrupts the execution. Let's create an infinite loop to demonstrate this.
 
     def counterfunc(n):
         while(n==7):print(n)
@@ -2388,8 +2344,8 @@ For this, we press Ctrl+C. This interrupts the execution. Let’s create an infi
 .   
 .   
 Traceback (most recent call last):  
-File “<pyshell#332>”, line 1, in <module> counterfunc(7)    
-File “<pyshell#331>”, line 2, in counterfunc    
+File "<pyshell#332>", line 1, in <module> counterfunc(7)    
+File "<pyshell#331>", line 2, in counterfunc    
 while(n==7):print(n)    
 KeyboardInterrupt
 
@@ -2400,20 +2356,20 @@ To find this, we use the function/method getcwd(). We import it from the module 
      import os
      os.getcwd()
 
-‘C:\\Users\\lifei\\AppData\\Local\\Programs\\Python\\Python36-32’
+'C:\\Users\\lifei\\AppData\\Local\\Programs\\Python\\Python36-32'
 
      type(os.getcwd)
 
-<class ‘builtin_function_or_method’>
+<class 'builtin_function_or_method'>
 
 We can also change the current working directory with chdir().
 
      os.chdir('C:\\Users\\lifei\\Desktop')
      os.getcwd()
 
-‘C:\\Users\\lifei\\Desktop’
+'C:\\Users\\lifei\\Desktop'
 
-## Q. How will you find, in a string, the first word that rhymes with ‘cake’?
+## Q. How will you find, in a string, the first word that rhymes with 'cake'?
 
 For our purpose, we will use the function search(), and then use group() to get the output.
 
@@ -2421,9 +2377,9 @@ For our purpose, we will use the function search(), and then use group() to get 
      rhyme=re.search('.ake','I would make a cake, but I hate to bake')
      rhyme.group()
 
-‘make’
+'make'
 
-And as we know, the function search() stops at the first match. Hence, we have our first rhyme to ‘cake’.
+And as we know, the function search() stops at the first match. Hence, we have our first rhyme to 'cake'.
 
 ## Q. What is Tkinter?
 
@@ -2436,7 +2392,7 @@ You can also import the tkinter module.
 
 This will create a new window for you:
 
-This creates a window with the title ‘My Game’. You can position your widgets on this.
+This creates a window with the title 'My Game'. You can position your widgets on this.
 
 Follow this link to know more about Python Libraries
 
@@ -2462,15 +2418,15 @@ This is simple. We call the function len() on the string we want to calculate th
      list3 = extendList('a')
      list1,list2,list3
 
-Ans. ([10, ‘a’], [123], [10, ‘a’])
+Ans. ([10, 'a'], [123], [10, 'a'])
 
-You’d expect the output to be something like this:
+You'd expect the output to be something like this:
 
-([10],[123],[‘a’])
+([10],[123],['a'])
 
 Well, this is because the list argument does not initialize to its default value ([]) every time we make a call to the function. Once we define the function, it creates a new list. Then, whenever we call it again without a list argument, it uses the same list. This is because it calculates the expressions in the default arguments when we define the function, not when we call it.
 
-Let’s revise the Basis of Python Programming
+Let's revise the Basis of Python Programming
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2523,7 +2479,7 @@ Below are some Basic Python Programming Interview Questions and answers for fres
 
 ## Q. How many arguments can the range() function take?
 
-Ans. The range() function in Python can take up to 3 arguments. Let’s see this one by one.
+Ans. The range() function in Python can take up to 3 arguments. Let's see this one by one.
 
 a. One argument
 
@@ -2621,7 +2577,7 @@ Then, we can start debugging.
 
 ## Q. What is a Counter in Python?
 
-Ans.  The function Counter() from the module ‘collections’. It counts the number of occurrences of the elements of a container.
+Ans.  The function Counter() from the module 'collections'. It counts the number of occurrences of the elements of a container.
 
     from collections import Counter
     Counter([1,3,2,1,4,2,1,3,1])
@@ -2671,16 +2627,11 @@ array([], shape=(0, 0), dtype=float64)
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. Explain the use of the 'nonlocal' keyword in Python.
 
-## Q. What is PEP 8?
+Ans.  First, let's discuss the local and global scope. By example, a variable defined inside a function is local to that function. Another variable defined outside any other scope is global to the function.
 
-Ans.  PEP 8 is a coding convention that lets us write more readable code. In other words, it is a set of recommendations.
-
-## Q. Explain the use of the ‘nonlocal’ keyword in Python.
-
-Ans.  First, let’s discuss the local and global scope. By example, a variable defined inside a function is local to that function. Another variable defined outside any other scope is global to the function.
-
-Suppose we have nested functions. We can read a variable in an enclosing scope from inside he inner function, but cannot make a change to it. For that, we must declare it nonlocal inside the function. First, let’s see this without the nonlocal keyword.
+Suppose we have nested functions. We can read a variable in an enclosing scope from inside he inner function, but cannot make a change to it. For that, we must declare it nonlocal inside the function. First, let's see this without the nonlocal keyword.
 
      def outer():
         a=7
@@ -2702,12 +2653,12 @@ Suppose we have nested functions. We can read a variable in an enclosing scope f
      outer()
 
 Traceback (most recent call last):  
-File “<pyshell#462>”, line 1, in <module> outer()
-File “<pyshell#461>”, line 7, in outer inner()
-File “<pyshell#461>”, line 4, in inner print(a)
-UnboundLocalError: local variable ‘a’ referenced before assignment
+File "<pyshell#462>", line 1, in <module> outer()
+File "<pyshell#461>", line 7, in outer inner()
+File "<pyshell#461>", line 4, in inner print(a)
+UnboundLocalError: local variable 'a' referenced before assignment
 
-So now, let’s try doing this with the ‘nonlocal’ keyword:
+So now, let's try doing this with the 'nonlocal' keyword:
 
      def outer():
         a=7
@@ -2752,8 +2703,8 @@ The solution:
 
 Ans. For this to happen, two conditions must be met:
 
-    The script file’s mode must be executable
-    The first line must begin with a hash(#). An  example of this will be: #!/usr/local/bin/python
+The script file's mode must be executable
+The first line must begin with a hash(#). An  example of this will be: #!/usr/local/bin/python
 
 ## Q. What functions or methods will you use to delete a file in Python?
 
@@ -2764,7 +2715,7 @@ Ans. For this, we may use remove() or unlink().
      os.remove('try.py')
     
 
-When we go and check our Desktop, the file is gone. Let’s go make it again so we can delete it again using unlink().
+When we go and check our Desktop, the file is gone. Let's go make it again so we can delete it again using unlink().
 
      os.unlink('try.py')
     
@@ -2773,7 +2724,7 @@ Both functions are the same, but unlink is the traditional Unix name for it.
 
 ## Q. What are accessors, mutators, and @property?
 
-Ans. What we call getters and setters in languages like Java, we term accessors and mutators in Python. In Java, if we have a user-defined class with a property ‘x’, we have methods like getX() and setX(). In Python, we have @property, which is syntactic sugar for property(). This lets us get and set variables without compromising on the conventions. For a detailed explanation on property, refer to Python property.
+Ans. What we call getters and setters in languages like Java, we term accessors and mutators in Python. In Java, if we have a user-defined class with a property 'x', we have methods like getX() and setX(). In Python, we have @property, which is syntactic sugar for property(). This lets us get and set variables without compromising on the conventions. For a detailed explanation on property, refer to Python property.
 
 
 ## Q. Differentiate between the append() and extend() methods of a list.
@@ -2818,17 +2769,17 @@ a=A()
 b=B()
 a.sayhello()
 ```
-Hello, I’m A
+Hello, I'm A
 ```py
 b.sayhello()
 ```
-Hello, I’m B
+Hello, I'm B
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is JSON? Describe in brief how you’d convert JSON data into Python data?
+## Q. What is JSON? Describe in brief how you'd convert JSON data into Python data?
 
 Ans. JSON stands for JavaScript Object Notation. It is a highly popular data format, and it stores data into NoSQL databases. JSON is generally built on the following two structures:
 
@@ -2864,7 +2815,7 @@ In Python, every name introduced has a place where it lives and can be hooked fo
 
 A namespace is a collection of names. It maps names to corresponding objects. When different namespaces contain objects with the same names, this avoids any name collisions. Internally, a namespace is implemented as a Python dictionary.
 
-On starting the interpreter, it creates a namespace for as long as we don’t exit. We have local namespaces, global namespaces, and a built-in namespace.
+On starting the interpreter, it creates a namespace for as long as we don't exit. We have local namespaces, global namespaces, and a built-in namespace.
 
 ## Q. Explain the differences between local and global namespaces.
 
@@ -2876,7 +2827,7 @@ Global, Local, Module and Class namespaces.
 
 ## Q. When would you use triple quotes as a delimiter?
 
-Triple quotes ‘’”” or ‘“ are string delimiters that can span multiple lines in Python. Triple quotes are usually used when spanning multiple lines, or enclosing a string that has a mix of single and double quotes contained therein.
+Triple quotes ''"" or '" are string delimiters that can span multiple lines in Python. Triple quotes are usually used when spanning multiple lines, or enclosing a string that has a mix of single and double quotes contained therein.
 
 
 ## Q. How to use GUI that comes with Python to test your code?
@@ -2897,27 +2848,27 @@ B is the minor version number, incremented for less earth-shattering changes.
 C is the micro-level. It is incremented for each bug fix release.
 Not all releases are bug fix releases. 
 
-In the run-up to a new major release, ‘A’ series of development releases are made denoted as alpha, beta, or release candidate.
+In the run-up to a new major release, 'A' series of development releases are made denoted as alpha, beta, or release candidate.
 
-Alphas are early releases in which interfaces aren’t finalized yet; it’s not unexpected to see an interface change between two alpha releases.
+Alphas are early releases in which interfaces aren't finalized yet; it's not unexpected to see an interface change between two alpha releases.
 
 Betas are more stable, preserving existing interfaces but possibly adding new modules, and release candidates are frozen, making no changes except as needed to fix critical bugs.
 
 Alpha, beta and release candidate versions have an additional suffix.
 
-The suffix for an alpha version is “aN” for some small number N,
+The suffix for an alpha version is "aN" for some small number N,
 
-The suffix for a beta version is “bN” for some small number N,
+The suffix for a beta version is "bN" for some small number N,
 
-And the suffix for a release candidate version is “cN” for some small number N.
+And the suffix for a release candidate version is "cN" for some small number N.
 
 In other words, all versions labeled 2.0aN precede the versions labeled 2.0bN, which precede versions labeled 2.0cN, and those precede 2.0.
 
-You may also find version numbers with a “+” suffix, e.g. “2.2+”. These are unreleased versions, built directly from the subversion trunk. In practice, after a final minor release is made, the subversion trunk is incremented to the next minor version, which becomes the “a0” version, e.g. “2.4a0”.
+You may also find version numbers with a "+" suffix, e.g. "2.2+". These are unreleased versions, built directly from the subversion trunk. In practice, after a final minor release is made, the subversion trunk is incremented to the next minor version, which becomes the "a0" version, e.g. "2.4a0".
 
 ## Q. Where is math.py (socket.py, regex.py, etc.) source file?
 
-If you can’t find a source file for a module, it may be a built-in or dynamically loaded module implemented in C, C++ or other compiled language. In this case you may not have the source file or it may be something like mathmodule.c, somewhere in a C source directory (not on the Python Path). There are (at least) three kinds of modules in Python:
+If you can't find a source file for a module, it may be a built-in or dynamically loaded module implemented in C, C++ or other compiled language. In this case you may not have the source file or it may be something like mathmodule.c, somewhere in a C source directory (not on the Python Path). There are (at least) three kinds of modules in Python:
 
 - Modules written in Python (.py);
 - Modules written in C and dynamically loaded (.dll, .pyd, .so, .sl, etc);
@@ -2927,27 +2878,27 @@ Import sys print sys.builtin_module_names;
 ## Q. How do I make a Python script executable on UNIX?
 
 You need to do two things:
-The script file’s mode must be executable and the first line must begin with “#!” followed by the path of the Python interpreter. 
-- The first is done by executing chmod +x scriptfile or perhaps chmod 755 ‘script’ file.
+The script file's mode must be executable and the first line must begin with "#!" followed by the path of the Python interpreter. 
+- The first is done by executing chmod +x scriptfile or perhaps chmod 755 'script' file.
 - The second can be done in a number of ways.
 
 The most straightforward way is to write:   
 `#!/usr/local/bin/python`
 
-as the very first line of your file, using the pathname for where the Python interpreter is installed on your platform. If you would like the script to be independent of where the Python interpreter lives, you can use the “env” program. Almost all UNIX variants support the following, assuming the python interpreter is in a directory on the users $PATH:
+as the very first line of your file, using the pathname for where the Python interpreter is installed on your platform. If you would like the script to be independent of where the Python interpreter lives, you can use the "env" program. Almost all UNIX variants support the following, assuming the python interpreter is in a directory on the users $PATH:
 
 `#! /usr/bin/env python`
 
-Don’t do this for CGI scripts. The __$PATH__ variable for CGI scripts is often minimal, so you need to use the actual absolute pathname of the interpreter. Occasionally, a user’s environment is so full that the /usr/bin/env program fails; or there’s no env program at all. In that case, you can try the following hack (due to Alex Rezinsky):
+Don't do this for CGI scripts. The __$PATH__ variable for CGI scripts is often minimal, so you need to use the actual absolute pathname of the interpreter. Occasionally, a user's environment is so full that the /usr/bin/env program fails; or there's no env program at all. In that case, you can try the following hack (due to Alex Rezinsky):
 
 ```py
 #! /bin/sh
-“””:”
-exec python $0 ${1+”$@”}
-“””
+""":"
+exec python $0 ${1+"$@"}
+"""
 ```
-The minor disadvantage is that this defines the script’s `__doc__`string. However, you can fix that by adding:  
-`__doc__ = “””…Whatever…”””`
+The minor disadvantage is that this defines the script's `__doc__`string. However, you can fix that by adding:  
+`__doc__ = """…Whatever…"""`
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2965,17 +2916,17 @@ def handler(signum, frame):
 To dynamically load g++ extension modules, you must: 
 Recompile Python
 Re-link it using g++ (change LINKCC in the python Modules Makefile)
-Link your extension module using g++ (e.g., “g++ -shared -o mymodule.so mymodule.o”).
+Link your extension module using g++ (e.g., "g++ -shared -o mymodule.so mymodule.o").
 
 ## Q. How do I send mail from a Python script?
 
-Use the standard library module smtplib. Here’s a very simple interactive mail sender that uses it. This method will work on any host that supports an SMTP listener.
+Use the standard library module smtplib. Here's a very simple interactive mail sender that uses it. This method will work on any host that supports an SMTP listener.
 ```py
 import sys, smtplib
-fromaddr = raw_input(“From: “)
-toaddrs = raw_input(“To: “).split(‘,’)
-print “Enter message, end with ^D:”
-msg = ”
+fromaddr = raw_input("From: ")
+toaddrs = raw_input("To: ").split(',')
+print "Enter message, end with ^D:"
+msg = "
 while 1:
     line = sys.stdin.readline()
     if not line:
@@ -2984,101 +2935,79 @@ while 1:
 msg = msg + line
 
 # The actual mail send
-server = smtplib.SMTP(‘localhost’)
+server = smtplib.SMTP('localhost')
 server.sendmail(fromaddr, toaddrs, msg)
 server.quit()
 ```
-A UNIX-only alternative uses send mail. The location of the send mail program varies between systems; sometimes it is /usr/lib/sendmail, sometime /usr/sbin/sendmail. The send mail manual page will help you out. Here’s some sample code:
+A UNIX-only alternative uses send mail. The location of the send mail program varies between systems; sometimes it is /usr/lib/sendmail, sometime /usr/sbin/sendmail. The send mail manual page will help you out. Here's some sample code:
 
 ```py
-SENDMAIL = “/usr/sbin/sendmail” # sendmail location
+SENDMAIL = "/usr/sbin/sendmail" # sendmail location
 import os
-p = os.popen(“%s -t -i” % SENDMAIL, “w”)
-p.write(“To: receiver@example.comn“)
-p.write(“Subject: testn”)
-p.write(“n”) # blank line separating headers from body
-p.write(“Some textn”)
-p.write(“some more textn”)
+p = os.popen("%s -t -i" % SENDMAIL, "w")
+p.write("To: receiver@example.comn")
+p.write("Subject: testn")
+p.write("n") # blank line separating headers from body
+p.write("Some textn")
+p.write("some more textn")
 sts = p.close()
 if sts != 0:
-    print (“Sendmail exit status”, sts)
+    print ("Sendmail exit status", sts)
 ```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. How can I mimic CGI form submission (METHOD=POST)? I would like to retrieve web pages that are the result of posting a form. Is there existing code that would let me do this easily?
+## Q. How can I mimic CGI form submission (METHOD=POST)? I would like to retrieve web pages that are the result of posting a form.
 
-Yes. Here’s a simple example that uses httplib:
+Yes. Here is a simple example that uses httplib:
 ```py
 #!/usr/local/bin/python
 import httplib, sys, time
+
 ### build the query string
-qs = “First=Josephine&MI=Q&Last=Public”
+qs = "First=Josephine&MI=Q&Last=Public"
+
 ### connect and send the server a path
-httpobj = httplib.HTTP(‘www.some-server.out-there’, 80)
-httpobj.putrequest(‘POST’, ‘/cgi-bin/some-cgi-script’)
+httpobj = httplib.HTTP('www.some-server.out-there', 80)
+httpobj.putrequest('POST', '/cgi-bin/some-cgi-script')
+
 ### now generate the rest of the HTTP headers…
-httpobj.putheader(‘Accept’, ‘*/*’)
-httpobj.putheader(‘Connection’, ‘Keep-Alive’)
-httpobj.putheader(‘Content-type’, ‘application/x-www-form-urlencoded’)
-httpobj.putheader(‘Content-length’, ‘%d’ % len(qs))
+httpobj.putheader('Accept', '*/*')
+httpobj.putheader('Connection', 'Keep-Alive')
+httpobj.putheader('Content-type', 'application/x-www-form-urlencoded')
+httpobj.putheader('Content-length', '%d' % len(qs))
 httpobj.endheaders()
 httpobj.send(qs)
+
 ### find out what the server said in response…
 reply, msg, hdrs = httpobj.getreply()
 if reply != 200:
 sys.stdout.write(httpobj.getfile().read())
 ```
-Note that in general for URL-encoded POST operations, query strings must be quoted by using urllib.quote(). For example to send name=”Guy Steele, Jr.”:
+Note that in general for URL-encoded POST operations, query strings must be quoted by using urllib.quote(). For example to send name="Guy Steele, Jr.":
+
 ```py
 from urllib import quote
-x = quote(“Guy Steele, Jr.”)
+x = quote("Guy Steele, Jr.")
 print(x)
-‘Guy%20Steele,%20Jr.’
- query_string = “name=”+x
+'Guy%20Steele,%20Jr.'
+ query_string = "name="+x
  query_string
-‘name=Guy%20Steele,%20Jr.’
+'name=Guy%20Steele,%20Jr.'
 ```
 ## Q. Why is that none of my threads are not running? How can I make it work?
 
 As soon as the main thread exits, all threads are killed. Your main thread is running too quickly, giving the threads no time to do any work.
-A simple fix is to add a sleep to the end of the program that’s long enough for all the threads to finish:
+A simple fix is to add a sleep to the end of the program that's long enough for all the threads to finish:
+
 ```py
 import threading, time
 def thread_task(name, n):
 for i in range(n): print name, i
 for i in range(10)
 ```
-
-## Q. Installation of Python 3.6.1
-
-Download the required 3.6.1 python, executable installer file from the www.python.org.com website.
->
-    Installation Process:
-    Click on the downloaded executable installer
-    Click On ‘Run’
-    Click on Customize Installation
-    Click on ‘Next’
-    Select the installation location by clicking on browse button
-    Click on ‘Install’
-    Click on ‘Yes’
-    Click on ‘Close’
-
-Path: Path is an environment variable of operating system by using e=which we can make it available the softwares which are installed in the directory to all other directions of the operating system.
-To set Path:
->
-    Right click on my computer
-    Click on properties
-    Click on Advanced system setting
-    Click on advanced
-    Click on environment variables
-    Go to system variables, select ‘path’
-    Click on ‘edit’
-    Copy the installation folder location of python software in the begging of the variable value
-    Click on ‘OK’
-    Now path setting is secured.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -3108,7 +3037,7 @@ X, Y is not find.
 Interactive  mode is unfit for looping purpose.
 
 Interactive Mode:
-The concept of submitting one by one python statements explicitly in the python interpreter is known as “Interactive Mode”
+The concept of submitting one by one python statements explicitly in the python interpreter is known as "Interactive Mode"
 In Order to submit the one by one python statements explicitly to the python interpreter we use python command line shell.
 Python command line shell is present in python software
 We can open the python command line shell by executing python command on command prompt or terminal
@@ -3117,8 +3046,8 @@ c:/users/mindmajix>python
 `3+4`   
 7   
 
-`‘mindmajix’*3`     
-‘mindmajix mindmajix mindmajix’     
+`'mindmajix'*3`     
+'mindmajix mindmajix mindmajix'     
 
 `x=1000`    
 `y=2000`    
@@ -3127,12 +3056,12 @@ c:/users/mindmajix>python
 Quit    
 x+y     
 c:/users/sailu>python
-Error: name ‘X’ not defined
+Error: name 'X' not defined
 
 Batch Mode:     
 In the concept of writing the group of python statements in a file, save the file with extension .py and submit that entire file to the python interpreter is known as Batch Mode.      
 
-In Order to develop the python files we use editors or IDE’s
+In Order to develop the python files we use editors or IDE's
 Different editors are notepad, notepad++, edit+,nano, VI, gedil and so on.      
 Open the notepad and write the following code:
 
@@ -3170,36 +3099,31 @@ D:/mindmajix Python>python Demo.py
 
 ## Q. What are The Data Types Supports in Python Language?   
 
-    - Numbers- Numbers use to hold numerical values.
-    
-    - Strings- A string is a sequence of characters.  We declare it using single or double quotes.
-    
-    - Lists- A list is an ordered collection of values, and we declare it using square brackets.
-    
-    - Tuples- A tuple, like a list, is an ordered collection of values. The difference. However, is that a tuple is immutable. This means that we cannot change a value in it.
-    
-    - Dictionary- A dictionary is a data structure that holds key-value pairs. We declare it using curly braces.
-    
-    - We can also use a dictionary comprehension:
-    
-    Numbers:
-        Int
-        Float
-        Complex
-    Boolean
-    Operational:
-        Strings
-        List
-        Tuple
-        Set
-        Dictionary
+- Numbers- Numbers use to hold numerical values.
+- Strings- A string is a sequence of characters.  We declare it using single or double quotes.   
+- Lists- A list is an ordered collection of values, and we declare it using square brackets.
+- Tuples- A tuple, like a list, is an ordered collection of values. The difference. However, is that a tupleis immutable. This means that we cannot change a value in it.
+- Dictionary- A dictionary is a data structure that holds key-value pairs. We declare it using curly braces.
+- We can also use a dictionary comprehension:
 
-Every data type in python language is internally implemented as a class. Python language data types are categorized into two types. 
+Numbers:
+    Int
+    Float
+    Complex
+Boolean
+Operational:
+    Strings
+    List
+    Tuple
+    Set
+    Dictionary
+
+Every data type in python language is internally implemented as a class. Python language data types are categorized into two types.
 
 They are:
 
-    Fundamental Types
-    Collection Types
+Fundamental Types
+Collection Types
 
 ### _Control Flow_
 
@@ -3222,15 +3146,15 @@ The code in the else block is executed after the for loop completes, unless a br
 
 ## Q. Explain the use of break and continue in Python looping.
 
-The break statement stops execution of the current loop. and transfers control to the next block. The continue statement ends the current block’s execution and jumps to the next iteration of the loop.
+The break statement stops execution of the current loop. and transfers control to the next block. The continue statement ends the current block's execution and jumps to the next iteration of the loop.
 
 ## Q. When would you use a continue statement in a for loop?
 
-When processing a particular item was complete; to move on to the next, without executing further processing in the block. The continue statement says, “I’m done processing this item, move on to the next item.”
+When processing a particular item was complete; to move on to the next, without executing further processing in the block. The continue statement says, "I'm done processing this item, move on to the next item."
 
 ## Q. When would you use a break statement in a for loop?
 
-When the loop has served its purpose. As an example. after finding the item in a list searched for, there is no need to keep looping. The break statement says, I’m done in this loop; move on to the next block of code.”
+When the loop has served its purpose. As an example. after finding the item in a list searched for, there is no need to keep looping. The break statement says, I'm done in this loop; move on to the next block of code."
 
 ## Q. What is the structure of a for loop?
 
@@ -3242,23 +3166,23 @@ while : … The ellipsis represents a code block to be executed. until the condi
 
 ## Q. Use a for loop and illustrate how you would define and print the characters in a string out, one per line.
 ```
-myString = “I Love Python”
+myString = "I Love Python"
 for myChar hi myString:
     print(myChar)
 ```
-## Q. Given the string “I LoveQPython” use afor loop and illustrate printing each character tip to, but not including the Q.
+## Q. Given the string "I LoveQPython" use afor loop and illustrate printing each character tip to, but not including the Q.
 ```
 inyString = "I Love Pijtlzon"
 for myCizar in myString:    
-    fmyC’har ==
+    fmyC'har ==
     break
 print(myChar)
 ```
-## Q. Given the string “I Love Python” print out each character except for the spaces, using a for loop.
+## Q. Given the string "I Love Python" print out each character except for the spaces, using a for loop.
 
-inyString = I Love Python”
+inyString = I Love Python"
 for myCizar in myString:
-fmyChar == ‘’ ‘’:
+fmyChar == '' '':
 continue
 print myChar
 
@@ -3298,7 +3222,7 @@ while i < 10:
     print(len(z))
     p=(10,20,30,40,50,10,20,10) Insertion & duplicate
     print(p)
-    q=(100, 123.123, True, “mindmajix”) Heterogeneous
+    q=(100, 123.123, True, "mindmajix") Heterogeneous
     print(q)
     Output:
 
@@ -3336,12 +3260,12 @@ while i < 10:
 
 By default python interpreter search for the imported modules in the following locations:
 
-    - Current directory (main module location)
-    - Environment variable path
-    - Installation dependent directory
-    - If the imported module is not found in the any one of the above locations. Then python interpreter gives error.
-    - Built-in attributes of a module:
-    - By default for each and every python module some properties are added internally and we call those properties as a built-in-attribute of a module
+- Current directory (main module location)
+- Environment variable path
+- Installation dependent directory
+- If the imported module is not found in the any one of the above locations. Then python interpreter giveserror.
+- Built-in attributes of a module:
+- By default for each and every python module some properties are added internally and we call thoseproperties as a built-in-attribute of a module
 
 ## Q. What are the Packages?
 
@@ -3361,6 +3285,10 @@ We can open the files by calling open function of built-in-modules
 At the time of opening the file, we have to specify the mode of the file
 Mode of the file indicates for what purpose the file is going to be opened(r,w,a,b)
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. What are the Runtime Errors?
 
 The errors which occurs after starting the execution of the programs are known as runtime errors. Runtime errors can occur because of:
@@ -3376,6 +3304,10 @@ While executing the program if any runtime error is occur corresponding runtime 
 Creating runtime error representation class object is technically known as a rising exception
 While executing the program if any exception is raised, then internally python interpreter verify any code is implemented to handle raised exception or not
 If code is not implemented to handle raised exception then program will be terminated abnormally
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. What is Abnormal Termination?
 
@@ -3393,17 +3325,25 @@ try{
 The statements which causes to run time errors and other statements which depends on the execution of run time errors statements are recommended to represent in try block
 While executing try block statement if any exception is raised then immediately try block identifies that exception, receive that exception and forward that exception to except block without executing remaining statements to try block.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. What is the Difference Between Methods & Constructors?
 
 Methods 	
 - Method name can be any name.
-- With respect to one object one method can be called for ‘n’ members of lines 	
+- With respect to one object one method can be called for 'n' members of lines 	
 - Methods are used to represent business logic to perform the operations
 
 Constructor
 - Constructor will be executed automatically whenever we create a object.
 - With respect to one object one constructor can be executed only once
 - Constructors are used to define & initialize the non static variable
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. What is the Encapsulation?
 
@@ -3414,17 +3354,21 @@ The concept of binding or grouping related data members along with its related f
 DML (Data Modification Language) Commands are used to modify the data of the database objects
 Whenever we execute DML Commands the records are going to be modified temporarily.
 
-Whenever we run “rollback” command the modified records will come back to its original state.
+Whenever we run "rollback" command the modified records will come back to its original state.
 
-To modify the records of the database objects permanently we use “commit” command
+To modify the records of the database objects permanently we use "commit" command
 
-After executing the commit command even though we execute “rollback” command, the modified records will not come back to its original state.
+After executing the commit command even though we execute "rollback" command, the modified records will not come back to its original state.
 
 Create the emp1 table in the database by using following command    
 `Create table emp1 as select * from emp;`
 
 Whenever we run the DML commands through the python program, then the no.of records which are modified because of that command will be stored into the rowcount attribute of cursor object.     
 After executing the DML Command through the python program we have to call commit method of cursor object.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ### _Multithreading_
 
@@ -3443,6 +3387,10 @@ Whenever sleep fun or join methods are called on the running state threads then 
 Whenever waiting time is over or specified thread execution is over - then immediately waiting state threads are forwarded for scheduling.
 - If running state threads execution is over then immediately those threads execution will be terminated
  -The threads which execution is terminated are known as dead state threads.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. What is scheduling?
 
@@ -3467,42 +3415,49 @@ For loop takes the given object, convert that object in the form of iterable obj
 
 While getting the one by value element from the iterable object if stop iteration exception is raised then for loop internally handle that exception
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. OS Module
 
 OS Module is a predefined module and which provides various functions and methods to perform the operating system related activities, such as creating the files, removing the files, creating the directories removing the directories, executing the operating system related commands, etc.
 Example:
+
 ```py
 import os
 cwd=os.getwd()
-print(“1”, cwd)
-os.chdir(“samples”)
-print(“2”, os.getcwd())
+print("1", cwd)
+os.chdir("samples")
+print("2", os.getcwd())
 os.chdir(os.pardir)
-print(“3”,os.getcwd())
+print("3",os.getcwd())
 ```
 Output:
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. What Are Applications of Python?
 
 Applications of Python
 
-    - Automation App    
-    - Data Analytics 	       
-    - Scientific App 
-    - Web App 	
-    - Web Scrapping 
-    - Test Cases 	
-    - Network with IOT 
-    - Admin Script 	
-    - GUI 	 
-    - Gaming 	 
-    - Animation 	
+- Automation App    
+- Data Analytics 	       
+- Scientific App 
+- Web App 	
+- Web Scrapping 
+- Test Cases 	
+- Network with IOT 
+- Admin Script 	
+- GUI 	 
+- Gaming 	 
+- Animation 	
 
-
-## Q. What is PEP 8?
-
-PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. How Python is interpreted?
 
@@ -3511,8 +3466,6 @@ Python language is an interpreted language. Python program runs directly from th
 ## Q. What are the tools that help to find bugs or perform static analysis?
 
 PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug. Pylint is another tool that verifies whether the module meets the coding standard.
-
-
 
 ## Q. What is pass in Python?
 
@@ -3530,7 +3483,7 @@ A mechanism to select a range of items from sequence types like list, tuple, str
 ## Q. What are generators in Python?
 
 The way of implementing iterators are known as generators. It is a normal function except that it yields expression in the function.    
-Python generator produces a sequence of values to iterate on. This way, it is kind of an iterable. We define a function that ‘yields’ values one by one, and then use a for loop to iterate on it.
+Python generator produces a sequence of values to iterate on. This way, it is kind of an iterable. We define a function that 'yields' values one by one, and then use a for loop to iterate on it.
 ```
     def squares(n):
         i=1
@@ -3571,36 +3524,25 @@ And now, when we call it again, it raises a StopIteration exception. This is bec
      next(odds)
 
     Traceback (most recent call last):
-    File “<pyshell#295>”, line 1, in <module> next(odds)
+    File "<pyshell#295>", line 1, in <module> next(odds)
     StopIteration
 
-## Q. we asked you about generators and iterators, and you gave us the right answers. But don’t they sound similar?
+## Q. Explain generators and iterators in python?
 
 - They do, but there are subtle differences:
 
-    - For a generator, we create a function. For an iterator, we use in-built functions `iter()` and `next()`.
-
-    - For a generator, we use the keyword ‘yield’ to yield/return an object at a time.
-
-    - A generator may have as many ‘yield’ statements as you want.
-
-    - A generator will save the states of the local variables every time ‘yield’ will pause the loop. 
-
-
-    - An iterator does not use local variables; it only needs an iterable to iterate on.
-
-    - Using a class, you can implement your own iterator, but not a generator.
-
-    - Generators are fast, compact, and simpler.
-
-    - Iterators are more memory-efficient.
-
+- For a generator, we create a function. For an iterator, we use in-built functions `iter()` and `next()`.
+- For a generator, we use the keyword 'yield' to yield/return an object at a time.
+- A generator may have as many 'yield' statements as you want.
+- A generator will save the states of the local variables every time 'yield' will pause the loop. 
+- An iterator does not use local variables; it only needs an iterable to iterate on.
+- Using a class, you can implement your own iterator, but not a generator.
+- Generators are fast, compact, and simpler.
+- Iterators are more memory-efficient.
 
 ## Q. How can you copy an object in Python?
 
 To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.
-
-
 
 ## Q. How you can convert a number to a string?
 
@@ -3654,11 +3596,12 @@ Module = =PyImport_ImportModule("<modulename>");
 It is a Floor Divisionoperator , which is used for dividing two operands with the result as quotient showing only digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
 
 ## Q. Mention five benefits of using Python?
-    - Python comprises of a huge standard library for most Internet platforms like Email, HTML, etc.
-    - Python does not require explicit memory management as the interpreter itself allocates the memory to new variables and free them automatically
-    - Provide easy readability due to use of square brackets
-    - Easy-to-learn for beginners
-    - Having the built-in data types saves programming time and effort from declaring variables
+
+- Python comprises of a huge standard library for most Internet platforms like Email, HTML, etc.
+- Python does not require explicit memory management as the interpreter itself allocates the memory to newvariables and free them automatically
+- Provide easy readability due to use of square brackets
+- Easy-to-learn for beginners
+- Having the built-in data types saves programming time and effort from declaring variables
 
 ## Q. Mention the use of the split function in Python?
 
@@ -3678,35 +3621,41 @@ The data in the failed server won't get removed, but there is a provision for au
 
 ## Q. Explain how you can minimize the Memcached server outages in your Python Development?
 
-   - When one instance fails, several of them goes down, this will put larger load on the database server when lost data is reloaded as client make a request. To avoid this, if your code has been written to minimize cache stampedes then it will leave a minimal impact
-    - Another way is to bring up an instance of Memcached on a new machine using the lost machines IP address
-    - Code is another option to minimize server outages as it gives you the liberty to change the Memcached server list with minimal work
-    -  Setting timeout value is another option that some Memcached clients implement for Memcached server outage. When your Memcached server goes down, the client will keep trying to send a request till the time-out limit is reached
+- When one instance fails, several of them goes down, this will put larger load on the database server when lost data is reloaded as client make a request. To avoid this, if your code has been written to minimize cache stampedes then it will leave a minimal impact
+- Another way is to bring up an instance of Memcached on a new machine using the lost machines IP address
+- Code is another option to minimize server outages as it gives you the liberty to change the Memcached server list with minimal work
+-  Setting timeout value is another option that some Memcached clients implement for Memcached server outage. When your Memcached server goes down, the client will keep trying to send a request till the time-out limit is reached
 
-- Explain what is Dogpile effect? How can you prevent this effect?
+## Q. Explain what is Dogpile effect? How can you prevent this effect?
 
 Dogpile effect is referred to the event when cache expires, and websites are hit by the multiple requests made by the client at the same time.  
 This effect can be prevented by using semaphore lock. In this system when value expires, first process acquires the lock and starts generating new value.
 
-- Explain how Memcached should not be used in your Python project?
+## Q. Explain how Memcached should not be used in your Python project?
 
-Memcached common misuse is to use it as a data store, and not as a cache. Never use Memcached as the only source of the information you need to run your application. Data should always be available through another source as well. Memcached is just a key or value store and cannot perform query over the data or iterate over the contents to extract information.      
+Memcached common misuse is to use it as a data store, and not as a cache. Never use Memcached as the only source of the information you need to run your application. Data should always be available through another source as well. Memcached is just a key or value store and cannot perform query over the data or iterate over the contents to extract information.
+
 Memcached does not offer any form of security either in encryption or authentication
-
 
 ## Q. What is List Comprehensions feature of Python used for?
 
 List comprehensions help to create and manage lists in a simpler and clearer way than using `map()`, `filter()` and `lambda`. Each list comprehension consists of an expression followed by a for clause, then zero or more for or if clauses.
 
-## Q. What are lambda expressions, list comprehensions and generator expressions? What are the advantages and appropriate uses of each?
+## Q. What are lambda expressions, list comprehensions and generator expressions?
 
-**Lambda expressions** are a shorthand technique for creating single line, anonymous functions. Their simple, inline nature often – though not always – leads to more readable and concise code than the alternative of formal function declarations. On the other hand, their terse inline nature, by definition, very much limits what they are capable of doing and their applicability. Being anonymous and inline, the only way to use the same lambda function in multiple locations in your code is to specify it redundantly.
+**Lambda expressions**
 
-**List comprehensions** provide a concise syntax for creating lists. List comprehensions are commonly used to make lists where each element is the result of some operation(s) applied to each member of another sequence or iterable. They can also be used to create a subsequence of those elements whose members satisfy a certain condition. In Python, list comprehensions provide an alternative to using the built-in map() and filter() functions.
+are a shorthand technique for creating single line, anonymous functions. Their simple, inline nature often – though not always – leads to more readable and concise code than the alternative of formal function declarations. On the other hand, their terse inline nature, by definition, very much limits what they are capable of doing and their applicability. Being anonymous and inline, the only way to use the same lambda function in multiple locations in your code is to specify it redundantly.
+
+**List comprehensions**
+
+provide a concise syntax for creating lists. List comprehensions are commonly used to make lists where each element is the result of some operation(s) applied to each member of another sequence or iterable. They can also be used to create a subsequence of those elements whose members satisfy a certain condition. In Python, list comprehensions provide an alternative to using the built-in map() and filter() functions.
 
 As the applied usage of lambda expressions and list comprehensions can overlap, opinions vary widely as to when and where to use one vs. the other. One point to bear in mind, though, is that a list comprehension executes somewhat faster than a comparable solution using map and lambda (some quick tests yielded a performance difference of roughly 10%). This is because calling a lambda function creates a new stack frame while the expression in the list comprehension is evaluated without doing so.
 
-**Generator expressions** are syntactically and functionally similar to list comprehensions but there are some fairly significant differences between the ways the two operate and, accordingly, when each should be used. In a nutshell, iterating over a generator expression or list comprehension will essentially do the same thing, but the list comprehension will create the entire list in memory first while the generator expression will create the items on the fly as needed. Generator expressions can therefore be used for very large (and even infinite) sequences and their lazy (i.e., on demand) generation of values results in improved performance and lower memory usage. It is worth noting, though, that the standard Python list methods can be used on the result of a list comprehension, but not directly on that of a generator expression.
+**Generator expressions** 
+
+are syntactically and functionally similar to list comprehensions but there are some fairly significant differences between the ways the two operate and, accordingly, when each should be used. In a nutshell, iterating over a generator expression or list comprehension will essentially do the same thing, but the list comprehension will create the entire list in memory first while the generator expression will create the items on the fly as needed. Generator expressions can therefore be used for very large (and even infinite) sequences and their lazy (i.e., on demand) generation of values results in improved performance and lower memory usage. It is worth noting, though, that the standard Python list methods can be used on the result of a list comprehension, but not directly on that of a generator expression.
 
 - Consider the two approaches below for initializing an array and the arrays that will result. How will the resulting arrays differ and why should you use one initialization approach vs. the other?
 
@@ -3726,7 +3675,9 @@ As the applied usage of lambda expressions and list comprehensions can overlap, 
 
  # WHICH METHOD SHOULD YOU USE AND WHY?
 ```
+
 **Ans:**
+
 While both methods appear at first blush to produce the same result, there is an extremely significant difference between the two. Method 2 produces, as you would expect, an array of 3 elements, each of which is itself an independent 4-element array. In method 1, however, the members of the array all point to the same object. This can lead to what is most likely unanticipated and undesired behavior as shown below.
 
 ```py
@@ -3735,13 +3686,13 @@ x[0][3] = 99
 x
 [[1, 2, 3, 99], [1, 2, 3, 99], [1, 2, 3, 99]]
 
-# UH-OH, DON’T THINK YOU WANTED THAT TO HAPPEN!
+# UH-OH, DON'T THINK YOU WANTED THAT TO HAPPEN!
 ...
 # MODIFYING THE y ARRAY FROM THE PRIOR CODE SNIPPET:
 y[0][3] = 99
 y
 [[1, 2, 3, 99], [1, 2, 3, 4], [1, 2, 3, 4]]
-# THAT’S MORE LIKE WHAT YOU EXPECTED!
+# THAT'S MORE LIKE WHAT YOU EXPECTED!
 ...
 ```
 
@@ -3807,7 +3758,9 @@ x,y = y,x
 x,y
 ('Y', 'X')
 ```
-Q: What will be printed out by the last statement below?
+
+## Q. What will be printed out by the last statement below?
+
 ```py
 flist = []
 for i in range(3):
@@ -3819,7 +3772,8 @@ In any closure in Python, variables are bound by name. Thus, the above line of c
 [2, 2, 2]   
 Presumably not what the author of the above code intended?
 
-A workaround is to either create a separate function or to pass the args by name; e.g.:
+A workaround is to either create a separate function or to pass the args by name; e.g.
+
 ```py
 flist = []
 for i in range(3):  
@@ -3831,7 +3785,7 @@ for i in range(3):
 
 ## Q. Is Python interpreted or compiled?
 
-As noted in Why Are There So Many Pythons?, this is, frankly, a bit of a trick question in that it is malformed. Python itself is nothing more than an interface definition (as is true with any language specification) of which there are multiple implementations. Accordingly, the question of whether “Python” is interpreted or compiled does not apply to the Python language itself; rather, it applies to each specific implementation of the Python specification.
+As noted in Why Are There So Many Pythons?, this is, frankly, a bit of a trick question in that it is malformed. Python itself is nothing more than an interface definition (as is true with any language specification) of which there are multiple implementations. Accordingly, the question of whether "Python" is interpreted or compiled does not apply to the Python language itself; rather, it applies to each specific implementation of the Python specification.
 
 Further complicating the answer to this question is the fact that, in the case of CPython (the most common Python implementation), the answer really is "sort of both". Specifically, with CPython, code is first compiled and then interpreted. More precisely, it is not precompiled to native machine code, but rather to bytecode. While machine code is certainly faster, bytecode is more portable and secure. The bytecode is then interpreted in the case of CPython (or both interpreted and compiled to optimized machine code at runtime in the case of PyPy).
 
@@ -3839,7 +3793,7 @@ Further complicating the answer to this question is the fact that, in the case o
 
 One of the more prominent alternative implementations is Jython, a Python implementation written in Java that utilizes the Java Virtual Machine (JVM). While CPython produces bytecode to run on the CPython VM, Jython produces Java bytecode to run on the JVM.
 
-Another is IronPython, written in C# and targeting the .NET stack. IronPython runs on Microsoft’s Common Language Runtime (CLR).
+Another is IronPython, written in C# and targeting the .NET stack. IronPython runs on Microsoft's Common Language Runtime (CLR).
 
 As also pointed out in Why Are There So Many Pythons?, it is entirely possible to survive without ever touching a non-CPython implementation of Python, but there are advantages to be had from switching, most of which are dependent on your technology stack.
 
@@ -3851,19 +3805,19 @@ Another noteworthy alternative implementation is PyPy whose key features include
 - Sandboxing. PyPy provides the ability to run untrusted code in a fully secure way.
 - Stackless mode. PyPy comes by default with support for stackless mode, providing micro-threads for massive concurrency.
 
-## Q. What is unittest in Python? What’s your approach to unit testing in Python?
+## Q. What is unittest in Python? What's your approach to unit testing in Python?
 
 A unit testing framework in Python is known as unittest. It supports sharing of setups, automation testing, shutdown code for tests, aggregation of tests into collections etc.
 
-The most fundamental answer to this question centers around Python’s unittest testing framework. Basically, if a candidate doesn’t mention unittest when answering this question, that should be a huge red flag.
+The most fundamental answer to this question centers around Python's unittest testing framework. Basically, if a candidate doesn't mention unittest when answering this question, that should be a huge red flag.
 
 `unittest` supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections, and independence of the tests from the reporting framework. The unittest module provides classes that make it easy to support these qualities for a set of tests.
 
-Assuming that the candidate does mention unittest (if they don’t, you may just want to end the interview right then and there!), you should also ask them to describe the key elements of the unittest framework; namely, test fixtures, test cases, test suites and test runners.
+Assuming that the candidate does mention unittest (if they don't, you may just want to end the interview right then and there!), you should also ask them to describe the key elements of the unittest framework; namely, test fixtures, test cases, test suites and test runners.
 
 A more recent addition to the unittest framework is mock. mock allows you to replace parts of your system under test with mock objects and make assertions about how they are to be used. mock is now part of the Python standard library, available as unittest.mock in Python 3.3 onwards.
 
-The value and power of mock are well explained in An Introduction to Mocking in Python. As noted therein, system calls are prime candidates for mocking: whether writing a script to eject a CD drive, a web server which removes antiquated cache files from /tmp, or a socket server which binds to a TCP port, these calls all feature undesired side-effects in the context of unit tests. Similarly, keeping your unit-tests efficient and performant means keeping as much “slow code” as possible out of the automated test runs, namely filesystem and network access.
+The value and power of mock are well explained in An Introduction to Mocking in Python. As noted therein, system calls are prime candidates for mocking: whether writing a script to eject a CD drive, a web server which removes antiquated cache files from /tmp, or a socket server which binds to a TCP port, these calls all feature undesired side-effects in the context of unit tests. Similarly, keeping your unit-tests efficient and performant means keeping as much "slow code" as possible out of the automated test runs, namely filesystem and network access.
 
 [Note: This question is for Python developers who are also experienced in Java.]
 
@@ -3871,31 +3825,31 @@ The value and power of mock are well explained in An Introduction to Mocking in 
 
 Ans.  For this purpose, we have the module unittest in Python. It has the following members:
 >
-    FunctionTestCase
-    SkipTest
-    TestCase
-    TestLoader
-    TestResult
-    TestSuite
-    TextTestResult
-    TextTestRunner
-    defaultTestLoader
-    expectedFailure
-    findTestCases
-    getTestCaseNames
-    installHandler
-    main
-    makeSuite
-    registerResult
-    removeHandler
-    removeResult
-    skip
-    skipIf
-    skipUnless
+- FunctionTestCase
+- SkipTest
+- TestCase
+- TestLoader
+- TestResult
+- TestSuite
+- TextTestResult
+- TextTestRunner
+- defaultTestLoader
+- expectedFailure
+- findTestCases
+- getTestCaseNames
+- installHandler
+- main
+- makeSuite
+- registerResult
+- removeHandler
+- removeResult
+- skip
+- skipIf
+- skipUnless
 
 Below are some Advanced Python Programming Interview Questions For Experienced. I recommend freshers to also refer these interview questions for advanced knowledge.
 
-Q40. How do I test a Python program or component?
+## Q. How do I test a Python program or component?
 
 Python comes with two testing frameworks:
 The documentation test module finds examples in the documentation strings for a module and runs them, comparing the output with the expected output given in the documentation string.
@@ -3905,9 +3859,9 @@ The unittest moduleis a fancier testing framework modeled on Java and Smalltalk 
 For testing, it helps to write the program so that it may be easily tested by using good modular design. Your program should have almost all functionality encapsulated in either functions or class methods. And this sometimes has the surprising and delightful effect of making the program run faster because local variable accesses are faster than global accesses.
 
 Furthermore the program should avoid depending on mutating global variables, since this makes testing much more difficult to do.
-The “global main logic” of your program may be as simple as:
+The "global main logic" of your program may be as simple as:
 
-if __name__==”__main__”:    
+if __name__=="__main__":    
     main_logic()
 
 at the bottom of the main module of your program.
@@ -3915,21 +3869,21 @@ Once your program is organized as a tractable collection of functions and class 
 
 A test suite can be associated with each module which automates a sequence of tests.
 
-You can make coding much more pleasant by writing your test functions in parallel with the “production code”, since this makes it easy to find bugs and even design flaws earlier.
+You can make coding much more pleasant by writing your test functions in parallel with the "production code", since this makes it easy to find bugs and even design flaws earlier.
 
-“Support modules” that are not intended to be the main module of a program may include a self-test of the module.
+"Support modules" that are not intended to be the main module of a program may include a self-test of the module.
 
-if __name__ == “__main__”:
+if __name__ == "__main__":
     self_test()
 
-Even programs that interact with complex external interfaces may be tested when the external interfaces are unavailable by using “fake” interfaces implemented in Python.
+Even programs that interact with complex external interfaces may be tested when the external interfaces are unavailable by using "fake" interfaces implemented in Python.
 
 
 
 ### FLASK
 ## Q. What is Flask & its benefits?
 
-Python Flask, as we’ve previously discussed, is a web microframework for Python. It is based on the '`Werkzeug`, `Jinja 2` and good intentions' BSD license. Two of its dependencies are Werkzeug and Jinja2. This means that it has around no dependencies on external libraries. Due to this, we can call it a light framework. A session uses a signed cookie to allow the user to look at and modify session contents. It will remember information from one request to another. However, to modify a session, the user must have the secret key `Flask.secret_key`.
+Python Flask, as we've previously discussed, is a web microframework for Python. It is based on the '`Werkzeug`, `Jinja 2` and good intentions' BSD license. Two of its dependencies are Werkzeug and Jinja2. This means that it has around no dependencies on external libraries. Due to this, we can call it a light framework. A session uses a signed cookie to allow the user to look at and modify session contents. It will remember information from one request to another. However, to modify a session, the user must have the secret key `Flask.secret_key`.
 
 Flask is a web micro framework for Python based on "Werkzeug, Jinja 2 and good intentions" BSD licensed. Werkzeug and jingja are two of its dependencies.
 
@@ -3993,61 +3947,56 @@ Best database for flask is MySQL. Flask supports database powered application (R
    - `after_request()`: They are called after a request and pass the response that will be sent to the client.   
    - `teardown_request()`: They are called in situation when exception is raised, and response are not guaranteed. They are called after the response been constructed. They are not allowed to modify the request, and their values are ignored.
 
-
-[Mind Boggling Python FAQ](https://docs.python.org/3/faq/programming.html)
-
-## Q. GS Lab
-  - How will you sort result of student whose marks are unknown to you based on their roll numbers? 
+## How will you sort result of student whose marks are unknown to you based on their roll numbers? 
   Using bubble sort.
 
-## Q. Webonise labs
-  
-  - **How will you measure memory on Linux server?**
-    - 1. free command
+## Q. How will you measure memory on Linux server?
+
+1. free command
     
-        The free command is the most simple and easy to use command to check memory usage on linux:
+The free command is the most simple and easy to use command to check memory usage on linux:
     
-        `$ free -m`
+`$ free -m`
 
-        total  used  free   shared  buffers  cached
-        Mem:  7976  6459   1517  0   865     2248
-        -/+ buffers/cache:       3344       4631
-        Swap:         1951          0       1951
+total  used  free   shared  buffers  cached
+Mem:  7976  6459   1517  0   865     2248
+-/+ buffers/cache:       3344       4631
+Swap:         1951          0       1951
 
-        The m option displays all data in MBs. The second line tells that 4.6 GB is free. This is the free memory in first line added with the buffers and cached amount of memory. Linux has the habit of caching lots of things for faster performance, so that memory can be freed and used if needed. The last line is the swap memory, which in this case is lying entirely free.
+The m option displays all data in MBs. The second line tells that 4.6 GB is free. This is the free memorin first line added with the buffers and cached amount of memory. Linux has the habit of caching lots othings for faster performance, so that memory can be freed and used if needed. The last line is the swamemory, which in this case is lying entirely free.
 
-    - 2. /proc/meminfo
+- 2. /proc/meminfo
 
-        Know that the /proc file system does not contain real files. They are rather virtual files that contain dynamic information about the kernel and the system.
+Know that the /proc file system does not contain real files. They are rather virtual files that contain dynamic information about the kernel and the system.
         
-        >`$ cat /proc/meminfo`   
-        MemTotal:        8167848 kB     
-        MemFree:         1409696 kB     
-        Buffers:          961452 kB     
-        Cached:          2347236 kB     
-        SwapCached:            0 kB     
-        Active:          3124752 kB
+>`$ cat /proc/meminfo`   
+MemTotal:        8167848 kB     
+MemFree:         1409696 kB     
+Buffers:          961452 kB     
+Cached:          2347236 kB     
+SwapCached:            0 kB     
+Active:          3124752 kB
 
-        Check the values of MemTotal, MemFree, Buffers, Cached, SwapTotal, SwapFree.
-        They indicate same values of memory usage as the free command.
+Check the values of MemTotal, MemFree, Buffers, Cached, SwapTotal, SwapFree.
+They indicate same values of memory usage as the free command.
 
-    - 3. vmstat
+- 3. vmstat
         
-        The vmstat command with the s option, lays out the memory usage statistics much like the proc command. Here is an example
+The vmstat command with the s option, lays out the memory usage statistics much like the proc command. Here is an example
         <Use one tab and enter to make block of multiple lines>
         
-        >`$ vmstat -s`       
-        8167848 K total memory  
-        7449376 K used memory   
-        3423872 K active memory     
-        3140312 K inactive memory   
-        718472 K free memory    
-        1154464 K buffer memory     
-        2422876 K swap cache    
-        1998844 K total swap    
-        0 K used swap   
-        1998844 K free swap     
-        392650 non-nice user cpu ticks      
+>`$ vmstat -s`       
+8167848 K total memory  
+7449376 K used memory   
+3423872 K active memory     
+3140312 K inactive memory   
+718472 K free memory    
+1154464 K buffer memory     
+2422876 K swap cache    
+1998844 K total swap    
+0 K used swap   
+1998844 K free swap     
+392650 non-nice user cpu ticks      
         
         8073 nice user cpu ticks        
         
@@ -4081,9 +4030,9 @@ Best database for flask is MySQL. Flask supports database powered application (R
         
         The top few lines indicate total memory, free memory etc and so on.
     
-    - 4. *top* command
+- 4. *top* command
         
-        The top command is generally used to check memory and cpu usage per process. However it also reports total memory usage and can be used to monitor the total RAM usage. The header on output has the required information. Here is a sample output:
+The top command is generally used to check memory and cpu usage per process. However it also reports total memory usage and can be used to monitor the total RAM usage. The header on output has the required information. Here is a sample output:
         
         top - 15:20:30 up  6:57,  5 users,  load average: 0.64, 0.44, 0.33
         
@@ -4105,62 +4054,61 @@ Best database for flask is MySQL. Flask supports database powered application (R
 
         Check the KiB Mem and KiB Swap lines on the header. They indicate total, used and free amounts of the memory. The buffer and cache information is present here too, like the free command.
 
-    - 5. *htop*
+- 5. *htop*
         
-        Similar to the top command, the htop command also shows memory usage along with various other details.
+Similar to the top command, the htop command also shows memory usage along with various other details.
+The header on top shows cpu usage along with RAM and swap usage with the corresponding figures. 
+        
+**RAM Information**
+        
+To find out hardware information about the installed RAM, use the demidecode command. It reports lots of information about the installed RAM memory.
 
-        The header on top shows cpu usage along with RAM and swap usage with the corresponding figures. 
+>`$ sudo dmidecode -t 17`    
+`# dmidecode 2.11`
+*SMBIOS 2.4 present.*   
+Handle 0x0015, DMI type 17, 27 bytes    
+Memory Device   
+Array Handle: 0x0014    
+Error Information Handle: Not Provided  
+Total Width: 64 bits    
+Data Width: 64 bits 
+Size: 2048 MB   
+Form Factor: DIMM   
+Set: None   
+Locator: J1MY   
+Bank Locator: CHAN A DIMM 0     
+Type: DDR2  
+Type Detail: Synchronous    
+Speed: 667 MHz  
+Manufacturer: 0xFF00000000000000    
+Serial Number: 0xFFFFFFFF   
+Asset Tag: Unknown  
+Part Number: 0x524D32474235383443412D36344643FFFFFF
         
-        **RAM Information**
-        
-        To find out hardware information about the installed RAM, use the demidecode command. It reports lots of information about the installed RAM memory.
+Provided information includes the size (2048MB), type (DDR2) , speed(667 Mhz) etc.
 
-        >`$ sudo dmidecode -t 17`    
-        `# dmidecode 2.11`
-        *SMBIOS 2.4 present.*   
-        Handle 0x0015, DMI type 17, 27 bytes    
-        Memory Device   
-        Array Handle: 0x0014    
-        Error Information Handle: Not Provided  
-        Total Width: 64 bits    
-        Data Width: 64 bits 
-        Size: 2048 MB   
-        Form Factor: DIMM   
-        Set: None   
-        Locator: J1MY   
-        Bank Locator: CHAN A DIMM 0     
-        Type: DDR2  
-        Type Detail: Synchronous    
-        Speed: 667 MHz  
-        Manufacturer: 0xFF00000000000000    
-        Serial Number: 0xFFFFFFFF   
-        Asset Tag: Unknown  
-        Part Number: 0x524D32474235383443412D36344643FFFFFF
-        
-        Provided information includes the size (2048MB), type (DDR2) , speed(667 Mhz) etc.
-
-  - **How will you check memory leak on Linux?**
+## Q. How will you check memory leak on Linux?
     - valgrind along with gcc.
 
-  - **What are parameters to consider for checking when server is down?**
-    - Server A Can’t Talk to Server B 
+## Q. What are parameters to consider for checking when server is down?
+    - Server A Can't Talk to Server B 
         - Client or Server Problem                          
           To go to another host on the same network and try to access the server.
         - Is It Plugged In?          
-          You first want to verify that your client’s connection to the network is healthy. To do this you can use the ethtool program (installed via the ethtool package) to verify that your link is up (the Ethernet device is physically connected to the network). 
+          You first want to verify that your client's connection to the network is healthy. To do this you can use the ethtool program (installed via the ethtool package) to verify that your link is up (the Ethernet device is physically connected to the network). 
         
-          If you aren’t sure what interface you use, run the `/sbin/ifconfig` command to list all the available network interfaces and their settings. So if your Ethernet device was at eth0 
+          If you aren't sure what interface you use, run the `/sbin/ifconfig` command to list all the available network interfaces and their settings. So if your Ethernet device was at eth0 
           
           `$ sudo ethtool eth0`
         
           >Settings for eth0:   
           Link detected: yes
         
-          Here, on the final line, you can see that Link detected is set to yes, so dev1 is physically connected to the network. If this was set to no, you would need to physically inspect dev1’s network connection and make sure it was connected. Since it is physically connected, you can move on.
+          Here, on the final line, you can see that Link detected is set to yes, so dev1 is physically connected to the network. If this was set to no, you would need to physically inspect dev1's network connection and make sure it was connected. Since it is physically connected, you can move on.
 
         - Is the Interface Up? 
         
-          Once you have established that you are physically connected to the network, the next step is to confirm that the network interface is configured correctly on your host. The best way to check this is to run the `ifconfig` command with your interface as an argument. So to test eth0’s settings
+          Once you have established that you are physically connected to the network, the next step is to confirm that the network interface is configured correctly on your host. The best way to check this is to run the `ifconfig` command with your interface as an argument. So to test eth0's settings
 
           `$ sudo ifconfig eth0`
          
@@ -4168,9 +4116,9 @@ Best database for flask is MySQL. Flask supports database powered application (R
           
           `sudo ifup eth0` and then run `ifconfig` again to see if the interface comes up. 
           
-          If the settings are wrong or the interface won’t come up, inspect `/etc/network/interfaces` on Debian-based systems or `/etc/sysconfig/ network_scripts/ifcfg-eth0` on Red Hat-based systems. 
+          If the settings are wrong or the interface won't come up, inspect `/etc/network/interfaces` on Debian-based systems or `/etc/sysconfig/ network_scripts/ifcfg-eth0` on Red Hat-based systems. 
           
-          It is in these files that you can correct any errors in the network settings. Now if the host gets its IP through DHCP, you will need to move your troubleshooting to the DHCP host to find out why you aren’t getting a lease.
+          It is in these files that you can correct any errors in the network settings. Now if the host gets its IP through DHCP, you will need to move your troubleshooting to the DHCP host to find out why you aren't getting a lease.
             
         - Is It on the Local Network?
 
@@ -4197,14 +4145,14 @@ Best database for flask is MySQL. Flask supports database powered application (R
           >`$ nslookup web1`     
           ;; connection timed out; no servers could be reached
           
-          In either case you will need to inspect /etc/resolv.conf and see if any name servers are configured there. If you don’t see any IP addresses configured there, you will need to add a name server to the file. Otherwise, if you see something like the following, you need to start troubleshooting your connection with your name server starting off with ping:
+          In either case you will need to inspect /etc/resolv.conf and see if any name servers are configured there. If you don't see any IP addresses configured there, you will need to add a name server to the file. Otherwise, if you see something like the following, you need to start troubleshooting your connection with your name server starting off with ping:
           
           search example.net    
           nameserver 10.1.1.3
 
-          If you can’t ping the name server and its IP address is in the same subnet (in this case, 10.1.1.3 is within the subnet), the name server itself could be completely down. If you can’t ping the name server and its IP address is in a different subnet, then skip ahead to the Can I Route to the Remote Host? section, 
-          but only apply those troubleshooting steps to the name server’s IP.
-          If you can ping the name server but it isn’t responding, skip ahead to the
+          If you can't ping the name server and its IP address is in the same subnet (in this case, 10.1.1.3 is within the subnet), the name server itself could be completely down. If you can't ping the name server and its IP address is in a different subnet, then skip ahead to the Can I Route to the Remote Host? section, 
+          but only apply those troubleshooting steps to the name server's IP.
+          If you can ping the name server but it isn't responding, skip ahead to the
           Is the Remote Port Open? section.
           
           - Missing Search Path or Name Server Problem          
@@ -4214,9 +4162,9 @@ Best database for flask is MySQL. Flask supports database powered application (R
           `$ nslookup web1`
           > Server: 10.1.1.3    
           Address: 10.1.1.3#53      
-          **server can’t find web1: NXDOMAIN
+          **server can't find web1: NXDOMAIN
 
-          Here you see that the server did respond, since it gave a response: server can’t find web1. This could mean two different things. One, it could mean that web1’s domain name is not in your DNS search path. This is set in /etc/resolv.conf in the line that begins with search. A good way to test this is to perform the same nslookup command, only use the fully qualified domain name (in this case, web1.example.net). If it does resolve, then either always use the fully qualified domain name, or if you want to be able to use just the hostname, add the domain name to the search path in /etc/resolv.conf. If even the fully qualified domain name doesn’t resolve, then the problem is on the name server. If the name server is supposed to have that record, then that zone’s configuration needs to be examined. If it is a recursive name server,then you will have to test whether or not recursion is working on the name server by looking up some other domain. If you can look up other domains, then you must check if the problem is on the remote name server that does contain the zones.
+          Here you see that the server did respond, since it gave a response: server can't find web1. This could mean two different things. One, it could mean that web1's domain name is not in your DNS search path. This is set in /etc/resolv.conf in the line that begins with search. A good way to test this is to perform the same nslookup command, only use the fully qualified domain name (in this case, web1.example.net). If it does resolve, then either always use the fully qualified domain name, or if you want to be able to use just the hostname, add the domain name to the search path in /etc/resolv.conf. If even the fully qualified domain name doesn't resolve, then the problem is on the name server. If the name server is supposed to have that record, then that zone's configuration needs to be examined. If it is a recursive name server,then you will have to test whether or not recursion is working on the name server by looking up some other domain. If you can look up other domains, then you must check if the problem is on the remote name server that does contain the zones.
         
         - Can I Route to the Remote Host?
           
@@ -4227,7 +4175,7 @@ Best database for flask is MySQL. Flask supports database powered application (R
             port 80. The next test is to see whether the port is even open.   
             `$ telnet 10.1.2.5 80`
             
-            If nmap isn’t installed, use your package manager to install the nmap package. To test web1:  
+            If nmap isn't installed, use your package manager to install the nmap package. To test web1:  
             `$ nmap -p 80 10.1.2.5`
 
             nmap is smart enough that it can often tell the difference between a closed port that is truly closed and a closed port behind a firewall. Normally when a port is actually down, nmap will report it as closed. Here it reported it as filtered. What this tells us is that some firewall is in the way and is dropping the packets to the floor. This means you need to investigate any firewall rules on the gateway (10.1.1.1) and on web1 itself to see
@@ -4254,13 +4202,13 @@ Best database for flask is MySQL. Flask supports database powered application (R
         
         - Find What Is Using Your Bandwidth with iftop
             iotop to identify what processes are consuming the most
-            disk I/O. It turns out there is a tool called iftop that does something similar with network connections. Unlike top, iftop doesn’t concern itself with processes but instead lists the connections between your server and a remote IP that are consuming the most bandwidth. For instance, with iftop you can quickly see if your backup job is using up all your bandwidth
+            disk I/O. It turns out there is a tool called iftop that does something similar with network connections. Unlike top, iftop doesn't concern itself with processes but instead lists the connections between your server and a remote IP that are consuming the most bandwidth. For instance, with iftop you can quickly see if your backup job is using up all your bandwidth
             by seeing the backup server IP address at the top of the output.
     
     - Packet Captures 
         - Use the tcpdump Tool      
                         
-            It will scan through your network interfaces and choose the first suitable one; then it will capture, parse, and output information about the packets it sees. Here’s some example output from tcpdump with the -n option (so it doesn’t convert IP addresses to hostnames and slow things down) 
+            It will scan through your network interfaces and choose the first suitable one; then it will capture, parse, and output information about the packets it sees. Here's some example output from tcpdump with the -n option (so it doesn't convert IP addresses to hostnames and slow things down) 
             
             `$ sudo tcpdump -n`
 
@@ -4274,15 +4222,15 @@ Best database for flask is MySQL. Flask supports database powered application (R
             19:01:51.256743 IP 201.52.186.78.63705 > 64.142.56.172.80: Flags [.], ack 1833085614, win Ê65340, length 0
 
             NOTE Whenever you are done capturing packets, just hit Ctrl-C to exit tcpdump. As tcpdump exits, it tells you how many packets it was able to capture and how many the kernel dropped.
-            The output of tcpdump can be a bit tricky to parse at first, and I won’t go over all the columns, but let’s take two lines from the preceding output and break them down:
+            The output of tcpdump can be a bit tricky to parse at first, and I won't go over all the columns, but let's take two lines from the preceding output and break them down:
 
            > 19:01:51.224021 IP 72.240.13.35.45665 > 64.142.56.172.53: 59454% [1au] AAAA? ns2.example. Ênet. (45)       
            19:01:51.224510 IP 64.142.56.172.53 > 72.240.13.35.45665: 59454*- 0/1/1 (90)
            
             The first line tells you that at 19:01:51, the host 72.240.13.35 on port 45665 sent a packet to 64.142.56.172 on port 53 (DNS). If you wanted to dig further in that line you could see that the source host sent a request for the AAAA record (an IPv6 IP address)for ns2.example.net. The second line tells you that also at 19:01:51 the host 64.142.56.172 on port 53 replied back to host 72.240.13.35 on port 45665, presumably with an answer to the query.
 
-            Since the first column is a datestamp for each packet, it makes it simple to see how long communication takes between hosts. This can be particularly useful for protocols that have set timeouts (like 30-second timeouts for DNS requests) since you can watch the timeout occur and see the source host resend its request. The next major column shows the IP and port for the source host. The > in the line can be treated like an arrow that lets you know that the direction of communication is from the first IP to the second. Finally, the next column tells you the destination IP and port followed by some extra flags, sequence numbers, and other TCP/IP information for that packet that we won’t get into here.
-            Filtering Tcpdump Output Since by default tcpdump captures all of the packets it sees, it usually bombards you with a lot of noise that doesn’t help with your troubleshooting. What you want to do is pass tcpdump some filtering rules so it only shows you packets that you are interested in. For instance, if you were troubleshooting problems between your host and a server with a hostname of web1, you could tell tcpdump to only show packets to or from that host with 
+            Since the first column is a datestamp for each packet, it makes it simple to see how long communication takes between hosts. This can be particularly useful for protocols that have set timeouts (like 30-second timeouts for DNS requests) since you can watch the timeout occur and see the source host resend its request. The next major column shows the IP and port for the source host. The > in the line can be treated like an arrow that lets you know that the direction of communication is from the first IP to the second. Finally, the next column tells you the destination IP and port followed by some extra flags, sequence numbers, and other TCP/IP information for that packet that we won't get into here.
+            Filtering Tcpdump Output Since by default tcpdump captures all of the packets it sees, it usually bombards you with a lot of noise that doesn't help with your troubleshooting. What you want to do is pass tcpdump some filtering rules so it only shows you packets that you are interested in. For instance, if you were troubleshooting problems between your host and a server with a hostname of web1, you could tell tcpdump to only show packets to or from that host with 
 
             `$ sudo tcpdump -n host web1`
             
@@ -4298,7 +4246,7 @@ Best database for flask is MySQL. Flask supports database powered application (R
             
             `$ sudo tcpdump -n port 80 or port 443`
 
-            You can actually get rather sophisticated with tcpdump filters, but it’s often easier to just capture a certain level of tcpdump output to a file and then use grep or other tools to filter it further. To save tcpdump output to a file, you can use a command-line redirect:
+            You can actually get rather sophisticated with tcpdump filters, but it's often easier to just capture a certain level of tcpdump output to a file and then use grep or other tools to filter it further. To save tcpdump output to a file, you can use a command-line redirect:
             
             `$ sudo tcpdump -n host web1 > outputfile`
             
@@ -4308,18 +4256,18 @@ Best database for flask is MySQL. Flask supports database powered application (R
             
         - Raw Packet Dumps 
         
-            Although you might think that tcpdump already provides plenty of difficult-to-parse output, sometimes all that output isn’t
-            enough—you want to save complete raw packets. Raw packets are particularly useful since they contain absolutely all of the information about communication between hosts, and a number of tools (such as Wireshark, which we’ll discuss briefly momentarily) can take these raw packet dumps as input and display them in a much-easier-to-understand way. 
+            Although you might think that tcpdump already provides plenty of difficult-to-parse output, sometimes all that output isn't
+            enough—you want to save complete raw packets. Raw packets are particularly useful since they contain absolutely all of the information about communication between hosts, and a number of tools (such as Wireshark, which we'll discuss briefly momentarily) can take these raw packet dumps as input and display them in a much-easier-to-understand way. 
             The simplest way to save raw packet dumps is to run tcpdump with the -w option:
 
             `$ sudo tcpdump -w output.pcap`
 
-            Like with other tcpdump commands, hit Ctrl-C to stop capturing packets.You can also use all of the same filtering options we’ve discussed so far when capturing raw packets. With raw packet dumps, you are getting the complete contents of the packets as best as tcpdump and your disk can keep up. So if someone is transferring a 1Gb file from your server, you might just capture the whole file in your packet dump. You may want to open up
+            Like with other tcpdump commands, hit Ctrl-C to stop capturing packets.You can also use all of the same filtering options we've discussed so far when capturing raw packets. With raw packet dumps, you are getting the complete contents of the packets as best as tcpdump and your disk can keep up. So if someone is transferring a 1Gb file from your server, you might just capture the whole file in your packet dump. You may want to open up
             a second command-line session just so you can keep an eye on the size ofthe output file. tcpdump provides a few options you can use to manage the size of output files. The first option, -C, lets you specify the maximum size of the output file (in millions of bytes) before it moves on to a second one. So, for instance, if you wanted to rotate files after they grow past ten megabytes, you can type 
             
             `$ sudo tcpdump -C 10 -w output.pcap`
             
-            The first output file will be named output.pcap.1, and once it gets to ten megabytes, tcpdump will close it and start writing to output.pcap.2, and so on, until you either kill tcpdump or you run out of disk space. If you want to be sure that you won’t run out of disk space, you can also add the -W option, which lets you limit the number of files tcpdump will ultimately create. Once tcpdump reaches the last file, it will start from the beginning and overwrite the first file in the set. So, for instance, if you want tcpdump to rotate to a new file after ten megabytes and want to make sure tcpdump only uses fifty megabytes of disk space, you could limit it to five rotated files:
+            The first output file will be named output.pcap.1, and once it gets to ten megabytes, tcpdump will close it and start writing to output.pcap.2, and so on, until you either kill tcpdump or you run out of disk space. If you want to be sure that you won't run out of disk space, you can also add the -W option, which lets you limit the number of files tcpdump will ultimately create. Once tcpdump reaches the last file, it will start from the beginning and overwrite the first file in the set. So, for instance, if you want tcpdump to rotate to a new file after ten megabytes and want to make sure tcpdump only uses fifty megabytes of disk space, you could limit it to five rotated files:
             
             `$ sudo tcpdump -C 10 -W 5 -w output.pcap`
 
@@ -4327,7 +4275,7 @@ Best database for flask is MySQL. Flask supports database powered application (R
 
             `$ sudo tcpdump -n -r output.pcap`
 
-            The tcpdump program is full of useful options and filters beyond what I’ve mentioned here. The man page (type man tcpdump) not only goes over all of these options and filters, but it also provides a nice primer on TCP packet construction, so it’s worth looking through if you want to dig deeper into tcpdump’s abilities.
+            The tcpdump program is full of useful options and filters beyond what I've mentioned here. The man page (type man tcpdump) not only goes over all of these options and filters, but it also provides a nice primer on TCP packet construction, so it's worth looking through if you want to dig deeper into tcpdump's abilities.
 
         - Use Wireshark
 ---
@@ -4365,7 +4313,7 @@ Best database for flask is MySQL. Flask supports database powered application (R
         These locations are composed of regions and Availability Zones. Each region is a separate geographic area. Each region has multiple, isolated locations known as Availability Zones. Each region is completely independent. Each Availability Zone is isolated, but the Availability Zones in a region are connected through low-latency links. The following diagram illustrates the relationship between regions and Availability Zones.
 
     - How To Create Security Group In Amazon Ec2 ?
-        - We can create Security Group in Amazon EC2 using the Amazon EC2 console. To launch instances in multiple regions, we’ll need to create a Security Group in each region.
+        - We can create Security Group in Amazon EC2 using the Amazon EC2 console. To launch instances in multiple regions, we'll need to create a Security Group in each region.
 
         Following are the steps to create Security Group in Amazon EC2:
 
@@ -4582,7 +4530,7 @@ Let\'s first get to the Desktop. We use the chdir() function/method form the os 
      import os
      os.chdir('C:\\Users\\lifei\\Desktop')
 
-The file we’ll use for this is Today.txt, and it has the following contents:
+The file we'll use for this is Today.txt, and it has the following contents:
 
 OS, DBMS, DS, ADA
 
@@ -4590,7 +4538,7 @@ HTML, CSS, jQuery, JavaScript
 
 Python, C++, Java
 
-This sem’s subjects
+This sem's subjects
 
 Debugger
 
@@ -4598,7 +4546,7 @@ itertools
 
 container
 
-Let’s read the contents into a list, and then call reversed() on it:
+Let's read the contents into a list, and then call reversed() on it:
     for line in reversed(list(open('Today.txt')))
        print(line.rstrip())
 
@@ -4608,7 +4556,7 @@ itertools
 
 Debugger
 
-This sem’s subjects
+This sem's subjects
 
 Python, C++, Java
 
@@ -4644,7 +4592,7 @@ Without the rstrip(), we would get blank lines between the output.
 #### Q. What version of Azure DataFactory you are using>?
 #### Q. How to execute a java code?
 #### Q. How to find PID of process and How to find how much resources a process is taking on linux?
-#### Q. What is Amazon’s version of Hadoop?
+#### Q. What is Amazon's version of Hadoop?
 #### Q. What are tools for ingestion?
 #### Q. What is Python?
 #### Q. Describe some features of Python.
@@ -4734,9 +4682,12 @@ Without the rstrip(), we would get blank lines between the output.
 #### Q. How is a Python class created?
 #### Q. How is a Python class instantiated?
 #### Q. How does a function return values?
-#### Q. What happens when a function doesn’t have a return statement? Is this valid?
+#### Q. What happens when a function doesn't have a return statement? Is this valid?
 #### Q. How do you create a dictionary which can preserve the order of pairs?
-#### Q. Can you use mutable Data Structure as key in Dictionaries ?
+#### Q. Can you use mutable Data Structure as key in Dictionaries?
+#### Q. What is difference between tuple and list? Where will you use tuple and where will you use list?
+#### Q. Explain all the file processing modes supported by Python?
+#### Q. What is PEP 8?
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
