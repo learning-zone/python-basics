@@ -493,38 +493,40 @@ size, color, disposition = cat
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is `__slots__` and when is it useful?     
-Normally, all class objects have an `__dict__` which allows new attributes to be bound to a class instance at runtime. When a class is defined with `__slots__`, only attributes whose names are present in the `__slots__` sequence are allowed. 
-This results in instances of this class not having an `__dict__` attribute and not being able to bind new attributes at run time.`__slots__` is useful because it eliminates 
+## Q. What is `__slots__` and when is it useful?
 
-`__slots__`  allow us to explicitly declare data members (like properties) and deny the creation of `__dict__` and `__weakref__` (unless explicitly declared in __slots__ or available in a parent.)
+In Python, every class can have instance attributes. By default Python uses a `dict` to store an object\'s instance attributes. This is really helpful as it allows setting arbitrary new attributes at runtime.
 
-The space saved over using `__dict__` can be significant.
-    
-    object.__slots__
+However, for small classes with known attributes it might be a bottleneck. The `dict` wastes a lot of RAM. Python can\'t just allocate a static amount of memory at object creation to store all the attributes. Therefore it sucks a lot of RAM if you create a lot of objects. The usage of `__slots__` to tell Python not to use a dict, and only allocate space for a fixed set of attributes.
 
-This class variable can be assigned a string, iterable, or sequence of strings with variable names used by instances. `__slots__` reserves space for the declared variables and prevents the automatic creation of `__dict__` and `__weakref__` for each instance.
+*Example:*
 
-3.3.2.4.1. Notes on using `__slots__`
-•When inheriting from a class without `__slots__`, the __dict__ and __weakref__ attribute of the instances will always be accessible.
+**1. Object without slots**
 
-•Without a __dict__ variable, instances cannot be assigned new variables not listed in the __slots__ definition. Attempts to assign to an unlisted variable name raises AttributeError. If dynamic assignment of new variables is desired, then add '__dict__' to the sequence of strings in the __slots__ declaration.
+```py
+class MyClass(object):
+      def __init__(self, *args, **kwargs):
+                self.a = 1
+                self.b = 2
+  
+if __name__ == "__main__":
+     instance = MyClass()
+     print(instance.__dict__)
+```
 
-•Without a __weakref__ variable for each instance, classes defining __slots__ do not support weak references to its instances. If weak reference support is needed, then add '__weakref__' to the sequence of strings in the __slots__ declaration.
+**2. object with slots**
 
-•__slots__ are implemented at the class level by creating descriptors (Implementing Descriptors) for each variable name. As a result, class attributes cannot be used to set default values for instance variables defined by __slots__; otherwise, the class attribute would overwrite the descriptor assignment.
-
-•The action of a __slots__ declaration is not limited to the class where it is defined. __slots__ declared in parents are available in child classes. However, child subclasses will get a __dict__ and __weakref__ unless they also define __slots__ (which should only contain names of any additional slots).
-
-•If a class defines a slot also defined in a base class, the instance variable defined by the base class slot is inaccessible (except by retrieving its descriptor directly from the base class). This renders the meaning of the program undefined. In the future, a check may be added to prevent this.
-
-•Nonempty __slots__ does not work for classes derived from "variable-length" built-in types such as int, bytes and tuple.
-
-•Any non-string iterable may be assigned to __slots__. Mappings may also be used; however, in the future, special meaning may be assigned to the values corresponding to each key.
-
-•__class__ assignment works only if both classes have the same __slots__.
-
-•Multiple inheritance with multiple slotted parent classes can be used, but only one parent is allowed to have attributes created by slots (the other bases must have empty slot layouts) - violations raise TypeError.
+```py
+class MyClass(object):
+      __slots__=['a', 'b']
+      def __init__(self, *args, **kwargs):
+                self.a = 1
+                self.b = 2
+  
+if __name__ == "__main__":
+     instance = MyClass()
+     print(instance.__slots__)
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
