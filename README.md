@@ -514,7 +514,7 @@ if __name__ == "__main__":
      print(instance.__dict__)
 ```
 
-**2. object with slots**
+**2. Object with slots**
 
 ```py
 class MyClass(object):
