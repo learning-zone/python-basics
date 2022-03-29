@@ -10,6 +10,7 @@ for letter in string.letters:
     print("The letter at index %i is %s" % (i, letter))
     i = i + 1
 ```
+
 Bonus points for mentioning `enumerate` and use of `str.format`.
 
 <div align="right">
@@ -42,6 +43,7 @@ With regard to the question of when using Python is the "right choice" for a pro
 For starters, if you know a language well, you know its drawbacks, so responses such as "there's nothing I don't like about it" or "it has no drawbacks" are very telling indeed.
 
 The two most common valid answers to this question (by no means intended as an exhaustive list) are:
+
 - The Global Interpreter Lock (GIL). CPython (the most common Python implementation) is not fully thread safe. In order to support multi-threaded Python programs, CPython provides a global lock that must be held by the current thread before it can safely access Python objects. As a result, no matter how many threads or processors are present, only one thread is ever being executed at any given time. In comparison, it is worth noting that the PyPy implementation discussed earlier in this article provides a stackless mode that supports micro-threads for massive concurrency.
 - Execution speed. Python can be slower than compiled languages since it is interpreted. (Well, sort of. See our earlier discussion on this topic.)
 
@@ -80,25 +82,25 @@ Error Handling
 
   Although Python 2 is formally considered legacy at this point,its use is still widespread enough that is important for a developer to recognize the differences between Python 2 and 3.
 
-  - Here are some of the key differences that a developer should be aware of:
+- Here are some of the key differences that a developer should be aware of:
 
-    - Text and Data instead of Unicode and 8-bit strings. Python 3.0 uses the concepts of text and (binary) data instead of Unicode strings and 8-bit strings. The biggest ramification of this is that any attempt to mix text and data in Python 3.0 raises a TypeError (to combine the two safely, you must decode bytes or encode Unicode, but you need to know the proper encoding, e.g. UTF-8)
-   
-    - This addresses a longstanding pitfall for naïve Python programmers. In Python 2, mixing Unicode and 8-bit data would work if the string happened to contain only 7-bit (ASCII) bytes, but you would get UnicodeDecodeError if it contained non-ASCII values. Moreover, the exception would happen at the combination point, not at the point at which the non-ASCII characters were put into the str object. This behavior was a common source of confusion and consternation for neophyte Python programmers.
-   
-    - `print` function. The print statement has been replaced with a print() function
-   
-    - `xrange` – buh-bye. xrange() no longer exists (range() now behaves like xrange() used to behave, except it works with values of arbitrary size)
-   
-   - API changes:
-        - `zip()`, `map()` and `filter()` all now return iterators instead of lists.
-        - `dict.keys()`, `dict.items()` and `dict.values()` now return 'views' instead of lists.
-        - `dict.iterkeys()`, `dict.iteritems()` and `dict.itervalues()` are no longer supported.
-        - Comparison operators. The ordering comparison operators (<, <=, >=, >) now raise a TypeError exception when the operands don't have a meaningful natural ordering. Some examples of the ramifications of this include:
-        - Expressions like 1 < '', 0 > None or len <= len are no longer valid
-        - None < None now raises a TypeError instead of returning False
-        - Sorting a heterogeneous list no longer makes sense.     
-        - All the elements must be comparable to each other
+- Text and Data instead of Unicode and 8-bit strings. Python 3.0 uses the concepts of text and (binary) data instead of Unicode strings and 8-bit strings. The biggest ramification of this is that any attempt to mix text and data in Python 3.0 raises a TypeError (to combine the two safely, you must decode bytes or encode Unicode, but you need to know the proper encoding, e.g. UTF-8)
+
+- This addresses a longstanding pitfall for naïve Python programmers. In Python 2, mixing Unicode and 8-bit data would work if the string happened to contain only 7-bit (ASCII) bytes, but you would get UnicodeDecodeError if it contained non-ASCII values. Moreover, the exception would happen at the combination point, not at the point at which the non-ASCII characters were put into the str object. This behavior was a common source of confusion and consternation for neophyte Python programmers.
+
+- `print` function. The print statement has been replaced with a print() function
+
+- `xrange` – buh-bye. xrange() no longer exists (range() now behaves like xrange() used to behave, except it works with values of arbitrary size)
+
+API changes:
+* `zip()`, `map()` and `filter()` all now return iterators instead of lists.
+* `dict.keys()`, `dict.items()` and `dict.values()` now return 'views' instead of lists.
+* `dict.iterkeys()`, `dict.iteritems()` and `dict.itervalues()` are no longer supported.
+* Comparison operators. The ordering comparison operators (<, <=, >=, >) now raise a TypeError exception when the operands don't have a meaningful natural ordering. Some examples of the ramifications of this include:
+* Expressions like 1 < '', 0 > None or len <= len are no longer valid
+* None < None now raises a TypeError instead of returning False
+* Sorting a heterogeneous list no longer makes sense.
+* All the elements must be comparable to each other
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
