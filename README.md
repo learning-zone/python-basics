@@ -1,4 +1,4 @@
-# Python Interview Questions
+# Python Basics
 
 ## Q. How can you improve the following code?
 
