@@ -1,5 +1,7 @@
 # Python Basics
 
+<br/>
+
 ## Q. How can you improve the following code?
 
 ```py
