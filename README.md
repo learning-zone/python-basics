@@ -19,7 +19,7 @@ Bonus points for mentioning `enumerate` and use of `str.format`.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is Python particularly good for? When is using Python the "right choice" for a project?
+## Q. When is using Python the "right choice" for a project?
 
 Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
 
@@ -34,17 +34,13 @@ Although likes and dislikes are highly personal, a developer who is "worth his o
 - A dynamically-typed and strongly-typed language, offering the rare combination of code flexibility while at the same time avoiding pesky implicit-type-conversion bugs.
 - It\'s free and open source! Need we say more?
 
-With regard to the question of when using Python is the "right choice" for a project, the complete answer also depends on a number of issues orthogonal to the language itself, such as prior technology investment, skill set of the team, and so on. Although the question as stated above implies interest in a strictly technical answer, a developer who will raise these additional issues in an interview will always "score more points" with me since it indicates an awareness of, and sensitivity to, the "bigger picture" (i.e., beyond just the technology being employed). Conversely, a response that Python is always the right choice is a clear sign of an unsophisticated developer.
-
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
 ## Q. What are some drawbacks of the Python language?
 
-For starters, if you know a language well, you know its drawbacks, so responses such as "there\'s nothing I don\'t like about it" or "it has no drawbacks" are very telling indeed.
-
-The two most common valid answers to this question (by no means intended as an exhaustive list) are:
+The two most common valid answers to this question are:
 
 - The Global Interpreter Lock (GIL). CPython (the most common Python implementation) is not fully thread safe. In order to support multi-threaded Python programs, CPython provides a global lock that must be held by the current thread before it can safely access Python objects. As a result, no matter how many threads or processors are present, only one thread is ever being executed at any given time. In comparison, it is worth noting that the PyPy implementation discussed earlier in this article provides a stackless mode that supports micro-threads for massive concurrency.
 - Execution speed. Python can be slower than compiled languages since it is interpreted. (Well, sort of. See our earlier discussion on this topic.)
@@ -72,19 +68,6 @@ So while it has problems, it is also a wonderful tool for a lot of things.
 </div>
 
 ## Q. What are the key differences between Python 2 and 3?
-
-```py
-Division operator
-`print` function  
-Unicode 
-xrange  
-Error Handling  
-`_future_` module
-```
-
-  Although Python 2 is formally considered legacy at this point,its use is still widespread enough that is important for a developer to recognize the differences between Python 2 and 3.
-
-- Here are some of the key differences that a developer should be aware of:
 
 - Text and Data instead of Unicode and 8-bit strings. Python 3.0 uses the concepts of text and (binary) data instead of Unicode strings and 8-bit strings. The biggest ramification of this is that any attempt to mix text and data in Python 3.0 raises a TypeError (to combine the two safely, you must decode bytes or encode Unicode, but you need to know the proper encoding, e.g. UTF-8)
 
@@ -162,13 +145,13 @@ div2(5.,2.)
 
 Also, how would the answer differ in Python 3 (assuming, of course, that the above [print] statements were converted to Python 3 syntax)?
 
-    -  kjalfkjaslf
+-  kjalfkjaslf
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is the difference between range and xrange? How has this changed over time?
+## Q. What is the difference between range and xrange?
 
 - As follows:
     - `xrange` returns the xrange object while range returns the list, and uses the same memory and no matter what the range size is.
@@ -232,6 +215,7 @@ Example: BaseAlias = class Derived(BaseAlias): def meth(self): BaseAlias.meth(se
 </div>
 
 ## Q. How do I find the current module name?
+
 A module can find out its own module name by looking at the predefined global variable `__name__`. If this has the value `'__main__'`, the program is running as a script. Many modules that are usually used by importing them also provide a command-line interface or a self-test, and only execute this code after checking `__name__`: 
 
 ```py
@@ -256,7 +240,7 @@ m = __import__(s)
 
 ## Q. How do I access a module written in Python from C?
 
-You can get a pointer to the module object as follows: 
+You can get a pointer to the module object as follows:
 
 `module = PyImport_ImportModule("");`
 
@@ -276,18 +260,18 @@ To convert, e.g., the number 144 to the string '144', use the built-in function 
 
 ## Q. How is the Implementation of Python\'s dictionaries done?
 
-Python dictionary needs to be declared first:   
+Python dictionary needs to be declared first:
 `dict = {}`
 
-Key value pair can be added as:     
-`dict[key] = value`     
-or      
+Key value pair can be added as:
+`dict[key] = value`
+or
 `objDict.update({key:value})`
 
 Remove element by:  
 `dict.pop(key)`
 
-Remove all:     
+Remove all:
 `objDict.clear()`
 
 A hash value of the key is computed using a hash function, The hash value addresses a location in an array of "buckets" or "collision lists" which contains the (key , value) pair.
@@ -300,7 +284,7 @@ A hash value of the key is computed using a hash function, The hash value addres
 
 "u" should be added before the string
 
-`a = (u'Python')`   
+`a = (u'Python')`
 `type(a)  #will give you unicode`
 
 Add unicode before the string. Ex: unicode(text) resulting in text.
@@ -364,7 +348,7 @@ Ans.  In languages like C++, we have something like this:
 
 But in Python, we do not have a switch-case statement. Here, you may write a switch function to use. Else, you may use a set of if-elif-else statements. To implement a function for this, we may use a dictionary.
 
-```
+```py
 def switch(choice):     
     switcher={
         'Ram':'Monday',
@@ -482,7 +466,7 @@ Python has a private heap space to hold all objects and data structures. Being p
 
 Objects referenced from the global namespaces of Python modules are not always deallocated when Python exits. This may happen if there are circular references. There are also certain bits of memory ...
 
-## Q. Whenever you exit Python, is all memory de-allocated? State why is it so.
+## Q. Whenever you exit Python, is all memory de-allocated?
 
 The answer here is no. The modules with circular references to other objects, or to objects referenced from global namespaces, aren\'t always freed on exiting Python.
 Plus, it is impossible to de-allocate portions of memory reserved by the C library.
@@ -506,7 +490,7 @@ disposition = cat[2]
 
 Do this:
 
-```
+```js
 cat = ['fat', 'orange', 'loud']
 size, color, disposition = cat
 ```
@@ -805,7 +789,7 @@ Hi, monkey
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Explain serialization and deserialization / Pickling and unpicking.
+## Q. Explain serialization and deserialization / Pickling and unpicking?
 
 Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling.
 
@@ -824,6 +808,7 @@ print(pickle.loads(pickled_string))
 ```
 
 Reference:
+
 [1]   https://www.sanfoundry.com/python-questions-answers-pickle-module/
 [2]   https://docs.python-guide.org/scenarios/serialization/
 
@@ -1006,7 +991,8 @@ print(b)
 ```
 
 Output:
-```
+
+```py
 M m1 of X 
 In m2 of Y
 2337815
