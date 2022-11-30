@@ -1,5 +1,7 @@
 # Python Basics
 
+> *Click &#9733; if you like the project. Your contributions are heartily ♡ welcome.*
+
 <br/>
 
 ## Q. How can you improve the following code?
