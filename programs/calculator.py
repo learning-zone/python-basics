@@ -68,7 +68,7 @@ def calculate(inner_expression, operators):
         nxt = new_expr[op_index+1]
         total = int(prev) * int(nxt)
         new_expr = new_expr[:op_index-1] + str(total) + new_expr[op_index+2:]
-        print new_expr
+        print(new_expr)
 
     while operators['/'] != []:
         op_index = operators['/'].pop()
