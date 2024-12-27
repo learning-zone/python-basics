@@ -167,8 +167,6 @@ div2(5.,2.)
 
 Also, how would the answer differ in Python 3 (assuming, of course, that the above [print] statements were converted to Python 3 syntax)?
 
--  kjalfkjaslf
-
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
