@@ -2341,56 +2341,6 @@ print(list(cache._cache.keys()))   # ['c', 'a', 'd']
 
 **No.** Dictionary keys must be **hashable**, and all mutable built-in types (`list`, `dict`, `set`) are **not hashable**. Attempting to use them raises `TypeError`.
 
-```py
-# Mutable types — NOT hashable, cannot be dict keys
-try:
-    d = {[1, 2, 3]: "value"}   # list key
-except TypeError as e:
-    print(f"TypeError: {e}")   # unhashable type: 'list'
-
-try:
-    d = {{1: "a"}: "value"}    # dict key
-except TypeError as e:
-    print(f"TypeError: {e}")   # unhashable type: 'dict'
-
-# Immutable types — hashable, valid dict keys
-valid_keys = {
-    "string": 1,
-    42: 2,
-    3.14: 3,
-    True: 4,
-    (1, 2, 3): 5,       # tuple of immutables — hashable
-    frozenset({1, 2}): 6, # frozenset — hashable
-}
-print(valid_keys[(1, 2, 3)])   # 5
-
-# A tuple is only hashable if ALL its elements are hashable
-try:
-    d = {(1, [2, 3]): "value"}   # tuple containing a list
-except TypeError as e:
-    print(f"TypeError: {e}")    # unhashable type: 'list'
-
-# Making a custom object hashable
-class Point:
-    def __init__(self, x: float, y: float) -> None:
-        self.x, self.y = x, y
-
-    def __eq__(self, other: object) -> bool:
-        if not isinstance(other, Point): return NotImplemented
-        return self.x == other.x and self.y == other.y
-
-    def __hash__(self) -> int:
-        return hash((self.x, self.y))  # hash based on immutable tuple
-
-grid: dict[Point, str] = {}
-grid[Point(0, 0)] = "origin"
-grid[Point(1, 2)] = "marker"
-print(grid[Point(0, 0)])   # origin
-
-# Rule: if __eq__ is defined, __hash__ MUST also be defined
-# Python sets __hash__ = None if __eq__ is defined without __hash__
-```
-
 **Rule:** Hashable = immutable structure + consistent `__hash__`. `hash(x) == hash(y)` whenever `x == y`.
 
 **Use Case:** A graph algorithm caches computed shortest paths using `frozenset({source, destination})` as a dict key — symmetric pairs `(A→B)` and `(B→A)` map to the same cache entry, halving cache misses.
